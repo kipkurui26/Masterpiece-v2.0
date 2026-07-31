@@ -1,13 +1,17 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from './Navbar'
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const AppShell = () => {
   return (
-    <div>
-        <Navbar/>
-        <Outlet/>
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default AppShell
+export default AppShell;
