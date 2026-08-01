@@ -3,10 +3,17 @@ import { useState } from "react";
 const TESTIMONIALS = [
   {
     quote:
-      "Masterpiece conducted a hydrogeological survey on our property and identified a reliable groundwater source. The borehole yielded 49m³ of water, giving us confidence to proceed with drilling.",
+      "Masterpiece conducted a hydrogeological survey on our property and identified a reliable groundwater source, giving us confidence to proceed with drilling. The borehole yielded 49m³ of water.",
     name: "Kahome Ndeithi",
     service: "Hydrogeological Survey",
     location: "Nanyuki",
+  },
+  {
+    quote:
+      "You delivered to our expectations and we are happy with the service.",
+    name: "Edith",
+    service: "Borehole Flushing",
+    location: "Royal Gates Estate, Kitengela",
   },
   {
     quote:
@@ -32,9 +39,18 @@ const TESTIMONIALS = [
 ];
 
 const ChevronIcon = ({ direction = "left", ...props }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
-    strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <polyline points={direction === "left" ? "15 18 9 12 15 6" : "9 18 15 12 9 6"} />
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <polyline
+      points={direction === "left" ? "15 18 9 12 15 6" : "9 18 15 12 9 6"}
+    />
   </svg>
 );
 
@@ -51,20 +67,26 @@ const Testimonials = () => {
   return (
     <section className="bg-[#5DD9D9]/10 py-16">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">What Our Clients Say</h2>
+        <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">
+          What Our Clients Say
+        </h2>
         <p className="mt-3 text-base text-gray-600">
-          Hear from property owners, farmers, businesses, and institutions who have trusted us
-          with their groundwater projects.
+          Hear from property owners, farmers, businesses, and institutions who
+          have trusted us with their groundwater projects.
         </p>
 
         <div className="mt-10 rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <p className="text-lg italic leading-relaxed text-gray-700">"{current.quote}"</p>
+          <p className="text-lg italic leading-relaxed text-gray-700">
+            "{current.quote}"
+          </p>
           <p className="mt-6 text-sm font-semibold text-[#1B1F5C]">
             {current.name}
             <span className="mx-2 text-gray-400">•</span>
             <span className="font-normal text-gray-600">{current.service}</span>
             <span className="mx-2 text-gray-400">•</span>
-            <span className="font-normal text-gray-600">{current.location}</span>
+            <span className="font-normal text-gray-600">
+              {current.location}
+            </span>
           </p>
         </div>
 
