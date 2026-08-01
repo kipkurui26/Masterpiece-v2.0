@@ -35,11 +35,12 @@ const AREAS_SERVED = [
 ];
 
 const CONTACT = {
-  phone: "0721577588",
-  whatsapp: "0721577588",
-  email: "sales@masterpiecehydrosolutions.co.ke",
-  facebook: "https://facebook.com/masterpiecehydrosolutions", // placeholder — swap for real handle
-  website: "https://masterpiecehydrosolutions.co.ke", // placeholder — confirm live domain
+  phone: "0797719305",
+  phone2: "0784680228",
+  whatsapp: "0797719305",
+  email: "info@masterpiecehydrosolutions.co.ke",
+  facebook: "https://facebook.com/masterpiecehydrosolutions",
+  website: "https://masterpiecehydrosolutions.co.ke",
 };
 
 const PhoneIcon = (props) => (
@@ -183,13 +184,20 @@ const Footer = () => {
             <span className="mt-6 block">Contact</span>
           </FooterHeading>
           <ul className="space-y-2">
-            <li>
+            <li className="flex gap-1">
               <a
                 href={`tel:${CONTACT.phone}`}
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
               >
                 <PhoneIcon className="h-4 w-4 shrink-0" />
                 {CONTACT.phone}
+              </a>
+              {" "} | {" "}
+              <a
+                href={`tel:${CONTACT.phone}`}
+                className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
+              >
+                {CONTACT.phone2}
               </a>
             </li>
             <li>
