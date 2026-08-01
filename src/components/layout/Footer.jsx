@@ -3,18 +3,23 @@ import { Link } from "react-router-dom";
 const QUICK_LINKS = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
-  { name: "Services", path: "/services" },
   { name: "Projects", path: "/projects" },
   { name: "Resource Centre", path: "/resource-centre" },
   { name: "Contact Us", path: "/contact" },
 ];
 
 const SERVICE_LINKS = [
-  { name: "Hydrogeological Surveys", path: "/services/hydrogeological-surveys" },
+  {
+    name: "Hydrogeological Surveys",
+    path: "/services/hydrogeological-surveys",
+  },
   { name: "Borehole Drilling", path: "/services/borehole-drilling" },
   { name: "Borehole Equipping", path: "/services/borehole-equipping" },
   { name: "Borehole Solarisation", path: "/services/borehole-solarisation" },
-  { name: "Borehole Rehabilitation", path: "/services/borehole-rehabilitation" },
+  {
+    name: "Borehole Rehabilitation",
+    path: "/services/borehole-rehabilitation",
+  },
 ];
 
 const AREAS_SERVED = [
@@ -38,8 +43,15 @@ const CONTACT = {
 };
 
 const PhoneIcon = (props) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
-    strokeLinecap="round" strokeLinejoin="round" {...props}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
@@ -51,8 +63,15 @@ const WhatsAppIcon = (props) => (
 );
 
 const MailIcon = (props) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
-    strokeLinecap="round" strokeLinejoin="round" {...props}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
     <rect x="2" y="4" width="20" height="16" rx="2" />
     <path d="m22 6-10 7L2 6" />
   </svg>
@@ -65,8 +84,15 @@ const FacebookIcon = (props) => (
 );
 
 const GlobeIcon = (props) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
-    strokeLinecap="round" strokeLinejoin="round" {...props}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
     <circle cx="12" cy="12" r="10" />
     <line x1="2" y1="12" x2="22" y2="12" />
     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -86,13 +112,15 @@ const Footer = () => {
     <footer className="bg-[#1B1F5C] text-gray-200">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
-          <p className="text-lg font-bold text-white">Masterpiece Hydro-Solutions</p>
+          <p className="text-lg font-bold text-white">
+            Masterpiece Hydro-Solutions
+          </p>
           <p className="mt-3 text-sm leading-relaxed text-gray-300">
             Professional groundwater and borehole solutions across Kenya.
           </p>
           <div className="mt-5 flex gap-3">
-            
-              <a href={CONTACT.facebook}
+            <a
+              href={CONTACT.facebook}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Masterpiece Hydro-Solutions on Facebook"
@@ -100,8 +128,9 @@ const Footer = () => {
             >
               <FacebookIcon className="h-4 w-4" />
             </a>
-            
-              <a href={CONTACT.website}
+
+            <a
+              href={CONTACT.website}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Masterpiece Hydro-Solutions website"
@@ -155,8 +184,8 @@ const Footer = () => {
           </FooterHeading>
           <ul className="space-y-2">
             <li>
-              
-                <a href={`tel:${CONTACT.phone}`}
+              <a
+                href={`tel:${CONTACT.phone}`}
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
               >
                 <PhoneIcon className="h-4 w-4 shrink-0" />
@@ -164,8 +193,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              
-                <a href={`https://wa.me/254${CONTACT.whatsapp.replace(/^0/, "")}`}
+              <a
+                href={`https://wa.me/254${CONTACT.whatsapp.replace(/^0/, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
@@ -175,8 +204,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              
-                <a href={`mailto:${CONTACT.email}`}
+              <a
+                href={`mailto:${CONTACT.email}`}
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
               >
                 <MailIcon className="h-4 w-4 shrink-0" />
@@ -191,10 +220,16 @@ const Footer = () => {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-gray-400 sm:flex-row sm:px-6 lg:px-8">
           <p>© {year} Masterpiece Hydro-Solutions. All Rights Reserved.</p>
           <div className="flex gap-4">
-            <Link to="/privacy-policy" className="transition-colors duration-200 hover:text-[#5DD9D9]">
+            <Link
+              to="/privacy-policy"
+              className="transition-colors duration-200 hover:text-[#5DD9D9]"
+            >
               Privacy Policy
             </Link>
-            <Link to="/terms-of-use" className="transition-colors duration-200 hover:text-[#5DD9D9]">
+            <Link
+              to="/terms-of-use"
+              className="transition-colors duration-200 hover:text-[#5DD9D9]"
+            >
               Terms of Use
             </Link>
           </div>

@@ -16,12 +16,13 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route element={<AppShell />}>
-        <Route path="/" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resource-centre" element={<ResourceCenter />} />
         <Route path="/projects" element={<Projects />} />
 
+        {/* {TODO : Nest the services pages} */}
         <Route path="/services/hydrogeological-surveys" element={<Survey />} />
         <Route path="/services/borehole-drilling" element={<Drilling />} />
         <Route path="/services/borehole-equipping" element={<Equipping />} />
