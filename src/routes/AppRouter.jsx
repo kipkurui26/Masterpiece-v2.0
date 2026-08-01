@@ -5,6 +5,12 @@ import AppShell from "../components/layout/AppShell";
 import { Contact } from "../features/contact";
 import { ResourceCenter } from "../features/resource-center";
 import { Projects } from "../features/projects";
+import { Survey } from "../features/services/survey";
+import { Drilling } from "../features/services/drilling";
+import { Equipping } from "../features/services/equipping";
+import { Solarization } from "../features/services/solarization";
+import { Rehabilitation } from "../features/services/rehabilitation";
+import { Inspection } from "../features/services/inspection";
 
 const AppRouter = () => {
   return (
@@ -15,6 +21,19 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resource-centre" element={<ResourceCenter />} />
         <Route path="/projects" element={<Projects />} />
+
+        <Route path="/services/hydrogeological-surveys" element={<Survey />} />
+        <Route path="/services/borehole-drilling" element={<Drilling />} />
+        <Route path="/services/borehole-equipping" element={<Equipping />} />
+        <Route
+          path="/services/borehole-solarisation"
+          element={<Solarization />}
+        />
+        <Route
+          path="/services/borehole-rehabilitation"
+          element={<Rehabilitation />}
+        />
+        <Route path="/services/borehole-inspection" element={<Inspection />} />
       </Route>
     </Routes>
   );
