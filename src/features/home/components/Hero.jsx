@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import heroImage from "../../../assets/hero-image.jpg";
+// import heroImage from "../../../assets/hero-image.jpg";
+import videoSurvey from "../../../assets/video-survey.mp4"
 
 const Hero = () => {
   return (
@@ -53,20 +54,19 @@ const Hero = () => {
         {/* Media column — swap src for the real hero image/video once assets arrive */}
         <div className="order-first lg:order-last">
           <div className="aspect-4/3 w-full overflow-hidden rounded-2xl bg-gray-200 shadow-lg">
-            <img
+            {/* <img
               src={heroImage}
               alt="Clean water flowing from a Masterpiece Hydro-Solutions borehole"
               className="h-full w-full object-cover"
-            />
-            {/* If using video instead of a static image, swap the <img> above for:
+            /> */}
             <video
               className="h-full w-full object-cover"
-              src="/videos/hero-borehole.mp4"
+              src={videoSurvey}
               autoPlay
               muted
               loop
               playsInline
-            /> */}
+            /> 
           </div>
         </div>
       </div>

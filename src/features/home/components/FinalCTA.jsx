@@ -29,7 +29,7 @@ const MailIcon = (props) => (
 
 const FinalCTA = () => {
   return (
-    <section className="bg-[#1B1F5C] py-16">
+    <section className="bg-linear-to-br from-[#1B1F5C] to-[#0F9E9E] py-16">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-white sm:text-3xl">
           Ready to Start Your Borehole Project?
