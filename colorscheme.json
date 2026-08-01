@@ -1,0 +1,117 @@
+{
+  "brand": {
+    "navy": {
+      "hex": "#1B1F5C",
+      "tailwindVar": "brand-navy",
+      "usage": [
+        "Logo text",
+        "Headings",
+        "Active nav links",
+        "Primary buttons",
+        "Footer background",
+        "Dark section bands (ApproachSection, FinalCTA, AboutHero, WhoWeWorkWith, AboutStats)",
+        "Section backgrounds on About page (hero, Who We Work With)",
+        "Primary text on light sections"
+      ]
+    },
+    "navyHover": {
+      "hex": "#141748",
+      "tailwindVar": "brand-navy-hover",
+      "usage": ["Hover state for navy buttons"]
+    },
+    "teal": {
+      "hex": "#0F9E9E",
+      "tailwindVar": "brand-teal",
+      "usage": [
+        "Nav link default color",
+        "Links/CTAs e.g. 'Learn More →'",
+        "Eyebrow/uppercase labels",
+        "CTA buttons on About page",
+        "Icon backgrounds",
+        "Accent borders",
+        "Checkmarks"
+      ]
+    },
+    "tealLight": {
+      "hex": "#5DD9D9",
+      "tailwindVar": "brand-teal-light",
+      "usage": [
+        "Hero background tint (used at /20 opacity)",
+        "Footer headings",
+        "Resource-centre pill borders",
+        "Hover accents on dark backgrounds",
+        "Eyebrow/label text on navy backgrounds",
+        "Stat values",
+        "Hover states"
+      ]
+    }
+  },
+  "gradients": {
+    "finalCtaAbout": {
+      "from": "#1B1F5C",
+      "to": "#0F9E9E",
+      "tailwind": "bg-gradient-to-r from-[#1B1F5C] to-[#0F9E9E]",
+      "usage": "AboutFinalCTA — the one section that breaks the flat-background pattern for visual closure"
+    }
+  },
+  "neutrals": {
+    "white": {
+      "tailwind": "white",
+      "usage": ["Navbar background", "Card backgrounds", "Text on navy/teal sections"]
+    },
+    "gray50": {
+      "tailwind": "gray-50",
+      "usage": ["Alternating section backgrounds (ProjectJourney, FeaturedProjects, FAQ, OurPhilosophy, RecommendationApproach)"]
+    },
+    "gray100": {
+      "tailwind": "gray-100",
+      "usage": ["Card borders", "Hover backgrounds"]
+    },
+    "gray200": {
+      "tailwind": "gray-200",
+      "usage": ["Card borders/dividers", "Image placeholder backgrounds"]
+    },
+    "gray300": {
+      "tailwind": "gray-300",
+      "usage": ["Footer body text", "Legal bar", "Body text on navy backgrounds"]
+    },
+    "gray400": {
+      "tailwind": "gray-400",
+      "usage": ["Footer body text (secondary)"]
+    },
+    "gray600": {
+      "tailwind": "gray-600",
+      "usage": ["Paragraph copy on light/white sections"]
+    },
+    "gray700": {
+      "tailwind": "gray-700",
+      "usage": ["Paragraph copy on light sections (emphasis)"]
+    }
+  },
+  "sectionRhythm": {
+    "description": "Alternating background pattern used across Home and About to create separation without borders. Carry the same pattern into the Contact page.",
+    "pattern": [
+      {
+        "background": "white",
+        "heading": "navy (#1B1F5C)",
+        "body": "gray-600"
+      },
+      {
+        "background": "gray-50",
+        "heading": "navy (#1B1F5C)",
+        "body": "gray-600",
+        "note": "Same text colors as white sections — background shift only, for rhythm between white sections"
+      },
+      {
+        "background": "navy (#1B1F5C)",
+        "heading": "white",
+        "body": "gray-300",
+        "accent": "teal-light (#5DD9D9) for labels/eyebrows/accents"
+      },
+      {
+        "background": "gradient navy → teal (#1B1F5C to #0F9E9E)",
+        "usage": "Closing/final CTA sections only — breaks the flat-background pattern for visual closure"
+      }
+    ]
+  }
+}

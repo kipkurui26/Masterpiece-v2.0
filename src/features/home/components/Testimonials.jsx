@@ -1,6 +1,13 @@
 import { useState } from "react";
 
 const TESTIMONIALS = [
+    {
+    quote:
+      "Hi Okelo, You have given me a permanent solution. My family is no longer in water distress. In fact I have connected at least 15 estate members to my borehole you just did to us. May God bless your work.",
+    name: "Paul",
+    service: "Survey.Drilling.Equipping.Solarisation.Tank Tower. Plumbing",
+    location: "Chuna Estate, Kitengela",
+  },
   {
     quote:
       "Masterpiece conducted a hydrogeological survey on our property and identified a reliable groundwater source, giving us confidence to proceed with drilling. The borehole yielded 49m³ of water.",
