@@ -5,8 +5,8 @@ header('Content-Type: application/json');
 
 // --- CORS: only allow your own domain(s) to call this ---
 $allowedOrigins = [
-    // 'https://masterpiecehydrosolutions.co.ke',
-    // 'https://www.masterpiecehydrosolutions.co.ke',
+    'https://masterpiecehydrosolutions.co.ke',
+    'https://www.masterpiecehydrosolutions.co.ke',
     'https://masterpiece-v2-0.vercel.app',
     'http://localhost:3000', 
 ];
@@ -106,8 +106,8 @@ use PHPMailer\PHPMailer\Exception;
 require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
-// require __DIR__ . '/../config.php';
-require __DIR__ . '/config.php';
+require __DIR__ . '/../config.php';
+// require __DIR__ . '/config.php';
 
 
 
@@ -115,7 +115,7 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
+    $mail->Host       = 'mail.masterpiecehydrosolutions.co.ke';
     $mail->SMTPAuth   = true;
     $mail->Username   = SMTP_USER;
     $mail->Password   = SMTP_PASS;
