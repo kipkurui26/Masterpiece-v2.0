@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 
-const ENDPOINT_URL = import.meta.env.VITE_ENQUIRY_ENDPOINT;
+// const ENDPOINT_URL = import.meta.env.VITE_ENQUIRY_ENDPOINT;
+const ENDPOINT_URL = 'https://masterpiecehydrosolutions.co.ke/enquiry.php'
 const MIN_SUBMIT_SECONDS = 3;
 const TOAST_DURATION_MS = 8000;
 const TOAST_EASE = "cubic-bezier(0.65, 0, 0.35, 1)";
