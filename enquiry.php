@@ -5,8 +5,8 @@ header('Content-Type: application/json');
 
 // --- CORS: only allow your own domain(s) to call this ---
 $allowedOrigins = [
-    'https://masterpiecehydrosolutions.co.ke',
-    'https://www.masterpiecehydrosolutions.co.ke',
+    // 'https://masterpiecehydrosolutions.co.ke',
+    // 'https://www.masterpiecehydrosolutions.co.ke',
     'https://masterpiece-v2-0.vercel.app',
     'http://localhost:3000', 
 ];
