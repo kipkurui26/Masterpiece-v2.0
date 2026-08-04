@@ -7,6 +7,7 @@ header('Content-Type: application/json');
 $allowedOrigins = [
     'https://masterpiecehydrosolutions.co.ke',
     'https://www.masterpiecehydrosolutions.co.ke',
+    'https://masterpiece-v2-0.vercel.app',
     'http://localhost:3000', 
 ];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
