@@ -3,6 +3,7 @@ import ContactFinalCTA from "./components/ContactFinalCTA"
 import ContactHero from "./components/ContactHero"
 import ContactMethods from "./components/ContactMethods"
 import ContactProcessSection from "./components/ContactProcessSection"
+import EnquiryForm from "./components/EnquiryForm"
 import ServiceAreas from "./components/ServicesArea"
 import ServicesWeHelpWith from "./components/ServicesWeHelpWith"
 
@@ -12,7 +13,7 @@ const Contact = () => {
       <ContactHero/>
       <ServicesWeHelpWith/>
       <ContactMethods/>
-      {/* TODO : Finish Up EQUIRY FORM */}
+      <EnquiryForm/>
       <ContactProcessSection/>
       <ServiceAreas/>
       <ContactFAQ/>
