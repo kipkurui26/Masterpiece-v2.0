@@ -1,7 +1,4 @@
-const Drilling = () => {
-  return (
-    <div>Drilling</div>
-  )
-}
+import ServiceDetailPage from "../ServiceDetailPage";
+import drillingContent from "./data";
 
-export default Drilling
+export const Drilling = () => <ServiceDetailPage content={drillingContent} />;

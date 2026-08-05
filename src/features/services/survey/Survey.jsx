@@ -1,7 +1,4 @@
-const Survey = () => {
-  return (
-    <div>Survey</div>
-  )
-}
+import ServiceDetailPage from "../ServiceDetailPage";
+import surveyContent from "./data";
 
-export default Survey
+export const Survey = () => <ServiceDetailPage content={surveyContent} />;

@@ -1,0 +1,120 @@
+import surveyVideo from "../../../assets/video-survey.mp4";
+import surveyImage from '../../../assets/hero-image.jpg'
+
+const surveyContent = {
+  slug: "hydrogeological-surveys",
+
+  hero: {
+    eyebrow: "Professional Hydrogeological Survey in Kenya",
+    headline: "Every Successful Borehole Begins Before Drilling",
+    intro:
+      "The first decision in a successful borehole project is not where to drill — it's understanding your site's groundwater potential. Groundwater is not found evenly beneath every site, and geological conditions can vary even between neighbouring properties. Before investing in drilling, a hydrogeological survey gives you reliable information about your site's groundwater potential and geological conditions, so you can make informed decisions about what comes next.",
+    primaryCTA: {
+      label: "Request a Hydrogeological Survey",
+      href: "/contact?service=hydrogeological-survey",
+    },
+    secondaryCTA: {
+      label: "Have Questions? Talk to a Hydrogeologist",
+      href: "https://wa.me/254721577588",
+    },
+    media: {
+      type: "video",
+      src: surveyVideo,
+      caption: "Hydrogeological survey field assessment",
+    },
+  },
+
+  whyItMatters: {
+    heading: "Why a Hydrogeological Survey Matters",
+    paragraphs: [
+      "Once you've decided to invest in a borehole, every decision that follows depends on how well you understand your site.",
+      "Without that understanding, you're left making important decisions based on assumptions about your site's geological conditions and groundwater potential.",
+      "Hydrogeological survey findings help you choose the most suitable drilling location and provide practical recommendations to guide the next stages of your borehole project.",
+      "The value of the survey is not simply that it collects information — it's that the information helps you make better decisions before investing in drilling.",
+    ],
+  },
+
+  process: {
+    heading: "What Happens During a Hydrogeological Survey?",
+    intro:
+      "Before you invest in drilling, there's one important question that needs to be answered: where is the most suitable place to drill, based on the conditions of your site?",
+    style: "narrative",
+    paragraphs: [
+      "Our hydrogeologist visits your site and carries out a detailed assessment using specialised equipment to understand your site's geological conditions and groundwater potential.",
+      "We don't rely on what we find at your site alone. We also review information from nearby boreholes, including their depths, water yields, and locations, together with other relevant geological information about the area, to build a clearer picture.",
+      "Before recommending a drilling location, we carefully review and compare all the information we've gathered. This helps us identify the most suitable drilling location and recommended depth for your site.",
+      "Where possible, we'll explain our findings on site so you understand what we found and what the next steps are.",
+      "A hydrogeological survey helps identify the most suitable drilling location and recommended depth based on the available evidence. However, the quantity and quality of water can only be confirmed after drilling is complete and the necessary water quality tests have been carried out.",
+    ],
+    media: {
+      type: "image",
+      src: surveyImage,
+      caption: "On-site geophysical assessment",
+    },
+    deliverable: {
+      heading: "Your Signed & Stamped Survey Report Includes",
+      items: [
+        "A recommended drilling point with GPS coordinates",
+        "A recommended drilling depth",
+        "The survey findings and the reasons behind our recommendations",
+        "Guidance on the permits required before drilling begins",
+      ],
+    },
+  },
+
+  specialInsight: {
+    heading: "What Guides Every Recommendation We Make",
+    paragraphs: [
+      "Every recommendation we make is guided by one objective: helping you make an informed drilling decision. That means considering more than one source of information — we combine field data, desktop research, nearby borehole records, and careful interpretation before recommending a drilling location and depth.",
+      "Experience also matters. With more than six years of hydrogeological surveying experience and over 300 surveys completed, we've developed the expertise to interpret survey findings and make well-informed recommendations.",
+      "Just as importantly, we're committed to honest professional advice. If the findings don't support your preferred drilling location, we'll explain why and recommend the option that the evidence supports. Our role is to help you make the best possible decision, even when the recommendation is not the one you expected.",
+    ],
+  },
+
+  trustStats: [
+    { value: "300+", label: "Hydrogeological Surveys Completed" },
+    { value: "6+", label: "Years of Surveying Experience" },
+    { value: "Nationwide", label: "Projects Across Kenya" },
+  ],
+
+  faq: [
+    {
+      question: "Can a hydrogeological survey guarantee that I'll find water?",
+      answer:
+        "No. A hydrogeological survey reduces uncertainty by helping identify the most suitable drilling location and recommended depth. However, water quantity and quality can only be confirmed after drilling and the necessary water quality tests have been completed. In some cases, the survey may show that your site does not have suitable groundwater potential for drilling — if so, we'll explain our findings and recommend the most appropriate course of action based on the available evidence.",
+    },
+    {
+      question:
+        "There are already boreholes near my property. Do I still need a hydrogeological survey?",
+      answer:
+        "Yes. Nearby boreholes provide useful information, but they don't guarantee that groundwater conditions beneath your property are the same. A hydrogeological survey assesses the geological conditions and groundwater potential at your site before recommending where to drill.",
+    },
+    {
+      question: "How accurate is a hydrogeological survey?",
+      answer:
+        "A hydrogeological survey uses scientific methods to identify the most suitable drilling location based on the information available. While no survey can guarantee a successful borehole, it significantly reduces uncertainty before drilling begins.",
+    },
+    {
+      question: "How long does a hydrogeological survey take?",
+      answer:
+        "The time required depends on the size of the site and the survey requirements. Once you contact us, we'll advise you on the expected timeline based on your project. However, in most cases it is done within a day.",
+    },
+    {
+      question: "Do you carry out hydrogeological surveys across Kenya?",
+      answer:
+        "Yes. We provide hydrogeological survey services in different parts of Kenya. Contact us to discuss your project, and we'll confirm service availability for your location.",
+    },
+  ],
+
+  finalCTA: {
+    heading: "Planning a Borehole Project?",
+    body:
+      "Start with a hydrogeological survey to understand your site's groundwater potential before investing in drilling. Talk to one of our hydrogeologists about your site — we'll answer your questions, explain the next steps, and help you arrange your survey.",
+    primaryCTA: {
+      label: "Request a Hydrogeological Survey",
+      href: "/contact?service=hydrogeological-survey",
+    },
+  },
+};
+
+export default surveyContent;
