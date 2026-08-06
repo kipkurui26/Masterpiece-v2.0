@@ -1,7 +1,28 @@
-const Equipping = () => {
-  return (
-    <div>Equipping</div>
-  )
-}
+import EquippingHero from "./components/EquippingHero";
+import EquippingWhyItMatters from "./components/EquippingWhyItMatters";
+import EquippingProcess from "./components/EquippingProcess";
+import EquippingCostFactors from "./components/EquippingCostFactors";
+import EquippingPumpSelection from "./components/EquippingPumpSelection";
+import EquippingFAQ from "./components/EquippingFAQ";
+import EquippingFinalCTA from "./components/EquippingFinalCTA";
+import MediaGallery from "../shared/MediaGallery";
+import equippingData from "./data";
 
-export default Equipping
+const Equipping = () => (
+  <>
+    <EquippingHero />
+    <EquippingWhyItMatters />
+    <EquippingProcess />
+    <EquippingCostFactors />
+    <EquippingPumpSelection />
+    <section className="bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-16 lg:py-20">
+        <MediaGallery items={equippingData.gallery} />
+      </div>
+    </section>
+    <EquippingFAQ />
+    <EquippingFinalCTA />
+  </>
+);
+
+export default Equipping;

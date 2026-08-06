@@ -1,1 +1,1 @@
-export { Drilling } from "./Drilling";
+export {default as Drilling} from './Drilling'

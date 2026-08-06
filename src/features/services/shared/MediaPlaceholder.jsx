@@ -19,44 +19,22 @@ const ImageIcon = () => (
   </svg>
 );
 
-const MediaPlaceholder = ({
-  type = "image", // "image" | "video"
-  src,
-  poster,
-  alt = "",
-  caption,
-  aspect = "video",
-
-  className = "",
-}) => {
+const MediaPlaceholder = ({ type = "image", src, poster, alt = "", caption, aspect = "video", className = "" }) => {
   const aspectClass = AspectRatios[aspect] || AspectRatios.video;
 
   if (src) {
     if (type === "video") {
       return (
-        <video
-          className={`w-full ${aspectClass} object-cover rounded-xl ${className}`}
-          controls
-          poster={poster}
-          muted
-        >
+        <video className={`w-full ${aspectClass} object-cover rounded-xl ${className}`} controls poster={poster} muted>
           <source src={src} />
         </video>
       );
     }
-    return (
-      <img
-        src={src}
-        alt={alt}
-        className={`w-full ${aspectClass} object-cover rounded-xl ${className}`}
-      />
-    );
+    return <img src={src} alt={alt} className={`w-full ${aspectClass} object-cover rounded-xl ${className}`} />;
   }
 
   return (
-    <div
-      className={`w-full ${aspectClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}
-    >
+    <div className={`w-full ${aspectClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}>
       {type === "video" ? <PlayIcon /> : <ImageIcon />}
       <span className="text-sm text-gray-500 px-4 text-center">
         {caption || (type === "video" ? "Video coming soon" : "Image coming soon")}

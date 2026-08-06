@@ -1,27 +1,17 @@
-import surveyImage from '../../../assets/hero-image.jpg'
-import surveyVideo from "../../../assets/video-survey.mp4";
+import drillingImage from "../../../assets/hero-image.jpg";
+import drillingVideo from "../../../assets/video-survey.mp4";
 
-const drillingContent = {
-  slug: "borehole-drilling",
-
+const drillingData = {
   hero: {
     eyebrow: "Professional Borehole Drilling in Kenya",
     headline: "Finding Water Is Only Part of a Successful Borehole",
-    intro:
-      "Finding water is an important milestone, but it does not determine how well your borehole will perform over time. Every stage of the drilling process affects your borehole's long-term performance. At Masterpiece Hydro-Solutions, we manage every drilling project to the required technical standards, so your borehole is built to perform for many years.",
-    primaryCTA: {
-      label: "Request a Borehole Drilling Quote",
-      href: "/contact?service=borehole-drilling",
-    },
-    secondaryCTA: {
-      label: "Have Questions? Talk to Our Team",
-      href: "https://wa.me/254721577588",
-    },
-    media: {
-      type: "image",
-      src: surveyImage,
-      caption: "Borehole drilling rig on site",
-    },
+    intro: [
+      "Finding water is an important milestone, but it does not determine how well your borehole will perform over time. A successful borehole depends on much more than simply reaching water during drilling.",
+      "Every stage of the drilling process affects your borehole's long-term performance. At Masterpiece Hydro-Solutions, we manage every drilling project to the required technical standards, so your borehole is built to perform for many years.",
+    ],
+    primaryCTA: { label: "Request a Borehole Drilling Quote", href: "/contact?service=borehole-drilling" },
+    secondaryCTA: { label: "Have Questions? Talk to Our Team", href: "https://wa.me/254721577588" },
+    media: { type: "image", src: drillingImage, caption: "Borehole drilling rig on site" },
   },
 
   whyItMatters: {
@@ -31,24 +21,19 @@ const drillingContent = {
       "What happens after water is found has a lasting impact on how your borehole performs, how long it lasts, and the maintenance it may require over time.",
       "A borehole can produce water immediately after drilling and still develop problems later if it is not drilled and completed to the required technical standards. Problems such as reduced water yield, sand intrusion, or poor long-term performance may only become apparent long after the rig has left.",
       "That's why every stage of the drilling process matters. From drilling through to borehole construction and development, each stage influences how your borehole performs over the long term.",
+      "Understanding the drilling process helps you know what to expect and why every step matters.",
     ],
   },
 
   process: {
     heading: "What Happens During Borehole Drilling?",
-    intro:
-      "Once your drilling location has been confirmed, drilling begins. From there, the project follows a series of carefully managed stages, each carried out for a specific purpose before the borehole is ready for use.",
-    style: "narrative",
+    intro: "Once your drilling location has been confirmed, drilling begins. From there, the project follows a series of carefully managed stages, each carried out for a specific purpose before the borehole is ready for use.",
     paragraphs: [
       "Drilling is carried out to the depth recommended by the hydrogeological survey. Where the geological conditions encountered require adjustments, these are made as the work continues. Throughout the process, the geological formations encountered, including the water-bearing zones, are carefully recorded.",
       "Once water is reached, the borehole still needs to be built, not just drilled. Suitable casing and screens are installed to support the borehole, allow groundwater to enter, and help keep out sand and sediment. Where required, the borehole is sealed to help protect it from surface contamination, and gravel packing is used to improve the movement of groundwater into the borehole.",
       "The borehole is then developed to remove fine particles introduced during drilling and improve its performance before test pumping is carried out. Test pumping helps determine how much water the borehole can reliably produce.",
     ],
-    media: {
-      type: "video",
-      src: surveyVideo,
-      caption: "Casing and borehole construction in progress",
-    },
+    media: { type: "video", src: drillingVideo, caption: "Casing and borehole construction in progress" },
     deliverable: {
       heading: "Your Drilling Completion Report Includes",
       items: [
@@ -61,35 +46,30 @@ const drillingContent = {
 
   costFactors: {
     heading: "What Affects the Cost of Borehole Drilling?",
-    intro:
-      "No two borehole projects are exactly the same, so drilling costs can vary from one site to another. Rather than offer a single figure that may not reflect your project, here are the factors that influence cost.",
+    intro: "No two borehole projects are exactly the same, so drilling costs can vary from one site to another. Rather than offer a single figure that may not reflect your project, here are the factors that influence cost.",
     factors: [
       {
         title: "Drilling Depth",
-        description:
-          "The deeper the borehole, the more drilling, casing, and time it requires. Your hydrogeological survey provides a recommended drilling depth, but the actual depth may vary depending on the geological conditions encountered during drilling.",
+        description: "The deeper the borehole, the more drilling, casing, and time it requires. Your hydrogeological survey provides a recommended drilling depth, but the actual depth may vary depending on the geological conditions encountered during drilling.",
       },
       {
         title: "Ground Conditions",
-        description:
-          "Some ground is straightforward to drill through. Other conditions, such as hard rock or unstable formations, require more time, different drilling methods, or additional material to complete the borehole safely and to the required technical standards.",
+        description: "Some ground is straightforward to drill through. Other conditions, such as hard rock or unstable formations, require more time, different drilling methods, or additional material to complete the borehole safely and to the required technical standards.",
       },
       {
         title: "Casing and Borehole Construction",
-        description:
-          "The type of casing required depends on the geological formations encountered during drilling and the depth achieved. These conditions influence the casing needed to protect the borehole and support its long-term performance.",
+        description: "The type of casing required depends on the geological formations encountered during drilling and the depth achieved. These conditions influence the casing needed to protect the borehole and support its long-term performance.",
       },
       {
         title: "Site Access",
-        description:
-          "The location and accessibility of your site can also influence drilling costs. Difficult terrain, long travel distances, or limited access for heavy equipment may affect the time and resources required to mobilise the drilling rig and supporting equipment.",
+        description: "The location and accessibility of your site can also influence drilling costs. Difficult terrain, long travel distances, or limited access for heavy equipment may affect the time and resources required to mobilise the drilling rig and supporting equipment.",
       },
       {
         title: "Additional Services",
-        description:
-          "Depending on your project, you may also require services such as test pumping, water quality analysis, borehole equipping, or solarisation. These are separate from drilling but are often planned together as part of the same borehole project.",
+        description: "Depending on your project, you may also require services such as test pumping, water quality analysis, borehole equipping, or solarisation. These are separate from drilling but are often planned together as part of the same borehole project.",
       },
     ],
+    closing: "Once your hydrogeological survey has been completed, we can prepare a quotation based on your site's conditions and the work required to complete your project. This ensures the quote you receive reflects your actual project requirements rather than a generic estimate.",
   },
 
   specialInsight: {
@@ -102,11 +82,15 @@ const drillingContent = {
     ],
   },
 
+  gallery: [
+    // populate once client provides real drilling rig / casing / test pumping photos
+  ],
+
   faq: [
     {
       question: "Can you guarantee that drilling will produce water?",
       answer:
-        "No responsible borehole drilling company can guarantee that drilling will produce water before work begins. A hydrogeological survey significantly reduces this uncertainty by identifying the most suitable drilling location based on the available evidence. However, water yield and quality can only be confirmed once drilling has been completed.",
+        "A hydrogeological survey helps reduce the risk of drilling in the wrong location by identifying the most suitable drilling point based on the available evidence. While no company can responsibly guarantee that drilling will produce water before work begins, a hydrogeological survey provides the information needed to make an informed drilling decision. Water quantity and quality can only be confirmed after drilling has been completed and the necessary testing has been carried out.",
     },
     {
       question: "What happens if you don't find water at the recommended depth?",
@@ -127,14 +111,10 @@ const drillingContent = {
 
   finalCTA: {
     heading: "Ready to Start Your Borehole Project?",
-    body:
-      "Whether you're ready to drill, still confirming your drilling location, or have questions about the process, our team is here to help. Discuss your project with us and get a clear plan for moving forward with confidence.",
-    primaryCTA: {
-      label: "Request a Borehole Drilling Quote",
-      href: "/contact?service=borehole-drilling",
-    },
+    body: "Whether you're ready to drill, still confirming your drilling location, or have questions about the process, our team is here to help. Discuss your project with us and get a clear plan for moving forward with confidence.",
+    primaryCTA: { label: "Request a Borehole Drilling Quote", href: "/contact?service=borehole-drilling" },
     secondaryOptions: ["Call", "WhatsApp", "Email"],
   },
 };
 
-export default drillingContent;
+export default drillingData;
