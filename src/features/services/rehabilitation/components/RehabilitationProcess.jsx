@@ -10,7 +10,7 @@ const RehabilitationProcess = () => (
       <ol className="space-y-5">
         {process.stages.map((stage, i) => (
           <li key={i} className="flex gap-4">
-            <span className="shrink-0 w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center font-semibold text-sm">
+            <span className="shrink-0 w-8 h-8 rounded-full bg-[#1B1F5C] text-white flex items-center justify-center font-semibold text-sm">
               {i + 1}
             </span>
             <div>

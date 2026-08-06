@@ -1,3 +1,4 @@
+import DeliverableCard from "../../shared/DeliverableCard";
 import MediaPlaceholder from "../../shared/MediaPlaceholder";
 import drillingData from "../data";
 
@@ -24,17 +25,11 @@ const DrillingProcess = () => (
           className="lg:sticky lg:top-24"
         />
       </div>
-      <div className="mt-10 bg-white border border-gray-200 rounded-xl p-6">
-        <h3 className="font-semibold text-brand-navy mb-3">{process.deliverable.heading}</h3>
-        <ul className="space-y-2">
-          {process.deliverable.items.map((item, i) => (
-            <li key={i} className="flex gap-2 text-gray-600">
-              <span className="text-brand-teal">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <DeliverableCard
+        heading={process.deliverable.heading}
+        items={process.deliverable.items}
+        supportingLine={process.deliverable.supportingLine}
+      />
     </div>
   </section>
 );

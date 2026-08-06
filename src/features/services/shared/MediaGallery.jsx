@@ -1,11 +1,18 @@
 import { useState } from "react";
 import MediaPlaceholder from "./MediaPlaceholder";
+import { ChevronRight, ChevronLeft } from "lucide-react";
 
 const MediaGallery = ({ items = [], aspect = "wide" }) => {
   const [active, setActive] = useState(0);
 
   if (!items.length) {
-    return <MediaPlaceholder type="image" aspect={aspect} caption="Gallery coming soon" />;
+    return (
+      <MediaPlaceholder
+        type="image"
+        aspect={aspect}
+        caption="Gallery coming soon"
+      />
+    );
   }
 
   const current = items[active];
@@ -14,24 +21,30 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
   return (
     <div className="w-full">
       <div className="relative">
-        <MediaPlaceholder type={current.type} src={current.src} poster={current.poster} caption={current.caption} aspect={aspect} />
+        <MediaPlaceholder
+          type={current.type}
+          src={current.src}
+          poster={current.poster}
+          caption={current.caption}
+          aspect={aspect}
+        />
         {items.length > 1 && (
           <>
             <button
               type="button"
               onClick={() => goTo(active - 1)}
               aria-label="Previous"
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow"
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow cursor-pointer"
             >
-              ‹
+              <ChevronLeft />
             </button>
             <button
               type="button"
               onClick={() => goTo(active + 1)}
               aria-label="Next"
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow"
+              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow cursor-pointer"
             >
-              ›
+              <ChevronRight />
             </button>
           </>
         )}
@@ -49,7 +62,11 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
           ))}
         </div>
       )}
-      {current.caption && <p className="text-sm text-gray-500 text-center mt-3">{current.caption}</p>}
+      {current.caption && (
+        <p className="text-sm text-gray-500 text-center mt-3">
+          {current.caption}
+        </p>
+      )}
     </div>
   );
 };
