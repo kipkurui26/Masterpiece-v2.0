@@ -1,5 +1,11 @@
 import drillingImage from "../../../assets/hero-image.jpg";
 import drillingVideo from "../../../assets/video-survey.mp4";
+import surveyImage1 from "../../../assets/hero-image.jpg";
+import surveyVideo1 from "../../../assets/video-survey.mp4";
+import surveyImage2 from "../../../assets/image2.jpg";
+import surveyVideo2 from "../../../assets/video2.mp4";
+import surveyImage3 from "../../../assets/image3.jpg";
+import surveyVideo3 from "../../../assets/video3.mp4";
 
 const drillingData = {
   hero: {
@@ -108,7 +114,24 @@ const drillingData = {
   },
 
   gallery: [
-    // populate once client provides real drilling rig / casing / test pumping photos
+    {
+      type: "image",
+      src: surveyImage1,
+      caption: "Field assessment in progress",
+    },
+    {
+      type: "video",
+      src: surveyVideo1,
+      caption: "Geophysical survey walkthrough",
+    },
+    { type: "image", src: surveyImage2, caption: "On-site data collection" },
+    {
+      type: "video",
+      src: surveyVideo2,
+      caption: "Equipment setup and readings",
+    },
+    { type: "image", src: surveyImage3, caption: "Survey report handover" },
+    { type: "video", src: surveyVideo3, caption: "Findings explained on site" },
   ],
 
   faq: [

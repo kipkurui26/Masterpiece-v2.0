@@ -1,4 +1,10 @@
 import solarisationImage from "../../../assets/hero-image.jpg";
+import surveyImage1 from "../../../assets/hero-image.jpg";
+import surveyVideo1 from "../../../assets/video-survey.mp4";
+import surveyImage2 from "../../../assets/image2.jpg";
+import surveyVideo2 from "../../../assets/video2.mp4";
+import surveyImage3 from "../../../assets/image3.jpg";
+import surveyVideo3 from "../../../assets/video3.mp4";
 
 const solarisationData = {
   hero: {
@@ -8,8 +14,15 @@ const solarisationData = {
       "Borehole solarisation can provide a reliable power source for your borehole without the ongoing running costs of grid electricity or diesel.",
       "We assess your project first, so the system we recommend is matched to your borehole, your site, and your water requirements.",
     ],
-    primaryCTA: { label: "Talk to Our Team", href: "/contact?service=borehole-solarisation" },
-    media: { type: "image", src: solarisationImage, caption: "Solar-powered borehole installation" },
+    primaryCTA: {
+      label: "Talk to Our Team",
+      href: "/contact?service=borehole-solarisation",
+    },
+    media: {
+      type: "image",
+      src: solarisationImage,
+      caption: "Solar-powered borehole installation",
+    },
   },
 
   whyItMatters: {
@@ -34,57 +47,86 @@ const solarisationData = {
 
   process: {
     heading: "What Happens During Borehole Solarisation?",
-    intro: "Every borehole solarisation project follows a series of carefully planned stages:",
+    intro:
+      "Every borehole solarisation project follows a series of carefully planned stages:",
     stages: [
       {
         title: "Site and Borehole Assessment",
-        description: "We review your borehole's technical details and your site's conditions, including the sunlight available throughout the day.",
+        description:
+          "We review your borehole's technical details and your site's conditions, including the sunlight available throughout the day.",
       },
       {
         title: "Water Requirement Review",
-        description: "Next, we establish how much water you need and when you need it, so the system reflects your actual requirements rather than a general estimate.",
+        description:
+          "Next, we establish how much water you need and when you need it, so the system reflects your actual requirements rather than a general estimate.",
       },
       {
         title: "System Design",
-        description: "Using this information, we determine the pump, solar array, and storage configuration that's suited to your borehole, your site, and your water requirements.",
+        description:
+          "Using this information, we determine the pump, solar array, and storage configuration that's suited to your borehole, your site, and your water requirements.",
       },
       {
         title: "Installation",
-        description: "Our team installs the system and tests it to confirm it's operating correctly before handover.",
+        description:
+          "Our team installs the system and tests it to confirm it's operating correctly before handover.",
       },
       {
         title: "Handover",
-        description: "Finally, we explain how the system operates and provide guidance on using and maintaining it for reliable long-term performance.",
+        description:
+          "Finally, we explain how the system operates and provide guidance on using and maintaining it for reliable long-term performance.",
       },
     ],
   },
 
   costFactors: {
     heading: "What Affects the Cost of Borehole Solarisation?",
-    intro: "Because every solar system is designed around the specific project, the cost of borehole solarisation varies from one project to another. Rather than provide a single figure that may not reflect your project, we explain the main factors that influence cost so you know what to expect before requesting a quotation.",
+    intro:
+      "Because every solar system is designed around the specific project, the cost of borehole solarisation varies from one project to another. Rather than provide a single figure that may not reflect your project, we explain the main factors that influence cost so you know what to expect before requesting a quotation.",
     factors: [
       {
         title: "Pumping Depth",
-        description: "Deeper boreholes generally require more powerful pumps and larger solar arrays.",
+        description:
+          "Deeper boreholes generally require more powerful pumps and larger solar arrays.",
       },
       {
         title: "Daily Water Requirements",
-        description: "The amount of water you need each day and the distance the water needs to travel from the borehole influence the size and capacity of the solar system required. Depending on your water requirements, additional water storage may also be needed, which can increase the overall cost of the system.",
+        description:
+          "The amount of water you need each day and the distance the water needs to travel from the borehole influence the size and capacity of the solar system required. Depending on your water requirements, additional water storage may also be needed, which can increase the overall cost of the system.",
       },
       {
         title: "Site Conditions",
-        description: "The amount of available sunlight and your site's layout influence the size and positioning of the solar array.",
+        description:
+          "The amount of available sunlight and your site's layout influence the size and positioning of the solar array.",
       },
       {
         title: "Existing Borehole System",
-        description: "Whether your borehole is already equipped, or requires equipping alongside solarisation, affects the scope of work and the overall installation cost.",
+        description:
+          "Whether your borehole is already equipped, or requires equipping alongside solarisation, affects the scope of work and the overall installation cost.",
       },
     ],
-    closing: "After assessing your borehole, your site, and your water requirements, we'll prepare a quotation that's tailored to your project and the solar system that's right for it.",
+    closing:
+      "After assessing your borehole, your site, and your water requirements, we'll prepare a quotation that's tailored to your project and the solar system that's right for it.",
   },
 
   gallery: [
-    // populate once client provides real panel/installation photos
+    {
+      type: "image",
+      src: surveyImage1,
+      caption: "Field assessment in progress",
+    },
+    {
+      type: "video",
+      src: surveyVideo1,
+      caption: "Geophysical survey walkthrough",
+    },
+    { type: "image", src: surveyImage2, caption: "On-site data collection" },
+    {
+      type: "video",
+      src: surveyVideo2,
+      caption: "Equipment setup and readings",
+    },
+    { type: "image", src: surveyImage3, caption: "Survey report handover" },
+    { type: "video", src: surveyVideo3, caption: "Findings explained on site" },
   ],
 
   faq: [
@@ -94,7 +136,8 @@ const solarisationData = {
         "The assessment does not commit you to proceeding with the project. Whether an assessment fee applies depends on the nature and location of your project, and we'll explain this before arranging the assessment. If solar is suitable, we'll use the findings to prepare an accurate quotation.",
     },
     {
-      question: "What happens if the assessment finds solar isn't right for me?",
+      question:
+        "What happens if the assessment finds solar isn't right for me?",
       answer:
         "We'll tell you and recommend the most suitable alternative for your project. Depending on your requirements, this may include a hybrid system or another suitable power source.",
     },
@@ -123,7 +166,10 @@ const solarisationData = {
   finalCTA: {
     heading: "Ready to Find Out if Solar Is Right for Your Borehole?",
     body: "Whether you're planning a new borehole project or looking to convert an existing system to solar power, we're here to help. Talk to our team about your project, and we'll assess your borehole, your site, and your water requirements before recommending the most suitable solution.",
-    primaryCTA: { label: "Talk to Our Team", href: "/contact?service=borehole-solarisation" },
+    primaryCTA: {
+      label: "Talk to Our Team",
+      href: "/contact?service=borehole-solarisation",
+    },
     secondaryOptions: ["Call", "WhatsApp", "Email"],
   },
 };
