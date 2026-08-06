@@ -58,9 +58,12 @@ const drillingData = {
     deliverable: {
       heading: "Your Drilling Completion Report Includes",
       items: [
-        "The work carried out during drilling",
-        "The geological formations encountered",
-        "Information required to support the next stages of your borehole project",
+        "The actual depth obtained.",
+        "The geological formation (logs) encountered.",
+        "The casing profile - if cased.",
+        "A test pumping report.",
+        "Water chemical analysis from the lab.",
+        "Any other information required to support the next stages of your borehole project."
       ],
 
       supportingLine:
