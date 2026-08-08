@@ -45,10 +45,22 @@ const drillingData = {
     heading: "What Happens During Borehole Drilling?",
     intro:
       "Once your drilling location has been confirmed, drilling begins. From there, the project follows a series of carefully managed stages, each carried out for a specific purpose before the borehole is ready for use.",
-    paragraphs: [
-      "Drilling is carried out to the depth recommended by the hydrogeological survey. Where the geological conditions encountered require adjustments, these are made as the work continues. Throughout the process, the geological formations encountered, including the water-bearing zones, are carefully recorded.",
-      "Once water is reached, the borehole still needs to be built, not just drilled. Suitable casing and screens are installed to support the borehole, allow groundwater to enter, and help keep out sand and sediment. Where required, the borehole is sealed to help protect it from surface contamination, and gravel packing is used to improve the movement of groundwater into the borehole.",
-      "The borehole is then developed to remove fine particles introduced during drilling and improve its performance before test pumping is carried out. Test pumping helps determine how much water the borehole can reliably produce.",
+    stages: [
+      {
+        title: "Drilling to Recommended Depth",
+        description:
+          "Drilling is carried out to the depth recommended by the hydrogeological survey. Where the geological conditions encountered require adjustments, these are made as the work continues. Throughout the process, the geological formations encountered, including the water-bearing zones, are carefully recorded.",
+      },
+      {
+        title: "Borehole Construction",
+        description:
+          "Once water is reached, the borehole still needs to be built, not just drilled. Suitable casing and screens are installed to support the borehole, allow groundwater to enter, and help keep out sand and sediment. Where required, the borehole is sealed to help protect it from surface contamination, and gravel packing is used to improve the movement of groundwater into the borehole.",
+      },
+      {
+        title: "Development & Test Pumping",
+        description:
+          "The borehole is then developed to remove fine particles introduced during drilling and improve its performance before test pumping is carried out. Test pumping helps determine how much water the borehole can reliably produce.",
+      },
     ],
     media: {
       type: "video",
@@ -63,11 +75,8 @@ const drillingData = {
         "The casing profile - if cased.",
         "A test pumping report.",
         "Water chemical analysis from the lab.",
-        "Any other information required to support the next stages of your borehole project."
+        "Any other information required to support the next stages of your borehole project.",
       ],
-
-      supportingLine:
-        "Prepared by a registered hydrogeologist to guide your drilling decision and support the next stage of your borehole project.",
     },
   },
 

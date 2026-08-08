@@ -32,9 +32,9 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            {/* Primary CTA */}
+            {/* Primary CTA — lands on the contact page and scrolls to the enquiry form */}
             <Link
-              to="/discuss-your-project"
+              to="/contact#enquiry-form"
               className="inline-block rounded-md bg-[#1B1F5C] px-6 py-3 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#141748]"
             >
               Discuss Your Project

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 
 // const ENDPOINT_URL = import.meta.env.VITE_ENQUIRY_ENDPOINT;
 // const ENDPOINT_URL = 'http://localhost:8000/enquiry.php';
-const ENDPOINT_URL = 'https://masterpiecehydrosolutions.co.ke/enquiry.php'
+const ENDPOINT_URL = "https://masterpiecehydrosolutions.co.ke/enquiry.php";
 const MIN_SUBMIT_SECONDS = 3;
 const TOAST_DURATION_MS = 8000;
 const TOAST_EASE = "cubic-bezier(0.65, 0, 0.35, 1)";
@@ -104,7 +104,7 @@ function EnquiryToast({ onClose }) {
       clearTimeout(timeout);
     };
   }, [onClose]);
-
+  
   return (
     <div
       role="status"
@@ -135,9 +135,7 @@ function EnquiryToast({ onClose }) {
         </div>
 
         <div className="flex-1 pt-0.5">
-          <p className="text-sm font-semibold text-[#1B1F5C]">
-            Enquiry sent
-          </p>
+          <p className="text-sm font-semibold text-[#1B1F5C]">Enquiry sent</p>
           <p className="mt-1 text-sm leading-snug text-gray-600">
             We&apos;ve received your details and will reach out using your
             preferred contact method soon.
@@ -150,7 +148,12 @@ function EnquiryToast({ onClose }) {
           aria-label="Close notification"
           className="flex-none rounded-md p-1 text-gray-400 transition hover:bg-gray-100 hover:text-gray-600"
         >
-          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden="true">
+          <svg
+            viewBox="0 0 20 20"
+            fill="none"
+            className="h-4 w-4"
+            aria-hidden="true"
+          >
             <path
               d="M5 5l10 10M15 5L5 15"
               stroke="currentColor"

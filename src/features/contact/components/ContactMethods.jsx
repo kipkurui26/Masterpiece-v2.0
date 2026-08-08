@@ -62,7 +62,7 @@ function MethodCard({ icon, title, description, children }) {
 
 export default function ContactMethods() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section id="contact-methods" className="bg-gray-50 py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold text-[#1B1F5C] sm:text-4xl">

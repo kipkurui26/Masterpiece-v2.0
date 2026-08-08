@@ -123,12 +123,12 @@ const Navbar = () => {
           )}
         </ul>
 
-        {/* CTA button (desktop) */}
+        {/* CTA button (desktop) — scrolls to the contact methods section */}
         <NavLink
-          to="/contact"
+          to="/contact#contact-methods"
           className="hidden rounded-md bg-[#1B1F5C] px-5 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#141748] lg:inline-block"
         >
-          Call Us Today
+          Contact Us Today
         </NavLink>
 
         {/* Hamburger (mobile) */}

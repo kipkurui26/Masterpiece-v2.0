@@ -46,13 +46,32 @@ const surveyData = {
     heading: "What Happens During a Hydrogeological Survey?",
     intro:
       "Before you invest in drilling, there's one important question that needs to be answered: where is the most suitable place to drill, based on the conditions of your site?",
-    paragraphs: [
-      "Our hydrogeologist visits your site and carries out a detailed assessment using specialised equipment to understand your site's geological conditions and groundwater potential.",
-      "We don't rely on what we find at your site alone. We also review information from nearby boreholes, including their depths, water yields, and locations, together with other relevant geological information about the area, to build a clearer picture.",
-      "Before recommending a drilling location, we carefully review and compare all the information we've gathered. This helps us identify the most suitable drilling location and recommended depth for your site.",
-      "Where possible, we'll explain our findings on site so you understand what we found and what the next steps are.",
-      "A hydrogeological survey helps identify the most suitable drilling location and recommended depth based on the available evidence. However, the quantity and quality of water can only be confirmed after drilling is complete and the necessary water quality tests have been carried out.",
+    stages: [
+      {
+        title: "On-Site Assessment",
+        description:
+          "Our hydrogeologist visits your site and carries out a detailed assessment using specialised equipment to understand your site's geological conditions and groundwater potential.",
+      },
+      {
+        title: "Reviewing Nearby Borehole Data",
+        description:
+          "We don't rely on what we find at your site alone. We also review information from nearby boreholes, including their depths, water yields, and locations, together with other relevant geological information about the area, to build a clearer picture.",
+      },
+      {
+        title: "Analysis & Recommendation",
+        description:
+          "Before recommending a drilling location, we carefully review and compare all the information we've gathered. This helps us identify the most suitable drilling location and recommended depth for your site.",
+      },
+      {
+        title: "On-Site Findings Review",
+        description:
+          "Where possible, we'll explain our findings on site so you understand what we found and what the next steps are.",
+      },
     ],
+    // Pulled out of the step list — this is a caveat, not a process step.
+    // Candidate for a HighlightStatement/callout component instead.
+    limitation:
+      "A hydrogeological survey helps identify the most suitable drilling location and recommended depth based on the available evidence. However, the quantity and quality of water can only be confirmed after drilling is complete and the necessary water quality tests have been carried out.",
     media: {
       type: "image",
       src: surveyImage,
