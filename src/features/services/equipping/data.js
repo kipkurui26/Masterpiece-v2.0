@@ -45,22 +45,27 @@ const equippingData = {
   process: {
     heading: "What Happens During Borehole Equipping?",
     intro:
-      "Before any equipment is selected or installed, we begin by understanding both your borehole's characteristics and your water requirements.",
+      "Before we select or install any equipment, we first make sure we understand your borehole and what you need the water system to do.",
     stages: [
       {
-        title: "Reviewing Your Borehole & Water Requirements",
+        title: "We Review Your Borehole",
         description:
-          "We review the drilling completion report and test pumping results, which provide important information about your borehole's depth, water level, and how much water your borehole can reliably provide. We also discuss how you'll use the water, including the amount you need, where it needs to be delivered, and the most suitable way to power your system.",
+          "We review your drilling completion report and test pumping results to understand your borehole's depth, water level, and how much water it can reliably provide.",
       },
       {
-        title: "Equipment Selection & Installation",
+        title: "We Understand Your Water Needs",
         description:
-          "Using this information, we select and install equipment that's matched to your specific project. This typically includes the pump, rising mains, cables, control system, and the components needed to deliver water safely and reliably.",
+          "We discuss how you plan to use the water, how much you need, where it needs to go, and the most suitable way to power your system.",
       },
       {
-        title: "Testing & Commissioning",
+        title: "We Select & Install the Equipment",
         description:
-          "Once installation is complete, the system is tested and commissioned to confirm it's operating correctly before it's handed over to you.",
+          "Using this information, we select equipment suited to your borehole and water needs. This typically includes the pump, rising mains, cables, control system, and other components needed to deliver water safely and reliably.",
+      },
+      {
+        title: "We Test the System",
+        description:
+          "Once installation is complete, we test and commission the system to make sure everything is working correctly before we hand it over to you.",
       },
     ],
     media: {
