@@ -1,71 +1,157 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Maximize2, X } from "lucide-react";
+
+import hydrogeologicalSurveyImage from "../../../assets/hydrogeological-survey-inkiito-isinya-kajiado-kenya.jpeg";
 import sampleImage from "../../../assets/hero-image.jpg";
 
-// Placeholder data — swap image paths/titles once real project photos are provided.
-// Structure anticipates each project having a location + service type, matching
-// the testimonial format ("Client • Service • Location") used elsewhere on the page.
 const FEATURED_PROJECTS = [
   {
-    title: "Hydrogeological Survey & Borehole Drilling",
-    location: "Mashuru, Kajiado",
-    image: sampleImage,
+    title: "Hydrogeological Survey",
+    location: "Inkiito, Isinya",
+    tagline: "Finding the right drilling point before drilling begins",
+    description:
+      "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
+    image: hydrogeologicalSurveyImage,
+    alt: "Hydrogeological survey in Inkiito, Isinya, Kajiado County, Kenya",
+    imageTitle:
+      "Hydrogeological Survey in Inkiito, Isinya, Kajiado County",
   },
   {
     title: "Borehole Camera Inspection",
     location: "Mbaruk, Nakuru",
     image: sampleImage,
+    alt: "Borehole camera inspection in Mbaruk, Nakuru, Kenya",
+    imageTitle: "Borehole Camera Inspection in Mbaruk, Nakuru",
   },
   {
     title: "Borehole Drilling",
     location: "Kisaju, Kajiado",
     image: sampleImage,
+    alt: "Borehole drilling project in Kisaju, Kajiado, Kenya",
+    imageTitle: "Borehole Drilling in Kisaju, Kajiado",
   },
 ];
 
 const FeaturedProjects = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">Featured Projects</h2>
-          <p className="mt-3 text-base text-gray-600">
-            See how we've helped homeowners, farmers, businesses, and institutions develop
-            reliable groundwater solutions across Kenya.
-          </p>
-        </div>
+    <>
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">
+              Featured Projects
+            </h2>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {FEATURED_PROJECTS.map((project) => (
+            <p className="mt-3 text-base text-gray-600">
+              See how we've helped homeowners, farmers, businesses, and
+              institutions develop reliable groundwater solutions across Kenya.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {FEATURED_PROJECTS.map((project) => (
+              <div
+                key={project.title + project.location}
+                className="group overflow-hidden rounded-xl bg-white shadow-sm transition-shadow duration-200 hover:shadow-md"
+              >
+                {/* Image */}
+                <div className="relative aspect-4/3 w-full overflow-hidden bg-gray-200">
+                  <img
+                    src={project.image}
+                    alt={project.alt}
+                    title={project.imageTitle}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+
+                  {/* Zoom Button */}
+                  <button
+                    type="button"
+                    onClick={() => openImage(project)}
+                    aria-label={`View full image of ${project.title}`}
+                    className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#1B1F5C] shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 hover:bg-white"
+                  >
+                    <Maximize2 size={20} strokeWidth={2} />
+                  </button>
+                </div>
+
+                {/* Project Details */}
+                <Link
+                  to="/projects"
+                  className="block p-5"
+                >
+                  <h3 className="text-base font-semibold text-[#1B1F5C]">
+                    {project.title}
+                  </h3>
+
+                  <p className="mt-1 text-sm text-gray-500">
+                    {project.location}
+                  </p>
+
+                  {project.tagline && (
+                    <p className="mt-3 text-sm font-medium text-[#0F9E9E]">
+                      {project.tagline}
+                    </p>
+                  )}
+
+                  {project.description && (
+                    <p className="mt-2 text-sm leading-6 text-gray-600">
+                      {project.description}
+                    </p>
+                  )}
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
             <Link
-              key={project.title + project.location}
               to="/projects"
-              className="group overflow-hidden rounded-xl bg-white shadow-sm transition-shadow duration-200 hover:shadow-md"
+              className="text-sm font-semibold text-[#0F9E9E] transition-colors duration-200 hover:text-[#1B1F5C]"
             >
-              <div className="aspect-4/3 w-full overflow-hidden bg-gray-200">
-                <img
-                  src={project.image}
-                  alt={`${project.title} in ${project.location}`}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="text-base font-semibold text-[#1B1F5C]">{project.title}</h3>
-                <p className="mt-1 text-sm text-gray-500">{project.location}</p>
-              </div>
+              View Our Projects →
             </Link>
-          ))}
+          </div>
         </div>
+      </section>
 
-        <div className="mt-10 text-center">
-          <Link
-            to="/projects"
-            className="text-sm font-semibold text-[#0F9E9E] transition-colors duration-200 hover:text-[#1B1F5C]"
+      {/* Fullscreen Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={closeImage}
+        >
+          {/* Close Button */}
+          <button
+            type="button"
+            onClick={closeImage}
+            aria-label="Close enlarged image"
+            className="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-white"
           >
-            View Our Projects →
-          </Link>
+            <X size={24} strokeWidth={2} />
+          </button>
+
+          {/* Enlarged Image */}
+          <img
+            src={selectedImage.image}
+            alt={selectedImage.alt}
+            title={selectedImage.imageTitle}
+            onClick={(event) => event.stopPropagation()}
+            className="max-h-[90vh] max-w-[95vw] rounded-lg object-contain shadow-2xl"
+          />
         </div>
-      </div>
-    </section>
+      )}
+    </>
   );
 };
 

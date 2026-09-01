@@ -46,7 +46,7 @@ const FinalCTA = () => {
 
         {/* Primary CTA */}
         <Link
-          to="/discuss-your-project"
+          to="/contact"
           className="mt-8 inline-block rounded-md bg-white px-8 py-3 text-sm font-semibold text-[#1B1F5C] transition-colors duration-200 hover:bg-[#5DD9D9]"
         >
           Discuss Your Project

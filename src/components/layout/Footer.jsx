@@ -16,6 +16,7 @@ const SERVICE_LINKS = [
   { name: "Borehole Drilling", path: "/services/borehole-drilling" },
   { name: "Borehole Equipping", path: "/services/borehole-equipping" },
   { name: "Borehole Solarisation", path: "/services/borehole-solarisation" },
+  { name: "Borehole Inspection", path: "/services/borehole-inspection" },
   {
     name: "Borehole Rehabilitation",
     path: "/services/borehole-rehabilitation",

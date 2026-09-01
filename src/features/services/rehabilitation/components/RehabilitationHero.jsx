@@ -17,7 +17,9 @@ const RehabilitationHero = () => (
           </h1>
           <div className="mt-6 space-y-3">
             {hero.intro.map((p, i) => (
-              <p key={i} className="text-lg text-gray-200 leading-relaxed">{p}</p>
+              <p key={i} className="text-lg text-gray-200 leading-relaxed">
+                {p}
+              </p>
             ))}
           </div>
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
@@ -33,6 +35,9 @@ const RehabilitationHero = () => (
             aspect="wide"
             className="border border-white/20"
           />
+          <p className="px-4 py-3 text-sm italic text-gray-100 text-center">
+            {hero.media.caption}
+          </p>
         </div>
       </div>
     </div>

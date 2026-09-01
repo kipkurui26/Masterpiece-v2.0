@@ -1,10 +1,8 @@
 import CTAButton from "../../shared/CTAButton";
 import MediaPlaceholder from "../../shared/MediaPlaceholder";
-import solarisationData from "../data";
+import { hero } from "../data";
 
-const { hero } = solarisationData;
-
-const SolarisationHero = () => (
+const InspectionHero = () => (
   <section className="bg-[#1B1F5C] text-white">
     <div className="mx-auto px-4 md:px-12 lg:px-20 py-16 lg:py-20">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -23,7 +21,8 @@ const SolarisationHero = () => (
             ))}
           </div>
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
-            <CTAButton {...hero.primaryCTA} variant="primary" />
+            <CTAButton {...hero.primaryCta} variant="primary" />
+            <CTAButton {...hero.secondaryCta} variant="secondary" />
           </div>
         </div>
         <div className="w-full">
@@ -43,4 +42,4 @@ const SolarisationHero = () => (
   </section>
 );
 
-export default SolarisationHero;
+export default InspectionHero;

@@ -1,7 +1,7 @@
-const ResourceCenter = () => {
-  return (
-    <div>ResourceCenter</div>
-  )
-}
+import ComingSoon from "../../components/ui/ComingSoon";
 
-export default ResourceCenter
+const ResourceCenter = () => {
+  return <ComingSoon section="The Resource Centre" />;
+};
+
+export default ResourceCenter;

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-// import heroImage from "../../../assets/hero-image.jpg";
-import videoSurvey from "../../../assets/video-survey.mp4"
+import heroImage from "../../../assets/borehole-drilling-project-eldama-ravine-kenya.jpeg";
 
 const Hero = () => {
   return (
@@ -53,20 +52,17 @@ const Hero = () => {
 
         {/* Media column — swap src for the real hero image/video once assets arrive */}
         <div className="order-first lg:order-last">
-          <div className="aspect-4/3 w-full overflow-hidden rounded-2xl bg-gray-200 shadow-lg">
-            {/* <img
+          <div className="overflow-hidden rounded-2xl">
+            <img
               src={heroImage}
-              alt="Clean water flowing from a Masterpiece Hydro-Solutions borehole"
-              className="h-full w-full object-cover"
-            /> */}
-            <video
-              className="h-full w-full object-cover"
-              src={videoSurvey}
-              autoPlay
-              muted
-              loop
-              playsInline
-            /> 
+              alt="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
+              className="aspect-4/3 w-full object-cover"
+            />
+
+            <p className="px-4 py-3 text-sm italic text-gray-600 text-center">
+              A borehole drilling project in Eldama Ravine, Kenya, documented on
+              site as drilling was underway.
+            </p>
           </div>
         </div>
       </div>
