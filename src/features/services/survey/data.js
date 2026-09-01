@@ -19,7 +19,7 @@ const surveyData = {
     ],
     primaryCTA: {
       label: "Request a Hydrogeological Survey",
-      href: "/contact?service=hydrogeological-survey",
+      href: "/contact#enquiry-form",
     },
     secondaryCTA: {
       label: "Have Questions? Talk to a Hydrogeologist",

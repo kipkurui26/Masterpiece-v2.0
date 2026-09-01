@@ -23,7 +23,7 @@ export const hero = {
   ],
   primaryCta: {
     label: "Request a Borehole Inspection",
-    href: "/contact?service=borehole-inspection",
+    href: "/contact#enquiry-form",
   },
   secondaryCta: {
     label: "Talk to a Hydrogeologist",

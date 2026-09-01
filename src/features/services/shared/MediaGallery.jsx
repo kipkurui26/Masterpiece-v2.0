@@ -81,6 +81,12 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
         )}
       </div>
 
+      {current.caption && (
+        <p className="text-sm text-gray-500 text-center mt-3">
+          {current.caption}
+        </p>
+      )}
+
       {items.length > 1 && (
         <div className="flex justify-center gap-2 mt-4">
           {items.map((_, i) => (
@@ -93,12 +99,6 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
             />
           ))}
         </div>
-      )}
-
-      {current.caption && (
-        <p className="text-sm text-gray-500 text-center mt-3">
-          {current.caption}
-        </p>
       )}
 
       {isZoomed && (

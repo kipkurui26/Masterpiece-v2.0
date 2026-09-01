@@ -15,8 +15,12 @@ const solarisationData = {
       "We assess your project first, so the system we recommend is matched to your borehole, your site, and your water requirements.",
     ],
     primaryCTA: {
-      label: "Talk to Our Team",
-      href: "/contact?service=borehole-solarisation",
+      label: "Request a Borehole Solarisation Quote",
+      href: "/contact#enquiry-form",
+    },
+    secondaryCTA: {
+      label: "Have Questions? Talk to us",
+      href: "https://wa.me/254721577588",
     },
     media: {
       type: "image",

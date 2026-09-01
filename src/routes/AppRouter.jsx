@@ -1,3 +1,4 @@
+// src/router/AppRouter.jsx
 import { Route, Routes } from "react-router-dom";
 import { Home } from "../features/home";
 import { About } from "../features/about";
@@ -11,6 +12,7 @@ import { Equipping } from "../features/services/equipping";
 import { Solarization } from "../features/services/solarization";
 import { Rehabilitation } from "../features/services/rehabilitation";
 import { Inspection } from "../features/services/inspection";
+import PageNotFound from "../components/layout/PageNotFound";
 
 const AppRouter = () => {
   return (
@@ -36,6 +38,9 @@ const AppRouter = () => {
         />
         <Route path="/services/borehole-inspection" element={<Inspection />} />
       </Route>
+
+      {/* Outside AppShell — no Navbar/Footer */}
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };

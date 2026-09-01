@@ -16,8 +16,12 @@ const rehabilitationData = {
       "Where the problem lies in the pumping system instead, we will identify that before recommending the most appropriate solution.",
     ],
     primaryCTA: {
+      label: "Request a Borehole Rehabilitation",
+      href: "/contact#enquiry-form",
+    },
+    secondaryCTA: {
       label: "Talk to Our Team",
-      href: "/contact?service=borehole-rehabilitation",
+      href: "https://wa.me/254721577588",
     },
     media: {
       type: "image",

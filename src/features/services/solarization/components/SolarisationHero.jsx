@@ -24,6 +24,7 @@ const SolarisationHero = () => (
           </div>
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
             <CTAButton {...hero.primaryCTA} variant="primary" />
+            <CTAButton {...hero.secondaryCTA} variant="secondary" />
           </div>
         </div>
         <div className="w-full">

@@ -17,7 +17,7 @@ const drillingData = {
     ],
     primaryCTA: {
       label: "Request a Borehole Drilling Quote",
-      href: "/contact?service=borehole-drilling",
+      href: "/contact#enquiry-form",
     },
     secondaryCTA: {
       label: "Have Questions? Talk to Our Team",

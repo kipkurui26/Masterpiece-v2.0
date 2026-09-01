@@ -19,7 +19,7 @@ const equippingData = {
     ],
     primaryCTA: {
       label: "Request a Borehole Equipping Quote",
-      href: "/contact?service=borehole-equipping",
+      href: "/contact#enquiry-form",
     },
     secondaryCTA: {
       label: "Have Questions? Talk to Our Team",
