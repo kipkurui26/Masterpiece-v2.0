@@ -13,31 +13,72 @@ const PlayIcon = () => (
 
 const ImageIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-gray-400">
-    <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
+    <rect
+      x="3"
+      y="4"
+      width="18"
+      height="16"
+      rx="2"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
     <circle cx="8.5" cy="9.5" r="1.5" fill="currentColor" />
-    <path d="M21 15l-5-5-9 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M21 15l-5-5-9 9"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
-const MediaPlaceholder = ({ type = "image", src, poster, alt = "", caption, aspect = "video", className = "" }) => {
+const MediaPlaceholder = ({
+  type = "image",
+  src,
+  poster,
+  alt = "",
+  caption,
+  aspect = "video",
+  objectFit = "cover",
+  className = "",
+}) => {
   const aspectClass = AspectRatios[aspect] || AspectRatios.video;
+  const objectFitClass =
+    objectFit === "contain" ? "object-contain" : "object-cover";
 
   if (src) {
     if (type === "video") {
       return (
-        <video className={`w-full ${aspectClass} object-cover rounded-xl ${className}`} controls poster={poster} muted>
+        <video
+          className={`w-full ${aspectClass} ${objectFitClass} rounded-xl ${className}`}
+          controls
+          poster={poster}
+          muted
+        >
           <source src={src} />
         </video>
       );
     }
-    return <img src={src} alt={alt} className={`w-full ${aspectClass} object-cover rounded-xl ${className}`} />;
+
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className={`w-full ${aspectClass} ${objectFitClass} rounded-xl ${className}`}
+      />
+    );
   }
 
   return (
-    <div className={`w-full ${aspectClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}>
+    <div
+      className={`w-full ${aspectClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}
+    >
       {type === "video" ? <PlayIcon /> : <ImageIcon />}
+
       <span className="text-sm text-gray-500 px-4 text-center">
-        {caption || (type === "video" ? "Video coming soon" : "Image coming soon")}
+        {caption ||
+          (type === "video" ? "Video coming soon" : "Image coming soon")}
       </span>
     </div>
   );

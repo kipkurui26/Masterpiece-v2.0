@@ -35,6 +35,7 @@ const EquippingHero = () => (
             title={hero.media.title}
             alt={hero.media.alt}
             aspect="wide"
+            objectFit="contain"
             className="border border-white/20"
           />
           <p className="px-4 py-3 text-sm italic text-gray-100 text-center">
