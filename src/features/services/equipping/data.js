@@ -1,4 +1,5 @@
-import equippingImage from "../../../assets/hero-image.jpg";
+import equipingHeroImage from "../../../assets/borehole-equipping-project-konza-kajiado-kenya.jpeg";
+
 import equippingVideo from "../../../assets/video-survey.mp4";
 import surveyImage1 from "../../../assets/hero-image.jpg";
 import surveyVideo1 from "../../../assets/video-survey.mp4";
@@ -27,8 +28,11 @@ const equippingData = {
     },
     media: {
       type: "image",
-      src: equippingImage,
-      caption: "Borehole equipping and pump installation on site",
+      src: equipingHeroImage,
+      alt: "Borehole equipping project in Konza, Kajiado County, Kenya.",
+      title: "Borehole Equipping Project in Konza, Kajiado County, Kenya",
+      caption:
+        "Ongoing borehole equipping works at a project site in Konza, Kajiado County, Kenya.",
     },
   },
 
@@ -71,6 +75,8 @@ const equippingData = {
     media: {
       type: "video",
       src: equippingVideo,
+      alt: "Pump and rising main installation in progress",
+      title: "Pump and rising main installation in progress",
       caption: "Pump and rising main installation in progress",
     },
     deliverable: {
@@ -146,21 +152,45 @@ const equippingData = {
     {
       type: "image",
       src: surveyImage1,
+      alt: "Alt Text",
+      title: "Title Text",
       caption: "Field assessment in progress",
     },
     {
       type: "video",
       src: surveyVideo1,
+      alt: "Alt Text",
+      title: "Title Text",
       caption: "Geophysical survey walkthrough",
     },
-    { type: "image", src: surveyImage2, caption: "On-site data collection" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage2,
+      caption: "On-site data collection",
+    },
     {
       type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
       src: surveyVideo2,
       caption: "Equipment setup and readings",
     },
-    { type: "image", src: surveyImage3, caption: "Survey report handover" },
-    { type: "video", src: surveyVideo3, caption: "Findings explained on site" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage3,
+      caption: "Survey report handover",
+    },
+    {
+      type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyVideo3,
+      caption: "Findings explained on site",
+    },
   ],
 
   faq: [

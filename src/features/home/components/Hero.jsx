@@ -56,6 +56,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
+              title="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
               className="aspect-4/3 w-full object-cover"
             />
 

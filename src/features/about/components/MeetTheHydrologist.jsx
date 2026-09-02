@@ -17,6 +17,7 @@ export default function MeetTheHydrogeologist() {
               <img
                 src={heroImage}
                 alt="Valentine Okelo, Lead Hydrogeologist and Director"
+                title="Valentine Okelo, Lead Hydrogeologist and Director"
                 className="w-full h-full object-cover"
               />
             </div>

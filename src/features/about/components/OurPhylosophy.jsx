@@ -11,6 +11,7 @@ export default function OurPhilosophy() {
               <img
                 src={heroImage}
                 alt="Hydrogeological site investigation in progress"
+                title="Hydrogeological site investigation in progress"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -23,7 +24,7 @@ export default function OurPhilosophy() {
             </h2>
 
             <div className="mt-6 space-y-1 text-lg">
-              <p className="text-gray-500 line-through decoration-2">
+              <p className="text-gray-500 decoration-2">
                 Many borehole projects begin with drilling.
               </p>
               <p className="text-[#0F9E9E] font-semibold">

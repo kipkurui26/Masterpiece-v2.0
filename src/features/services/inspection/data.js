@@ -7,7 +7,6 @@ import inspectionVideo2 from "../../../assets/video2.mp4";
 import inspectionImage3 from "../../../assets/image3.jpg";
 import inspectionVideo3 from "../../../assets/video3.mp4";
 
-
 export const seo = {
   title: "Borehole Inspection Services in Kenya | Masterpiece Hydro-Solutions",
   metaDescription:
@@ -32,6 +31,8 @@ export const hero = {
   media: {
     type: "image",
     src: inspectionImage,
+    alt: "This will be alt text",
+    title: "This will be the title text",
     caption: "Downhole camera inspection in progress",
   },
 };
@@ -90,6 +91,8 @@ export const scope = [
 export const processMedia = {
   type: "image",
   src: inspectionImage,
+  alt: "This will be alt text",
+  title: "This will be the title text",
   caption: "Downhole camera footage during a borehole inspection",
 };
 
@@ -153,31 +156,43 @@ export const gallery = [
   {
     type: "image",
     src: inspectionImage1,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Borehole camera inspection in progress",
   },
   {
     type: "video",
     src: inspectionVideo1,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Downhole camera inspection footage",
   },
   {
     type: "image",
     src: inspectionImage2,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Borehole inspection equipment on site",
   },
   {
     type: "video",
     src: inspectionVideo2,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Borehole inspection process on site",
   },
   {
     type: "image",
     src: inspectionImage3,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Inspection findings documented on site",
   },
   {
     type: "video",
     src: inspectionVideo3,
+    alt: "Alt Text",
+    title: "Title Text",
     caption: "Borehole inspection findings explained",
   },
 ];

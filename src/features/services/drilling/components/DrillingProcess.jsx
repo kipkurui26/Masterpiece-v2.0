@@ -29,6 +29,8 @@ const DrillingProcess = () => (
         <MediaPlaceholder
           type={process.media.type}
           src={process.media.src}
+          alt={process.media.alt}
+          title={process.media.title}
           caption={process.media.caption}
           aspect="wide"
           className="lg:sticky lg:top-24"

@@ -14,7 +14,10 @@ function InspectionProcess() {
             <MediaPlaceholder
               type={processMedia.type}
               src={processMedia.src}
+              title={processMedia.title}
+              alt={processMedia.alt}
               caption={processMedia.caption}
+
               aspect="wide"
             />
           </div>

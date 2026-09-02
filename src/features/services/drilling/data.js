@@ -1,4 +1,5 @@
-import drillingImage from "../../../assets/hero-image.jpg";
+import drillingHeroImage from "../../../assets/borehole-drilling-project-kitengela-kajiado-kenya.jpeg";
+
 import drillingVideo from "../../../assets/video-survey.mp4";
 import surveyImage1 from "../../../assets/hero-image.jpg";
 import surveyVideo1 from "../../../assets/video-survey.mp4";
@@ -25,8 +26,11 @@ const drillingData = {
     },
     media: {
       type: "image",
-      src: drillingImage,
-      caption: "Borehole drilling rig on site",
+      src: drillingHeroImage,
+      alt: "Borehole drilling project in Kitengela, Kajiado County, Kenya",
+      title: "Borehole Drilling Project in Kitengela, Kajiado County, Kenya",
+      caption:
+        "Ongoing borehole drilling works at a project site in Kitengela, Kajiado County, Kenya.",
     },
   },
 
@@ -66,6 +70,8 @@ const drillingData = {
       type: "video",
       src: drillingVideo,
       caption: "Casing and borehole construction in progress",
+      alt: "Casing and borehole construction in progress",
+      title: "Casing and borehole construction in progress",
     },
     deliverable: {
       heading: "Your Drilling Completion Report Includes",
@@ -129,21 +135,45 @@ const drillingData = {
     {
       type: "image",
       src: surveyImage1,
+      alt: "Alt Text",
+      title: "Title Text",
       caption: "Field assessment in progress",
     },
     {
       type: "video",
       src: surveyVideo1,
+      alt: "Alt Text",
+      title: "Title Text",
       caption: "Geophysical survey walkthrough",
     },
-    { type: "image", src: surveyImage2, caption: "On-site data collection" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage2,
+      caption: "On-site data collection",
+    },
     {
       type: "video",
       src: surveyVideo2,
+      alt: "Alt Text",
+      title: "Title Text",
       caption: "Equipment setup and readings",
     },
-    { type: "image", src: surveyImage3, caption: "Survey report handover" },
-    { type: "video", src: surveyVideo3, caption: "Findings explained on site" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage3,
+      caption: "Survey report handover",
+    },
+    {
+      type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyVideo3,
+      caption: "Findings explained on site",
+    },
   ],
 
   faq: [

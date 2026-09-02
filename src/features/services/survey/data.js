@@ -28,6 +28,8 @@ const surveyData = {
     media: {
       type: "video",
       src: surveyVideo,
+      alt: "Alt text",
+      title: "Title text",
       caption: "Hydrogeological survey field assessment",
     },
   },
@@ -75,6 +77,8 @@ const surveyData = {
     media: {
       type: "image",
       src: surveyImage,
+      title: "On-site geophysical assessment",
+      alt: "On-site geophysical assessment",
       caption: "On-site geophysical assessment",
     },
     deliverable: {
@@ -108,22 +112,46 @@ const surveyData = {
   gallery: [
     {
       type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
       src: surveyImage1,
       caption: "Field assessment in progress",
     },
     {
       type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
       src: surveyVideo1,
       caption: "Geophysical survey walkthrough",
     },
-    { type: "image", src: surveyImage2, caption: "On-site data collection" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage2,
+      caption: "On-site data collection",
+    },
     {
       type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
       src: surveyVideo2,
       caption: "Equipment setup and readings",
     },
-    { type: "image", src: surveyImage3, caption: "Survey report handover" },
-    { type: "video", src: surveyVideo3, caption: "Findings explained on site" },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage3,
+      caption: "Survey report handover",
+    },
+    {
+      type: "video",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyVideo3,
+      caption: "Findings explained on site",
+    },
   ],
 
   faq: [

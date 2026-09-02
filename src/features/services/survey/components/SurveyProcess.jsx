@@ -31,6 +31,8 @@ const SurveyProcess = () => (
         <MediaPlaceholder
           type={process.media.type}
           src={process.media.src}
+          title={process.media.title}
+          alt={process.media.alt}
           caption={process.media.caption}
           aspect="wide"
           className="lg:sticky lg:top-24"

@@ -32,6 +32,8 @@ const DrillingHero = () => (
             type={hero.media.type}
             src={hero.media.src}
             caption={hero.media.caption}
+            title={hero.media.title}
+            alt={hero.media.alt}
             aspect="wide"
             className="border border-white/20"
           />
