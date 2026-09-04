@@ -36,7 +36,7 @@ const DrillingHero = () => (
             alt={hero.media.alt}
             aspect="wide"
             objectFit="contain"
-            className="border border-white/20 "
+            className=""
           />
           <p className="px-4 py-3 text-sm italic text-gray-100 text-center">
             {hero.media.caption}

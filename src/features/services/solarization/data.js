@@ -1,4 +1,4 @@
-import solarisationImage from "../../../assets/hero-image.jpg";
+import solarizationHeroImage from '../../../assets/borehole-solarisation-kitengela-kisaju-kajiado-kenya.jpeg'
 import surveyImage1 from "../../../assets/hero-image.jpg";
 import surveyVideo1 from "../../../assets/video-survey.mp4";
 import surveyImage2 from "../../../assets/image2.jpg";
@@ -24,10 +24,10 @@ const solarisationData = {
     },
     media: {
       type: "image",
-      src: solarisationImage,
-      alt: "Alt text",
-      title: "Title text",
-      caption: "Solar-powered borehole installation",
+      src: solarizationHeroImage,
+      alt: "Borehole solarisation project in Kisaju, Kitengela, Kajiado County, Kenya",
+      title: "Borehole Solarisation Project in Kisaju, Kitengela, Kajiado County, Kenya",
+      caption: "Borehole solarisation works at a project site in Kisaju, Kitengela, Kajiado County, Kenya.",
     },
   },
 

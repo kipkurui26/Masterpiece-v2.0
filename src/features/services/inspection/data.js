@@ -1,4 +1,5 @@
 import inspectionImage from "../../../assets/hero-image.jpg";
+import inspectionHeroImage from "../../../assets/borehole-inspection-project-makindu-makueni-kenya.jpeg"
 
 import inspectionImage1 from "../../../assets/hero-image.jpg";
 import inspectionVideo1 from "../../../assets/video-survey.mp4";
@@ -30,10 +31,10 @@ export const hero = {
   },
   media: {
     type: "image",
-    src: inspectionImage,
-    alt: "This will be alt text",
-    title: "This will be the title text",
-    caption: "Downhole camera inspection in progress",
+    src: inspectionHeroImage,
+    alt: "Borehole inspection project in Makindu, Makueni County, Kenya",
+    title: "Borehole Inspection Project in Makindu, Makueni County, Kenya",
+    caption: "Ongoing borehole inspection works at a project site in Makindu, Makueni County, Kenya.",
   },
 };
 
