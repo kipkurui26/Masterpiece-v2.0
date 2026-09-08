@@ -1,7 +1,8 @@
-import rehabilitationImage from "../../../assets/hero-image.jpg";
-import surveyImage1 from "../../../assets/hero-image.jpg";
+import rehabilitationImage from "../../../assets/borehole-rehabilitation-kibwezi-kenya.jpeg";
+import solarAssessmentRehabilitation from '../../../assets/solar-assessment-rehabilitation.jpeg'
+import pumpLiftingRehabilitation from '../../../assets/pump-lifting-for-rehabilitation.jpeg'
+
 import surveyVideo1 from "../../../assets/video-survey.mp4";
-import surveyImage2 from "../../../assets/image2.jpg";
 import surveyVideo2 from "../../../assets/video2.mp4";
 import surveyImage3 from "../../../assets/image3.jpg";
 import surveyVideo3 from "../../../assets/video3.mp4";
@@ -26,9 +27,9 @@ const rehabilitationData = {
     media: {
       type: "image",
       src: rehabilitationImage,
-      alt: "This is alt text",
-      title: "This is title text",
-      caption: "Borehole drilling rig on site",
+      alt: "Borehole rehabilitation,  began with camera. Kibwezi",
+      title: "Borehole rehabilitation,  began with camera. Kibwezi",
+      caption: "Borehole rehabilitation,  began with camera. Kibwezi Area",
     },
   },
 
@@ -136,10 +137,10 @@ const rehabilitationData = {
   gallery: [
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyImage1,
-      caption: "Field assessment in progress",
+      alt: "Borehole Solar Assessment Rehabilitation",
+      title: "Borehole Solar Assessment Rehabilitation",
+      src: solarAssessmentRehabilitation,
+      caption: "Borehole Solar Assessment Rehabilitation",
     },
     {
       type: "video",
@@ -150,10 +151,10 @@ const rehabilitationData = {
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyImage2,
-      caption: "On-site data collection",
+      alt: "Pump Lifting For Borehole Rehabilitation",
+      title: "Pump Lifting For Borehole Rehabilitation",
+      src: pumpLiftingRehabilitation,
+      caption: "Pump Lifting For Borehole Rehabilitation",
     },
     {
       type: "video",

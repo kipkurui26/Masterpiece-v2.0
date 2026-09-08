@@ -33,6 +33,7 @@ const DrillingProcess = () => (
           title={process.media.title}
           caption={process.media.caption}
           aspect="wide"
+          objectFit="contain"
           className="lg:sticky lg:top-24"
         />
       </div>

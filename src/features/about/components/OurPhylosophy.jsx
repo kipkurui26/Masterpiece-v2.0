@@ -1,4 +1,4 @@
-import heroImage from "../../../assets/hero-image.jpg";
+import aboutImagePreview from '../../../assets/about-page-preview.jpeg'
 
 export default function OurPhilosophy() {
   return (
@@ -9,10 +9,10 @@ export default function OurPhilosophy() {
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-4/3 bg-gray-200">
               <img
-                src={heroImage}
-                alt="Hydrogeological site investigation in progress"
-                title="Hydrogeological site investigation in progress"
-                className="w-full h-full object-cover"
+                src={aboutImagePreview}
+                alt="Better Decisions Leads to Better Borehole"
+                title="Better Decisions Leads to Better Borehole"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>

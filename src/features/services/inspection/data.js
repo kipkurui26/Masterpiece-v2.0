@@ -1,7 +1,7 @@
-import inspectionImage from "../../../assets/hero-image.jpg";
 import inspectionHeroImage from "../../../assets/borehole-inspection-project-makindu-makueni-kenya.jpeg"
+import cameraInspectionProcess from '../../../assets/camera-inspection-process.jpeg'
 
-import inspectionImage1 from "../../../assets/hero-image.jpg";
+import inspectionGalleryOne from '../../../assets/borehole-camera-inspection-kibwezi.mp4'
 import inspectionVideo1 from "../../../assets/video-survey.mp4";
 import inspectionImage2 from "../../../assets/image2.jpg";
 import inspectionVideo2 from "../../../assets/video2.mp4";
@@ -32,9 +32,9 @@ export const hero = {
   media: {
     type: "image",
     src: inspectionHeroImage,
-    alt: "Borehole inspection project in Makindu, Makueni County, Kenya",
-    title: "Borehole Inspection Project in Makindu, Makueni County, Kenya",
-    caption: "Ongoing borehole inspection works at a project site in Makindu, Makueni County, Kenya.",
+    alt: "Borehole Camera Inspection Setup",
+    title: "Borehole Camera Inspection Setup",
+    caption: "Borehole Camera Inspection Setup",
   },
 };
 
@@ -91,7 +91,7 @@ export const scope = [
 
 export const processMedia = {
   type: "image",
-  src: inspectionImage,
+  src: cameraInspectionProcess,
   alt: "This will be alt text",
   title: "This will be the title text",
   caption: "Downhole camera footage during a borehole inspection",
@@ -155,11 +155,11 @@ export const costFactors = [
 
 export const gallery = [
   {
-    type: "image",
-    src: inspectionImage1,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Borehole camera inspection in progress",
+    type: "video",
+    src: inspectionGalleryOne,
+    alt: "Borehole Camera Inspection Kibwezi-Makueni",
+    title: "Borehole Camera Inspection Kibwezi-Makueni",
+    caption: "Borehole Camera Inspection Kibwezi-Makueni",
   },
   {
     type: "video",

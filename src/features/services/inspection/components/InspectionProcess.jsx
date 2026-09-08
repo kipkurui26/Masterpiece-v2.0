@@ -17,7 +17,7 @@ function InspectionProcess() {
               title={processMedia.title}
               alt={processMedia.alt}
               caption={processMedia.caption}
-
+              objectFit="contain"
               aspect="wide"
             />
           </div>

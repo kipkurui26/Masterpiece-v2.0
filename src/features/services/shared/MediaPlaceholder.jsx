@@ -40,18 +40,23 @@ const MediaPlaceholder = ({
   alt = "",
   caption,
   aspect = "video",
+  height,
   objectFit = "cover",
   className = "",
 }) => {
   const aspectClass = AspectRatios[aspect] || AspectRatios.video;
+
   const objectFitClass =
     objectFit === "contain" ? "object-contain" : "object-cover";
+
+  // If height is supplied, use height instead of aspect ratio.
+  const sizingClass = height || aspectClass;
 
   if (src) {
     if (type === "video") {
       return (
         <video
-          className={`w-full ${aspectClass} ${objectFitClass} rounded-xl ${className}`}
+          className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
           controls
           poster={poster}
           muted
@@ -65,14 +70,14 @@ const MediaPlaceholder = ({
       <img
         src={src}
         alt={alt}
-        className={`w-full ${aspectClass} ${objectFitClass} rounded-xl ${className}`}
+        className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
       />
     );
   }
 
   return (
     <div
-      className={`w-full ${aspectClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}
+      className={`w-full ${sizingClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}
     >
       {type === "video" ? <PlayIcon /> : <ImageIcon />}
 

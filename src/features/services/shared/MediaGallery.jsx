@@ -47,6 +47,7 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
           src={current.src}
           poster={current.poster}
           caption={current.caption}
+          objectFit="contain"
           aspect={aspect}
         />
 

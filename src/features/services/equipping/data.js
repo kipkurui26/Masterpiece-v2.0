@@ -1,6 +1,7 @@
 import equipingHeroImage from "../../../assets/borehole-equipping-project-konza-kajiado-kenya.jpeg";
 
-import equippingVideo from "../../../assets/video-survey.mp4";
+import boreholeEquipingProcess from '../../../assets/borehole-equiping-konza.jpeg'
+
 import surveyImage1 from "../../../assets/hero-image.jpg";
 import surveyVideo1 from "../../../assets/video-survey.mp4";
 import surveyImage2 from "../../../assets/image2.jpg";
@@ -73,11 +74,11 @@ const equippingData = {
       },
     ],
     media: {
-      type: "video",
-      src: equippingVideo,
-      alt: "Pump and rising main installation in progress",
-      title: "Pump and rising main installation in progress",
-      caption: "Pump and rising main installation in progress",
+      type: "image",
+      src: boreholeEquipingProcess,
+      alt: "Borehole equipping in Konza Area",
+      title: "Borehole equipping in Konza Area",
+      caption: "Borehole equipping in Konza Area",
     },
     deliverable: {
       heading: "After Installation, You'll Receive",

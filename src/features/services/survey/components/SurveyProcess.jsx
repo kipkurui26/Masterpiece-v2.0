@@ -21,8 +21,12 @@ const SurveyProcess = () => (
                   {i + 1}
                 </span>
                 <div>
-                  <h3 className="font-semibold text-brand-navy mb-1">{stage.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{stage.description}</p>
+                  <h3 className="font-semibold text-brand-navy mb-1">
+                    {stage.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {stage.description}
+                  </p>
                 </div>
               </li>
             ))}
@@ -35,6 +39,8 @@ const SurveyProcess = () => (
           alt={process.media.alt}
           caption={process.media.caption}
           aspect="wide"
+          objectFit="contain"
+          height={"max-h-[600px]"}
           className="lg:sticky lg:top-24"
         />
       </div>

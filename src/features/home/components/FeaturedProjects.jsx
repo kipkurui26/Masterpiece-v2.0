@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Maximize2, X } from "lucide-react";
 
-import hydrogeologicalSurveyImage from "../../../assets/hydrogeological-survey-inkiito-isinya-kajiado-kenya.jpeg";
-import sampleImage from "../../../assets/hero-image.jpg";
+import featuredHydrosurvey from "../../../assets/hydrogeological-survey-inkiito-isinya-kajiado-kenya.jpeg";
+import featuredCameraInspection from "../../../assets/featured-camera-alternative.jpeg";
+import featuredBoreholeDrilling from "../../../assets/featured-borehole-drilling.jpeg";
+
 
 const FEATURED_PROJECTS = [
   {
@@ -12,24 +14,29 @@ const FEATURED_PROJECTS = [
     tagline: "Finding the right drilling point before drilling begins",
     description:
       "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
-    image: hydrogeologicalSurveyImage,
+    image: featuredHydrosurvey,
     alt: "Hydrogeological survey in Inkiito, Isinya, Kajiado County, Kenya",
-    imageTitle:
-      "Hydrogeological Survey in Inkiito, Isinya, Kajiado County",
+    imageTitle: "Hydrogeological Survey in Inkiito, Isinya, Kajiado County",
   },
   {
     title: "Borehole Camera Inspection",
-    location: "Mbaruk, Nakuru",
-    image: sampleImage,
-    alt: "Borehole camera inspection in Mbaruk, Nakuru, Kenya",
-    imageTitle: "Borehole Camera Inspection in Mbaruk, Nakuru",
+    location: "Loloitikosh, Kajiado",
+    tagline: "Finding the right drilling point before drilling begins",
+    description:
+      "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
+    image: featuredCameraInspection,
+    alt: "Borehole camera inspection in Loloitikosh, Kajiado County",
+    imageTitle: "Borehole Camera Inspection in Loloitikosh, Kajiado County",
   },
   {
     title: "Borehole Drilling",
-    location: "Kisaju, Kajiado",
-    image: sampleImage,
-    alt: "Borehole drilling project in Kisaju, Kajiado, Kenya",
-    imageTitle: "Borehole Drilling in Kisaju, Kajiado",
+    location: "Joska, Machakos",
+    tagline: "Finding the right drilling point before drilling begins",
+    description:
+      "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
+    image: featuredBoreholeDrilling,
+    alt: "Borehole drilling project in Joska Area, Machakos",
+    imageTitle: "Borehole Drilling in Joska Area, Machakos",
   },
 ];
 
@@ -86,10 +93,7 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* Project Details */}
-                <Link
-                  to="/projects"
-                  className="block p-5"
-                >
+                <Link to="/projects" className="block p-5">
                   <h3 className="text-base font-semibold text-[#1B1F5C]">
                     {project.title}
                   </h3>

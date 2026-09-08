@@ -1,9 +1,10 @@
 import surveyVideo from "../../../assets/video-survey.mp4";
-import surveyImage from "../../../assets/hero-image.jpg";
-import surveyImage1 from "../../../assets/hero-image.jpg";
+import surveyImageWithClients from "../../../assets/hydrosurvey-with-clients.jpeg";
+
+import surveyGalleryOne from "../../../assets/consultations-sondu-kisumu.jpeg"
+import surveyGalleryTwo from "../../../assets/video2.mp4";
 import surveyVideo1 from "../../../assets/video-survey.mp4";
 import surveyImage2 from "../../../assets/image2.jpg";
-import surveyVideo2 from "../../../assets/video2.mp4";
 import surveyImage3 from "../../../assets/image3.jpg";
 import surveyVideo3 from "../../../assets/video3.mp4";
 
@@ -76,7 +77,7 @@ const surveyData = {
       "A hydrogeological survey helps identify the most suitable drilling location and recommended depth based on the available evidence. However, the quantity and quality of water can only be confirmed after drilling is complete and the necessary water quality tests have been carried out.",
     media: {
       type: "image",
-      src: surveyImage,
+      src: surveyImageWithClients,
       title: "On-site geophysical assessment",
       alt: "On-site geophysical assessment",
       caption: "On-site geophysical assessment",
@@ -112,16 +113,23 @@ const surveyData = {
   gallery: [
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyImage1,
-      caption: "Field assessment in progress",
+      alt: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+      title: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+      src: surveyGalleryOne,
+      caption: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
     },
     {
       type: "video",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyVideo1,
+      src: surveyGalleryTwo,
+      caption: "Equipment setup and readings",
+    },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: surveyImage2,
       caption: "Geophysical survey walkthrough",
     },
     {
@@ -130,13 +138,6 @@ const surveyData = {
       title: "Title Text",
       src: surveyImage2,
       caption: "On-site data collection",
-    },
-    {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo2,
-      caption: "Equipment setup and readings",
     },
     {
       type: "image",

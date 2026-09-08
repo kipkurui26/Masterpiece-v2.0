@@ -1,8 +1,10 @@
 import drillingHeroImage from "../../../assets/borehole-drilling-project-kitengela-kajiado-kenya.jpeg";
+import drillingProcessPreview from '../../../assets/drilling-process-preview.jpeg'
 
-import drillingVideo from "../../../assets/video-survey.mp4";
-import surveyImage1 from "../../../assets/hero-image.jpg";
-import surveyVideo1 from "../../../assets/video-survey.mp4";
+import drillingGalleryOne from '../../../assets/borehole-drilling-gallery-one.jpeg'
+import drillingGalleryTwo from '../../../assets/borehole-drilling-chuna-estate-kitengela.mp4'
+
+
 import surveyImage2 from "../../../assets/image2.jpg";
 import surveyVideo2 from "../../../assets/video2.mp4";
 import surveyImage3 from "../../../assets/image3.jpg";
@@ -67,8 +69,8 @@ const drillingData = {
       },
     ],
     media: {
-      type: "video",
-      src: drillingVideo,
+      type: "image",
+      src: drillingProcessPreview,
       caption: "Casing and borehole construction in progress",
       alt: "Casing and borehole construction in progress",
       title: "Casing and borehole construction in progress",
@@ -134,17 +136,17 @@ const drillingData = {
   gallery: [
     {
       type: "image",
-      src: surveyImage1,
-      alt: "Alt Text",
-      title: "Title Text",
-      caption: "Field assessment in progress",
+      src: drillingGalleryOne,
+      alt: "Borehole Drilling in Joska Area Machakos County",
+      title: "Borehole Drilling in Joska Area Machakos County",
+      caption: "Borehole Drilling in Joska Area Machakos County",
     },
     {
       type: "video",
-      src: surveyVideo1,
-      alt: "Alt Text",
-      title: "Title Text",
-      caption: "Geophysical survey walkthrough",
+      src: drillingGalleryTwo,
+      alt: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
+      title: "TBorehole Drilling at Chuna Estate Kitengela-Kenya",
+      caption: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
     },
     {
       type: "image",

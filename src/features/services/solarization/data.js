@@ -1,6 +1,7 @@
 import solarizationHeroImage from '../../../assets/borehole-solarisation-kitengela-kisaju-kajiado-kenya.jpeg'
-import surveyImage1 from "../../../assets/hero-image.jpg";
-import surveyVideo1 from "../../../assets/video-survey.mp4";
+
+import solarisationGalleryOne from '../../../assets/solarisation-kitengela.jpeg'
+import solarisationGallerytwo from '../../../assets/Solarisation-and-tank-tower.jpeg'
 import surveyImage2 from "../../../assets/image2.jpg";
 import surveyVideo2 from "../../../assets/video2.mp4";
 import surveyImage3 from "../../../assets/image3.jpg";
@@ -117,17 +118,17 @@ const solarisationData = {
   gallery: [
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyImage1,
-      caption: "Field assessment in progress",
+      alt: "Borehole solarisation kick off at Kitengela-Kenya",
+      title: "Borehole solarisation kick off at Kitengela-Kenya",
+      src: solarisationGalleryOne,
+      caption: "Borehole solarisation kick off at Kitengela-Kenya",
     },
     {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo1,
-      caption: "Geophysical survey walkthrough",
+      type: "image",
+      alt: "Solarisation and Tank Tower Construction in Kitengela",
+      title: "Solarisation and Tank Tower Construction in Kitengela",
+      src: solarisationGallerytwo,
+      caption: "Solarisation and Tank Tower Construction in Kitengela",
     },
     {
       type: "image",
