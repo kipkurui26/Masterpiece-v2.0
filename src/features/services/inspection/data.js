@@ -2,11 +2,10 @@ import inspectionHeroImage from "../../../assets/borehole-inspection-project-mak
 import cameraInspectionProcess from '../../../assets/camera-inspection-process.jpeg'
 
 import inspectionGalleryOne from '../../../assets/borehole-camera-inspection-kibwezi.mp4'
-import inspectionVideo1 from "../../../assets/video-survey.mp4";
-import inspectionImage2 from "../../../assets/image2.jpg";
-import inspectionVideo2 from "../../../assets/video2.mp4";
-import inspectionImage3 from "../../../assets/image3.jpg";
-import inspectionVideo3 from "../../../assets/video3.mp4";
+import inspectionGalleryTwo from '../../../assets/inspection-gallery-two.jpeg'
+import inspectionGalleryThree from '../../../assets/inspection-gallery-three.jpeg'
+import inspectionGalleryFour from '../../../assets/inspection-gallery-four.mp4'
+
 
 export const seo = {
   title: "Borehole Inspection Services in Kenya | Masterpiece Hydro-Solutions",
@@ -162,39 +161,25 @@ export const gallery = [
     caption: "Borehole Camera Inspection Kibwezi-Makueni",
   },
   {
-    type: "video",
-    src: inspectionVideo1,
+    type: "image",
+    src: inspectionGalleryTwo,
     alt: "Alt Text",
     title: "Title Text",
-    caption: "Downhole camera inspection footage",
+    caption: "Caption",
+  },
+  {
+    type: "video",
+    src: inspectionGalleryFour,
+    alt: "Alt Text",
+    title: "Title Text",
+    caption: "Caption",
   },
   {
     type: "image",
-    src: inspectionImage2,
+    src: inspectionGalleryThree,
     alt: "Alt Text",
     title: "Title Text",
-    caption: "Borehole inspection equipment on site",
-  },
-  {
-    type: "video",
-    src: inspectionVideo2,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Borehole inspection process on site",
-  },
-  {
-    type: "image",
-    src: inspectionImage3,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Inspection findings documented on site",
-  },
-  {
-    type: "video",
-    src: inspectionVideo3,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Borehole inspection findings explained",
+    caption: "Caption",
   },
 ];
 

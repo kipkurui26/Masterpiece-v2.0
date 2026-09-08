@@ -1,11 +1,9 @@
 import rehabilitationImage from "../../../assets/borehole-rehabilitation-kibwezi-kenya.jpeg";
-import solarAssessmentRehabilitation from '../../../assets/solar-assessment-rehabilitation.jpeg'
-import pumpLiftingRehabilitation from '../../../assets/pump-lifting-for-rehabilitation.jpeg'
 
-import surveyVideo1 from "../../../assets/video-survey.mp4";
-import surveyVideo2 from "../../../assets/video2.mp4";
-import surveyImage3 from "../../../assets/image3.jpg";
-import surveyVideo3 from "../../../assets/video3.mp4";
+import solarAssessmentRehabilitation from "../../../assets/solar-assessment-rehabilitation.jpeg";
+import pumpLiftingRehabilitation from "../../../assets/pump-lifting-for-rehabilitation.jpeg";
+import rehabilitationGalleryThree from '../../../assets/rehabilitation-gallery-three.jpeg'
+
 
 const rehabilitationData = {
   hero: {
@@ -143,13 +141,6 @@ const rehabilitationData = {
       caption: "Borehole Solar Assessment Rehabilitation",
     },
     {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo1,
-      caption: "Geophysical survey walkthrough",
-    },
-    {
       type: "image",
       alt: "Pump Lifting For Borehole Rehabilitation",
       title: "Pump Lifting For Borehole Rehabilitation",
@@ -157,25 +148,11 @@ const rehabilitationData = {
       caption: "Pump Lifting For Borehole Rehabilitation",
     },
     {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo2,
-      caption: "Equipment setup and readings",
-    },
-    {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage3,
-      caption: "Survey report handover",
-    },
-    {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo3,
-      caption: "Findings explained on site",
+      src: rehabilitationGalleryThree,
+      caption: "Fishing. Rehabilitation. Kibwezi",
     },
   ],
 

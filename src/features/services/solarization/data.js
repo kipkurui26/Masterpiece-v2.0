@@ -2,10 +2,11 @@ import solarizationHeroImage from '../../../assets/borehole-solarisation-kitenge
 
 import solarisationGalleryOne from '../../../assets/solarisation-kitengela.jpeg'
 import solarisationGallerytwo from '../../../assets/Solarisation-and-tank-tower.jpeg'
-import surveyImage2 from "../../../assets/image2.jpg";
-import surveyVideo2 from "../../../assets/video2.mp4";
-import surveyImage3 from "../../../assets/image3.jpg";
-import surveyVideo3 from "../../../assets/video3.mp4";
+import solarisationGalleryThree from '../../../assets/solar-gallery-three.jpeg'
+import solarisationGalleryFour from '../../../assets/solar-gallery-four.jpeg'
+import solarisationGalleryFive from '../../../assets/solar-gallery-five.jpeg'
+import solarisationGallerySix from '../../../assets/solar-gallery-six.jpeg'
+
 
 const solarisationData = {
   hero: {
@@ -134,29 +135,29 @@ const solarisationData = {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage2,
-      caption: "On-site data collection",
-    },
-    {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo2,
-      caption: "Equipment setup and readings",
+      src: solarisationGalleryThree,
+      caption: "Caption",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage3,
-      caption: "Survey report handover",
+      src: solarisationGalleryFour,
+      caption: "Caption",
     },
     {
-      type: "video",
+      type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyVideo3,
-      caption: "Findings explained on site",
+      src: solarisationGalleryFive,
+      caption: "Caption",
+    },
+    {
+      type: "image",
+      alt: "Alt Text",
+      title: "Title Text",
+      src: solarisationGallerySix,
+      caption: "Caption",
     },
   ],
 
