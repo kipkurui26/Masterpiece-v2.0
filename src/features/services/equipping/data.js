@@ -2,12 +2,12 @@ import equipingHeroImage from "../../../assets/borehole-equipping-project-konza-
 
 import boreholeEquipingProcess from '../../../assets/borehole-equiping-konza.jpeg'
 
-import surveyImage1 from "../../../assets/hero-image.jpg";
-import surveyVideo1 from "../../../assets/video-survey.mp4";
-import surveyImage2 from "../../../assets/image2.jpg";
-import surveyVideo2 from "../../../assets/video2.mp4";
-import surveyImage3 from "../../../assets/image3.jpg";
-import surveyVideo3 from "../../../assets/video3.mp4";
+import equippingGalleryOne from '../../../assets/equipping-gallery-one.jpeg'
+import equippingGalleryTwo from '../../../assets/equipping-gallery-two.jpeg'
+import equippingGalleryThree from '../../../assets/image3.jpg'
+import equippingGalleryFour from '../../../assets/equipping-gallery-four.jpeg'
+import equippingGalleryFive from '../../../assets/equipping-gallery-five.jpeg'
+
 
 const equippingData = {
   hero: {
@@ -152,45 +152,38 @@ const equippingData = {
   gallery: [
     {
       type: "image",
-      src: surveyImage1,
+      src: equippingGalleryOne,
       alt: "Alt Text",
       title: "Title Text",
-      caption: "Field assessment in progress",
+      caption: "Caption",
     },
     {
-      type: "video",
-      src: surveyVideo1,
+      type: "image",
+      src: equippingGalleryTwo,
       alt: "Alt Text",
       title: "Title Text",
-      caption: "Geophysical survey walkthrough",
+      caption: "Caption",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage2,
-      caption: "On-site data collection",
-    },
-    {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo2,
-      caption: "Equipment setup and readings",
+      src: equippingGalleryThree,
+      caption: "Caption",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage3,
-      caption: "Survey report handover",
+      src: equippingGalleryFour,
+      caption: "Caption",
     },
     {
-      type: "video",
+      type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyVideo3,
-      caption: "Findings explained on site",
+      src: equippingGalleryFive,
+      caption: "Caption",
     },
   ],
 

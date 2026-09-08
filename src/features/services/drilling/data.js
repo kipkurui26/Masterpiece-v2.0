@@ -3,12 +3,10 @@ import drillingProcessPreview from '../../../assets/drilling-process-preview.jpe
 
 import drillingGalleryOne from '../../../assets/borehole-drilling-gallery-one.jpeg'
 import drillingGalleryTwo from '../../../assets/borehole-drilling-chuna-estate-kitengela.mp4'
+import drillingGalleryThree from '../../../assets/drilling-gallery-three.jpeg'
+import drillingGalleryFour from '../../../assets/drilling-gallery-four.jpeg'
+import drillingGalleryFive from '../../../assets/drilling-gallery-five.jpeg'
 
-
-import surveyImage2 from "../../../assets/image2.jpg";
-import surveyVideo2 from "../../../assets/video2.mp4";
-import surveyImage3 from "../../../assets/image3.jpg";
-import surveyVideo3 from "../../../assets/video3.mp4";
 
 const drillingData = {
   hero: {
@@ -152,29 +150,22 @@ const drillingData = {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage2,
-      caption: "On-site data collection",
+      src: drillingGalleryThree,
+      caption: "Caption",
     },
     {
-      type: "video",
-      src: surveyVideo2,
+      type: "image",
+      src: drillingGalleryFour,
       alt: "Alt Text",
       title: "Title Text",
-      caption: "Equipment setup and readings",
+      caption: "Caption",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage3,
-      caption: "Survey report handover",
-    },
-    {
-      type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyVideo3,
-      caption: "Findings explained on site",
+      src: drillingGalleryFive,
+      caption: "Caption",
     },
   ],
 

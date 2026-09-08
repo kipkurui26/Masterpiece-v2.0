@@ -1,11 +1,12 @@
 import surveyVideo from "../../../assets/video-survey.mp4";
 import surveyImageWithClients from "../../../assets/hydrosurvey-with-clients.jpeg";
 
-import surveyGalleryOne from "../../../assets/consultations-sondu-kisumu.jpeg"
+import surveyGalleryOne from "../../../assets/consultations-sondu-kisumu.jpeg";
 import surveyGalleryTwo from "../../../assets/video2.mp4";
-import surveyImage2 from "../../../assets/image2.jpg";
-import surveyImage3 from "../../../assets/image3.jpg";
-import surveyVideo3 from "../../../assets/video3.mp4";
+import surveyGalleryThree from "../../../assets/tools-of-work.jpeg";
+import surveyGalleryFour from "../../../assets/survey-gallery-four.jpeg";
+import surveyGalleryFive from "../../../assets/survey-gallery-five.jpeg";
+import surveyGallerySix from '../../../assets/ground-profile.jpeg'
 
 const surveyData = {
   hero: {
@@ -113,9 +114,11 @@ const surveyData = {
     {
       type: "image",
       alt: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
-      title: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+      title:
+        "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
       src: surveyGalleryOne,
-      caption: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+      caption:
+        "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
     },
     {
       type: "video",
@@ -126,31 +129,31 @@ const surveyData = {
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: surveyImage2,
-      caption: "Geophysical survey walkthrough",
+      alt: "Preview of our survey toolkit",
+      title: "Preview of our survey toolkit",
+      src: surveyGalleryThree,
+      caption: "Preview of our survey toolkit",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage2,
-      caption: "On-site data collection",
+      src: surveyGalleryFour,
+      caption: "Caption",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyImage3,
-      caption: "Survey report handover",
+      src: surveyGalleryFive,
+      caption: "Caption",
     },
     {
-      type: "video",
+      type: "image",
       alt: "Alt Text",
       title: "Title Text",
-      src: surveyVideo3,
-      caption: "Findings explained on site",
+      src: surveyGallerySix,
+      caption: "Caption",
     },
   ],
 
