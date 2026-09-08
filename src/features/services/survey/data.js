@@ -3,7 +3,6 @@ import surveyImageWithClients from "../../../assets/hydrosurvey-with-clients.jpe
 
 import surveyGalleryOne from "../../../assets/consultations-sondu-kisumu.jpeg"
 import surveyGalleryTwo from "../../../assets/video2.mp4";
-import surveyVideo1 from "../../../assets/video-survey.mp4";
 import surveyImage2 from "../../../assets/image2.jpg";
 import surveyImage3 from "../../../assets/image3.jpg";
 import surveyVideo3 from "../../../assets/video3.mp4";
@@ -120,10 +119,10 @@ const surveyData = {
     },
     {
       type: "video",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "A geologist using pool finder to locate ground water",
+      title: "A geologist using pool finder to locate ground water",
       src: surveyGalleryTwo,
-      caption: "Equipment setup and readings",
+      caption: "A geologist using pool finder to locate ground water",
     },
     {
       type: "image",

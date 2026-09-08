@@ -21,9 +21,9 @@ const FEATURED_PROJECTS = [
   {
     title: "Borehole Camera Inspection",
     location: "Loloitikosh, Kajiado",
-    tagline: "Finding the right drilling point before drilling begins",
+    tagline: "Seeing what's happening inside the borehole",
     description:
-      "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
+      "An existing borehole in Loloitikosh, Kajiado, was inspected using downhole camera technology to investigate its internal condition. The inspection provided visual evidence of the borehole and casing condition, helping identify potential problems and determine whether rehabilitation or further investigation was appropriate.",
     image: featuredCameraInspection,
     alt: "Borehole camera inspection in Loloitikosh, Kajiado County",
     imageTitle: "Borehole Camera Inspection in Loloitikosh, Kajiado County",
@@ -31,9 +31,9 @@ const FEATURED_PROJECTS = [
   {
     title: "Borehole Drilling",
     location: "Joska, Machakos",
-    tagline: "Finding the right drilling point before drilling begins",
+    tagline: "Turning groundwater potential into a reliable water source",
     description:
-      "A hydrogeological survey conducted in Inkiito, Isinya to assess the area's groundwater potential and identify a suitable location for borehole development.",
+      "A borehole drilling project in Joska, Machakos, professionally supervised from drilling through borehole construction, development and test pumping. The project reflects our approach to borehole development • using hydrogeological information and drilling observations to guide decisions and establish a reliable groundwater source.",
     image: featuredBoreholeDrilling,
     alt: "Borehole drilling project in Joska Area, Machakos",
     imageTitle: "Borehole Drilling in Joska Area, Machakos",
