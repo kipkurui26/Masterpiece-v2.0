@@ -146,14 +146,14 @@ const surveyData = {
       alt: "Alt Text",
       title: "Title Text",
       src: surveyGalleryFive,
-      caption: "Caption",
+      caption: "Hydrogeological survey assessment in progress",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
       src: surveyGallerySix,
-      caption: "Caption",
+      caption: "Resistivity survey profile identifying a groundwater-bearing fracture zone for optimal borehole placement.",
     },
   ],
 

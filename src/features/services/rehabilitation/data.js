@@ -149,10 +149,10 @@ const rehabilitationData = {
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
+      title: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
       src: rehabilitationGalleryThree,
-      caption: "Fishing. Rehabilitation. Kibwezi",
+      caption: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
     },
   ],
 

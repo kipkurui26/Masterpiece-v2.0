@@ -23,7 +23,7 @@ const FEATURED_PROJECTS = [
     location: "Loloitikosh, Kajiado",
     tagline: "Seeing what's happening inside the borehole",
     description:
-      "An existing borehole in Loloitikosh, Kajiado, was inspected using downhole camera technology to investigate its internal condition. The inspection provided visual evidence of the borehole and casing condition, helping identify potential problems and determine whether rehabilitation or further investigation was appropriate.",
+      "The borehole owner wanted to verify the actual depth of the borehole, confirm whether water was present and establish whether the casing had been installed to the bottom as expected. A downhole camera inspection provided visual evidence from inside the borehole, helping the owner understand what had actually been constructed and make an informed decision on the way forward.",
     image: featuredCameraInspection,
     alt: "Borehole camera inspection in Loloitikosh, Kajiado County",
     imageTitle: "Borehole Camera Inspection in Loloitikosh, Kajiado County",

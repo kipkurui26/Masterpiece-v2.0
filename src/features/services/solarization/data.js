@@ -136,7 +136,7 @@ const solarisationData = {
       alt: "Alt Text",
       title: "Title Text",
       src: solarisationGalleryThree,
-      caption: "Caption",
+      caption: "Moments with clients before solar installations",
     },
     {
       type: "image",
@@ -150,14 +150,14 @@ const solarisationData = {
       alt: "Alt Text",
       title: "Title Text",
       src: solarisationGalleryFive,
-      caption: "Caption",
+      caption: "Elevated steel tank tower constructions fitted with solar panels under progress",
     },
     {
       type: "image",
       alt: "Alt Text",
       title: "Title Text",
       src: solarisationGallerySix,
-      caption: "Caption",
+      caption: "A Completed Tank Tower with Solar Installation",
     },
   ],
 
