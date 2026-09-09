@@ -1,13 +1,12 @@
 import equipingHeroImage from "../../../assets/borehole-equipping-project-konza-kajiado-kenya.jpeg";
 
-import boreholeEquipingProcess from '../../../assets/borehole-equiping-konza.jpeg'
+import boreholeEquipingProcess from "../../../assets/borehole-equiping-konza.jpeg";
 
-import equippingGalleryOne from '../../../assets/equipping-gallery-one.jpeg'
-import equippingGalleryTwo from '../../../assets/equipping-gallery-two.jpeg'
-import equippingGalleryThree from '../../../assets/image3.jpg'
-import equippingGalleryFour from '../../../assets/equipping-gallery-four.jpeg'
-import equippingGalleryFive from '../../../assets/equipping-gallery-five.jpeg'
-
+import equippingGalleryOne from "../../../assets/equipping-gallery-one.jpeg";
+import equippingGalleryTwo from "../../../assets/equipping-gallery-two.jpeg";
+import equippingGalleryThree from "../../../assets/image3.jpg";
+import equippingGalleryFour from "../../../assets/equipping-gallery-four.jpeg";
+import equippingGalleryFive from "../../../assets/equipping-gallery-five.jpeg";
 
 const equippingData = {
   hero: {
@@ -153,37 +152,42 @@ const equippingData = {
     {
       type: "image",
       src: equippingGalleryOne,
-      alt: "Alt Text",
-      title: "Title Text",
-      caption: "Caption",
+      alt: "Workers lowering pump and rising main into borehole using a drilling rig",
+      title: "Pump Installation",
+      caption:
+        "Lowering the submersible pump and rising main into the borehole using a mobile rig.",
     },
     {
       type: "image",
       src: equippingGalleryTwo,
-      alt: "Alt Text",
-      title: "Title Text",
-      caption: "Caption",
+      alt: "Technician wiring the pump control panel inside the borehole chamber",
+      title: "Electrical Connections",
+      caption:
+        "Technician connecting and testing electrical wiring for the pump control system.",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Technician connecting surface pipework to water storage tank",
+      title: "Surface Pipework Installation",
       src: equippingGalleryThree,
-      caption: "Caption",
+      caption:
+        "Technician installing pump controls and surface pipework during borehole equipping.",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Workers unloading rising main pipe and submersible cable from equipping rig",
+      title: "Rising Main & Cable Handling",
       src: equippingGalleryFour,
-      caption: "Caption",
+      caption:
+        "Preparing the rising main pipe and submersible cable ahead of pump installation.",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Technician fitting a water meter onto the borehole's surface pipework",
+      title: "Water Meter Installation",
       src: equippingGalleryFive,
-      caption: "Caption",
+      caption:
+        "Fitting a water meter to monitor output from the completed borehole.",
     },
   ],
 
