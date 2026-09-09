@@ -1,12 +1,11 @@
-import solarizationHeroImage from '../../../assets/borehole-solarisation-kitengela-kisaju-kajiado-kenya.jpeg'
+import solarizationHeroImage from "../../../assets/borehole-solarisation-kitengela-kisaju-kajiado-kenya.jpeg";
 
-import solarisationGalleryOne from '../../../assets/solarisation-kitengela.jpeg'
-import solarisationGallerytwo from '../../../assets/Solarisation-and-tank-tower.jpeg'
-import solarisationGalleryThree from '../../../assets/solar-gallery-three.jpeg'
-import solarisationGalleryFour from '../../../assets/solar-gallery-four.jpeg'
-import solarisationGalleryFive from '../../../assets/solar-gallery-five.jpeg'
-import solarisationGallerySix from '../../../assets/solar-gallery-six.jpeg'
-
+import solarisationGalleryOne from "../../../assets/solarisation-kitengela.jpeg";
+import solarisationGallerytwo from "../../../assets/Solarisation-and-tank-tower.jpeg";
+import solarisationGalleryThree from "../../../assets/solar-gallery-three.jpeg";
+import solarisationGalleryFour from "../../../assets/solar-gallery-four.jpeg";
+import solarisationGalleryFive from "../../../assets/solar-gallery-five.jpeg";
+import solarisationGallerySix from "../../../assets/solar-gallery-six.jpeg";
 
 const solarisationData = {
   hero: {
@@ -28,8 +27,10 @@ const solarisationData = {
       type: "image",
       src: solarizationHeroImage,
       alt: "Borehole solarisation project in Kisaju, Kitengela, Kajiado County, Kenya",
-      title: "Borehole Solarisation Project in Kisaju, Kitengela, Kajiado County, Kenya",
-      caption: "Borehole solarisation works at a project site in Kisaju, Kitengela, Kajiado County, Kenya.",
+      title:
+        "Borehole Solarisation Project in Kisaju, Kitengela, Kajiado County, Kenya",
+      caption:
+        "Borehole solarisation works at a project site in Kisaju, Kitengela, Kajiado County, Kenya.",
     },
   },
 
@@ -122,7 +123,7 @@ const solarisationData = {
       alt: "Borehole solarisation kick off at Kitengela-Kenya",
       title: "Borehole solarisation kick off at Kitengela-Kenya",
       src: solarisationGalleryOne,
-      caption: "Borehole solarisation kick off at Kitengela-Kenya",
+      caption: "Borehole solar installation kick off at Kitengela-Kenya",
     },
     {
       type: "image",
@@ -133,29 +134,31 @@ const solarisationData = {
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Masterpiece Hydro-Solutions team with community members before solar installation in Kitengela",
+      title: "Community Engagement Before Installation",
       src: solarisationGalleryThree,
       caption: "Moments with clients before solar installations",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Solar panel mounting structure installed above borehole tank stand",
+      title: "Solar Panel Mounting",
       src: solarisationGalleryFour,
-      caption: "Caption",
+      caption:
+        "Solar panel array mounted and ready for connection.",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Elevated steel tank tower constructions fitted with solar panels under progress",
+      title: "Tank Tower Solarisation in Progress",
       src: solarisationGalleryFive,
-      caption: "Elevated steel tank tower constructions fitted with solar panels under progress",
+      caption:
+        "Elevated steel tank tower constructions fitted with solar panels under progress",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Completed elevated tank tower with solar panel installation in a rural setting",
+      title: "Completed Solarised Tank Tower",
       src: solarisationGallerySix,
       caption: "A Completed Tank Tower with Solar Installation",
     },
