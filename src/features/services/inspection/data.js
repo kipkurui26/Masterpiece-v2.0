@@ -179,7 +179,7 @@ export const gallery = [
     src: inspectionGalleryThree,
     alt: "Borehole inspection equipment set up on site",
     title: "Inspection Equipment Setup",
-    caption: "Borehole inspection equipment set up on site",
+    caption: "Borehole inspection equipment set up on site at Kakuma",
   },
   {
     type: "video",
