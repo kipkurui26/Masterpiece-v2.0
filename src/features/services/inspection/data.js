@@ -1,11 +1,11 @@
-import inspectionHeroImage from "../../../assets/borehole-inspection-project-makindu-makueni-kenya.jpeg"
-import cameraInspectionProcess from '../../../assets/camera-inspection-process.jpeg'
+import inspectionHeroImage from "../../../assets/borehole-inspection-project-makindu-makueni-kenya.jpeg";
+import cameraInspectionProcess from "../../../assets/camera-inspection-process.jpeg";
 
-import inspectionGalleryOne from '../../../assets/borehole-camera-inspection-kibwezi.mp4'
-import inspectionGalleryTwo from '../../../assets/inspection-gallery-two.jpeg'
-import inspectionGalleryThree from '../../../assets/inspection-gallery-three.jpeg'
-import inspectionGalleryFour from '../../../assets/inspection-gallery-four.mp4'
-
+import inspectionGalleryOne from "../../../assets/borehole-camera-inspection-kibwezi.mp4";
+import inspectionGalleryTwo from "../../../assets/inspection-gallery-two.jpeg";
+import inspectionGalleryThree from "../../../assets/borehole-inspection-gallery.jpeg";
+import inspectionGalleryFour from "../../../assets/inspection-gallery-four.mp4";
+import inspectionGalleryFive from "../../../assets/borehole-inspection-in-kitengela.mp4";
 
 export const seo = {
   title: "Borehole Inspection Services in Kenya | Masterpiece Hydro-Solutions",
@@ -163,26 +163,32 @@ export const gallery = [
   {
     type: "image",
     src: inspectionGalleryTwo,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Caption",
+    alt: "Borehole inspection at Kakuma, Turkana",
+    title: "Borehole Inspection at Kakuma, Turkana",
+    caption: "Borehole inspection at Kakuma, Turkana",
   },
   {
     type: "video",
     src: inspectionGalleryFour,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Caption",
+    alt: "Borehole inspection in Muranga",
+    title: "Borehole Inspection in Muranga",
+    caption: "Borehole inspection in Muranga",
   },
   {
     type: "image",
     src: inspectionGalleryThree,
-    alt: "Alt Text",
-    title: "Title Text",
-    caption: "Caption",
+    alt: "Borehole inspection equipment set up on site",
+    title: "Inspection Equipment Setup",
+    caption: "Borehole inspection equipment set up on site",
+  },
+  {
+    type: "video",
+    src: inspectionGalleryFive,
+    alt: "Borehole Camera Inspection in Kitengela",
+    title: "Borehole Camera Inspection in Kitengela",
+    caption: "Borehole Camera Inspection in Kitengela",
   },
 ];
-
 export const faq = [
   {
     question:

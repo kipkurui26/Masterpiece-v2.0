@@ -1,9 +1,10 @@
 import rehabilitationImage from "../../../assets/borehole-rehabilitation-kibwezi-kenya.jpeg";
 
-import solarAssessmentRehabilitation from "../../../assets/solar-assessment-rehabilitation.jpeg";
-import pumpLiftingRehabilitation from "../../../assets/pump-lifting-for-rehabilitation.jpeg";
-import rehabilitationGalleryThree from '../../../assets/rehabilitation-gallery-three.jpeg'
-
+import rehabilitationGalleryOne from "../../../assets/solar-assessment-rehabilitation.jpeg";
+import rehabilitationGalleryTwo from "../../../assets/pump-lifting-for-rehabilitation.jpeg";
+import rehabilitationGalleryThree from "../../../assets/rehabilitation-gallery-three.jpeg";
+import rehabilitationGalleryFour from "../../../assets/consultations-sondu-kisumu.jpeg";
+import rehabilitationGalleryFive from "../../../assets/rehabillitation-in-joska.mp4";
 
 const rehabilitationData = {
   hero: {
@@ -137,22 +138,39 @@ const rehabilitationData = {
       type: "image",
       alt: "Borehole Solar Assessment Rehabilitation",
       title: "Borehole Solar Assessment Rehabilitation",
-      src: solarAssessmentRehabilitation,
+      src: rehabilitationGalleryOne,
       caption: "Borehole Solar Assessment Rehabilitation",
     },
     {
       type: "image",
       alt: "Pump Lifting For Borehole Rehabilitation",
       title: "Pump Lifting For Borehole Rehabilitation",
-      src: pumpLiftingRehabilitation,
+      src: rehabilitationGalleryTwo,
       caption: "Pump Lifting For Borehole Rehabilitation",
     },
     {
       type: "image",
       alt: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
-      title: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
+      title:
+        "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
       src: rehabilitationGalleryThree,
-      caption: "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
+      caption:
+        "Forceful Removal of Foreign Objects from an Abandoned Borehole at Ithamba Aume Primary School in Kibwezi",
+    },
+    {
+      type: "image",
+      alt: "Consultation about water quality issues on an existing borehole in Sondu Area, Kisumu",
+      title: "Water Quality Consultation, Sondu",
+      src: rehabilitationGalleryFour,
+      caption:
+        "Consultation about water quality issues on an existing borehole in Sondu Area, Kisumu",
+    },
+    {
+      type: "video",
+      alt: "Borehole rehabilitation project in progress at Joska",
+      title: "Borehole Rehabilitation in Joska",
+      src: rehabilitationGalleryFive,
+      caption: "Borehole rehabilitation project in progress at Joska",
     },
   ],
 

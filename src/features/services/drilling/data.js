@@ -1,12 +1,10 @@
 import drillingHeroImage from "../../../assets/borehole-drilling-project-kitengela-kajiado-kenya.jpeg";
-import drillingProcessPreview from '../../../assets/drilling-process-preview.jpeg'
+import drillingProcessPreview from "../../../assets/drilling-process-preview.jpeg";
 
-import drillingGalleryOne from '../../../assets/borehole-drilling-gallery-one.jpeg'
-import drillingGalleryTwo from '../../../assets/borehole-drilling-chuna-estate-kitengela.mp4'
-import drillingGalleryThree from '../../../assets/drilling-gallery-three.jpeg'
-import drillingGalleryFour from '../../../assets/drilling-gallery-four.jpeg'
-import drillingGalleryFive from '../../../assets/drilling-gallery-five.jpeg'
-
+import drillingGalleryOne from "../../../assets/borehole-drilling-gallery-one.jpeg";
+import drillingGalleryTwo from "../../../assets/borehole-drilling-chuna-estate-kitengela.mp4";
+import drillingGalleryThree from "../../../assets/drilling-in-maili-tisa.jpeg";
+import drillingGalleryFour from "../../../assets/Borehole-Drilling-behind-KAG.jpeg";
 
 const drillingData = {
   hero: {
@@ -143,30 +141,23 @@ const drillingData = {
       type: "video",
       src: drillingGalleryTwo,
       alt: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
-      title: "TBorehole Drilling at Chuna Estate Kitengela-Kenya",
+      title: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
       caption: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Borehole Drilling in Maili Tisa, Kajiado",
+      title: "Borehole Drilling in Maili Tisa, Kajiado",
       src: drillingGalleryThree,
-      caption: "Caption",
+      caption: "Borehole Drilling in Maili Tisa, Kajiado",
     },
     {
       type: "image",
-      src: drillingGalleryFour,
-      alt: "Alt Text",
-      title: "Title Text",
-      caption: "Caption",
-    },
-    {
-      type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
-      src: drillingGalleryFive,
-      caption: "Caption",
-    },
+      src: drillingGalleryFour, 
+      alt: "Borehole Drilling behind KAG, Kisaju",
+      title: "Borehole Drilling behind KAG, Kisaju",
+      caption: "Borehole Drilling behind KAG, Kisaju",
+    }
   ],
 
   faq: [

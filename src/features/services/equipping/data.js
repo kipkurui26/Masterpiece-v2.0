@@ -152,10 +152,10 @@ const equippingData = {
     {
       type: "image",
       src: equippingGalleryOne,
-      alt: "Workers lowering pump and rising main into borehole using a drilling rig",
+      alt: "Workers lowering pump and rising main into borehole",
       title: "Pump Installation",
       caption:
-        "Lowering the submersible pump and rising main into the borehole using a mobile rig.",
+        "Lowering the submersible pump and rising main into the borehole",
     },
     {
       type: "image",

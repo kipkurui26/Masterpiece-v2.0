@@ -1,12 +1,12 @@
 import surveyVideo from "../../../assets/video-survey.mp4";
 import surveyImageWithClients from "../../../assets/hydrosurvey-with-clients.jpeg";
 
-import surveyGalleryOne from "../../../assets/consultations-sondu-kisumu.jpeg";
+import surveyGalleryOne from "../../../assets/survey-in-mombasa.jpeg";
 import surveyGalleryTwo from "../../../assets/video2.mp4";
 import surveyGalleryThree from "../../../assets/tools-of-work.jpeg";
 import surveyGalleryFour from "../../../assets/survey-gallery-four.jpeg";
 import surveyGalleryFive from "../../../assets/survey-gallery-five.jpeg";
-import surveyGallerySix from '../../../assets/ground-profile.jpeg'
+import surveyGallerySix from "../../../assets/ground-profile.jpeg";
 
 const surveyData = {
   hero: {
@@ -113,12 +113,11 @@ const surveyData = {
   gallery: [
     {
       type: "image",
-      alt: "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
-      title:
-        "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+      alt: "Hydrogeological survey in a coastal area",
+      title: "Hydrogeological survey in a coastal area",
       src: surveyGalleryOne,
       caption:
-        "Brief Consultations with clients in Sondu Area Kisumu before field assessment",
+        "Geologist Okelo doing hydrogeological survey in Mombasa",
     },
     {
       type: "video",
@@ -136,24 +135,28 @@ const surveyData = {
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Hydrogeological survey in Loitoktok-Kajiado",
+      title: "Hydrogeological survey in Loitoktok-Kajiado",
       src: surveyGalleryFour,
-      caption: "Caption",
+      caption: "Hydrogeological survey in Loitoktok-Kajiado",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Hydrogeological survey assessment in progress in Kuresoi-Molo-Nakuru County",
+      title:
+        "Hydrogeological survey assessment in progress in Kuresoi-Molo-Nakuru County",
       src: surveyGalleryFive,
-      caption: "Hydrogeological survey assessment in progress",
+      caption:
+        "Hydrogeological survey assessment in progress in Kuresoi-Molo-Nakuru County",
     },
     {
       type: "image",
-      alt: "Alt Text",
-      title: "Title Text",
+      alt: "Resistivity survey profile identifying a groundwater-bearing fracture zone",
+      title:
+        "Resistivity survey profile identifying a groundwater-bearing fracture zone",
       src: surveyGallerySix,
-      caption: "Resistivity survey profile identifying a groundwater-bearing fracture zone for optimal borehole placement.",
+      caption:
+        "Resistivity survey profile identifying a groundwater-bearing fracture zone for optimal borehole placement.",
     },
   ],
 

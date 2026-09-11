@@ -141,11 +141,10 @@ const solarisationData = {
     },
     {
       type: "image",
-      alt: "Solar panel mounting structure installed above borehole tank stand",
-      title: "Solar Panel Mounting",
+      alt: "Solar panel mounting structure installed above borehole tank stand in Joska",
+      title: "Solar Panel Mounting in Joska",
       src: solarisationGalleryFour,
-      caption:
-        "Solar panel array mounted and ready for connection.",
+      caption: "Solar panel array mounted and ready for connection at Joska.",
     },
     {
       type: "image",
