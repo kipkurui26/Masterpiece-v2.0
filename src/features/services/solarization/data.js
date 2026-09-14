@@ -152,7 +152,7 @@ const solarisationData = {
       title: "Tank Tower Solarisation in Progress",
       src: solarisationGalleryFive,
       caption:
-        "Elevated steel tank tower constructions fitted with solar panels under progress",
+        "Elevated steel tank tower constructions fitted with solar panels in progress",
     },
     {
       type: "image",

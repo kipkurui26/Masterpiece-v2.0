@@ -184,9 +184,9 @@ export const gallery = [
   {
     type: "video",
     src: inspectionGalleryFive,
-    alt: "Borehole Camera Inspection in Kitengela",
-    title: "Borehole Camera Inspection in Kitengela",
-    caption: "Borehole Camera Inspection in Kitengela",
+    alt: "Borehole Camera Inspection at Luckybase Kitengela",
+    title: "Borehole Camera Inspection at Luckybase Kitengela",
+    caption: "Borehole Camera Inspection at Luckybase Kitengela",
   },
 ];
 export const faq = [
