@@ -1,4 +1,4 @@
-import heroImage from "../../../assets/hero-image.jpg";
+import snapshotOkelo from '../../../assets/okelo-snapshot.jpeg'
 
 export default function MeetTheHydrogeologist() {
   return (
@@ -15,7 +15,7 @@ export default function MeetTheHydrogeologist() {
           <div className="mx-auto sm:mx-0">
             <div className="w-48 h-48 rounded-full overflow-hidden bg-gray-200 shadow-md">
               <img
-                src={heroImage}
+                src={snapshotOkelo}
                 alt="Valentine Okelo, Lead Hydrogeologist and Director"
                 title="Valentine Okelo, Lead Hydrogeologist and Director"
                 className="w-full h-full object-cover"
