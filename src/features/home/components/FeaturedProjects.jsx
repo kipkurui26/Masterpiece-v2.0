@@ -33,7 +33,7 @@ const FEATURED_PROJECTS = [
     location: "Joska, Machakos",
     tagline: "Turning groundwater potential into a reliable water source",
     description:
-      "A borehole drilling project in Joska, Machakos, professionally supervised from drilling through borehole construction, development and test pumping. The project reflects our approach to borehole development • using hydrogeological information and drilling observations to guide decisions and establish a reliable groundwater source.",
+      "A borehole drilling project in Joska, Machakos, professionally supervised from drilling through borehole construction, development and test pumping. The project reflects our approach to borehole development using hydrogeological information and drilling observations to guide decisions and establish a reliable groundwater source.",
     image: featuredBoreholeDrilling,
     alt: "Borehole drilling project in Joska Area, Machakos",
     imageTitle: "Borehole Drilling in Joska Area, Machakos",
