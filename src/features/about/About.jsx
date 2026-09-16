@@ -9,19 +9,24 @@ import RecommendationApproach from "./components/RecommendationApproach";
 import WhoWeWorkWith from "./components/WhoWeWorkWith";
 import WhyWeExist from "./components/WhyWeExist";
 
+// SEO Setup
+import { SEO } from "../../components/SEO";
+import { PAGE_SEO } from "../../config/seo";
+
 const About = () => {
   return (
     <div className="">
-     <AboutHero/>
-     <WhyWeExist/>
-     <OurPhilosophy/>
-     <ProjectStages/>
-     <WhoWeWorkWith/>
-     <RecommendationApproach/>
-     <MeetTheHydrogeologist/>
-     <AboutStats/>
-     <AboutWhyChooseUs/>
-     <AboutFinalCTA/>
+      <SEO {...PAGE_SEO.about} />
+      <AboutHero />
+      <WhyWeExist />
+      <OurPhilosophy />
+      <ProjectStages />
+      <WhoWeWorkWith />
+      <RecommendationApproach />
+      <MeetTheHydrogeologist />
+      <AboutStats />
+      <AboutWhyChooseUs />
+      <AboutFinalCTA />
     </div>
   );
 };

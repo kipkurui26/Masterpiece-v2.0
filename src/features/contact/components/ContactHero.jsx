@@ -1,4 +1,3 @@
-// features/contact/ContactHero.jsx
 
 const scrollToEnquiryForm = () => {
   document.getElementById("enquiry-form")?.scrollIntoView({ behavior: "smooth", block: "start" });

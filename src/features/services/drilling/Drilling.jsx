@@ -8,8 +8,13 @@ import DrillingFinalCTA from "./components/DrillingFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import drillingData from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
 const Drilling = () => (
   <>
+    <SEO {...PAGE_SEO.drilling} />
     <DrillingHero />
     <DrillingWhyItMatters />
     <DrillingProcess />

@@ -8,8 +8,13 @@ import SolarisationFinalCTA from "./components/SolarisationFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import solarisationData from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
 const Solarisation = () => (
   <>
+  <SEO {...PAGE_SEO.solarisation} />
     <SolarisationHero />
     <SolarisationWhyItMatters />
     <SolarisationSuitabilityCheck />

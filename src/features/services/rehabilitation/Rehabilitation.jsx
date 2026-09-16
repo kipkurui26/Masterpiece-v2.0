@@ -8,8 +8,13 @@ import RehabilitationFinalCTA from "./components/RehabilitationFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import rehabilitationData from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
 const Rehabilitation = () => (
   <>
+  <SEO {...PAGE_SEO.rehabilitation} />
     <RehabilitationHero />
     <RehabilitationWhyItMatters />
     <RehabilitationSuitabilityCheck />

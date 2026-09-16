@@ -19,7 +19,7 @@ const EquippingFAQ = () => {
             <FAQItem
               key={item.question}
               question={item.question}
-              answer={item.answer}
+            answer={item.answer}
               isOpen={openIndex === index}
               onToggle={() => toggle(index)}
             />

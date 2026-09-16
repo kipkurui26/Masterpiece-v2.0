@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { SearchX, Home, Mail } from "lucide-react";
 
+// SEO Setup
+import { SEO } from "../SEO";
+import { PAGE_SEO } from "../../config/seo";
+
 const PageNotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4 bg-white">
+      <SEO {...PAGE_SEO.notFound} />
       <div className="max-w-md w-full text-center">
         <div className="w-20 h-20 rounded-full bg-[#0F9E9E]/10 flex items-center justify-center mx-auto mb-6">
           <SearchX className="w-9 h-9 text-[#0F9E9E]" />
@@ -18,8 +23,8 @@ const PageNotFound = () => {
         </h1>
 
         <p className="text-gray-500 leading-relaxed mb-8">
-          Looks like a typo, or the page you're looking for doesn't exist.
-          Let's get you back on track.
+          Looks like a typo, or the page you're looking for doesn't exist. Let's
+          get you back on track.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">

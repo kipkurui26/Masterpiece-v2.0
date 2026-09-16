@@ -8,8 +8,13 @@ import SurveyFinalCTA from "./components/SurveyFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import surveyData from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
 const Survey = () => (
   <>
+  <SEO {...PAGE_SEO.survey} />
     <SurveyHero />
     <SurveyWhyItMatters />
     <SurveyProcess />

@@ -8,8 +8,14 @@ import EquippingFinalCTA from "./components/EquippingFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import equippingData from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
+
 const Equipping = () => (
   <>
+    <SEO {...PAGE_SEO.equipping} />
     <EquippingHero />
     <EquippingWhyItMatters />
     <EquippingProcess />

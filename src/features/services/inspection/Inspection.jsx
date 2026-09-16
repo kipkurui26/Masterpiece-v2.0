@@ -10,9 +10,14 @@ import InspectionFinalCTA from "./components/InspectionFinalCTA";
 import MediaGallery from "../shared/MediaGallery";
 import { gallery } from "./data";
 
+// SEO Setup
+import { SEO } from "../../../components/SEO";
+import { PAGE_SEO } from "../../../config/seo";
+
 const Inspection = () => {
   return (
     <div>
+    <SEO {...PAGE_SEO.inspection} />
       <InspectionHero />
       <InspectionDeliverables />
       <InspectionUseCases />
