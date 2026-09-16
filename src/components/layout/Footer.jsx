@@ -40,7 +40,9 @@ const CONTACT = {
   phone2: "0784680228",
   whatsapp: "0797719305",
   email: "info@masterpiecehydrosolutions.co.ke",
-  facebook: "https://facebook.com/masterpiecehydrosolutions",
+  facebook: "https://www.facebook.com/masterpiecedrill",
+  tiktok: "https://www.tiktok.com/@masterpiece_solutions",
+  youtube: "#",
   website: "https://masterpiecehydrosolutions.co.ke",
 };
 
@@ -85,6 +87,18 @@ const FacebookIcon = (props) => (
   </svg>
 );
 
+const TikTokIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-3.77h-3.16v13.05a2.91 2.91 0 1 1-2-2.76V10a6.07 6.07 0 1 0 5.16 6V9.37a8 8 0 0 0 4.68 1.51V7.72a4.84 4.84 0 0 1-.91-1.03z" />
+  </svg>
+);
+
+const YouTubeIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.5v-7l6.2 3.5-6.2 3.5z" />
+  </svg>
+);
+
 const GlobeIcon = (props) => (
   <svg
     viewBox="0 0 24 24"
@@ -113,14 +127,18 @@ const Footer = () => {
   return (
     <footer className="bg-[#1B1F5C] text-gray-200">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        {/* Company */}
         <div>
           <p className="text-lg font-bold text-white">
             Masterpiece Hydro-Solutions
           </p>
+
           <p className="mt-3 text-sm leading-relaxed text-gray-300">
             Professional groundwater and borehole solutions across Kenya.
           </p>
+
           <div className="mt-5 flex gap-3">
+            {/* Facebook */}
             <a
               href={CONTACT.facebook}
               target="_blank"
@@ -131,6 +149,29 @@ const Footer = () => {
               <FacebookIcon className="h-4 w-4" />
             </a>
 
+            {/* TikTok */}
+            <a
+              href={CONTACT.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Masterpiece Hydro-Solutions on TikTok"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-500 text-gray-200 transition-colors duration-200 hover:border-[#5DD9D9] hover:text-[#5DD9D9]"
+            >
+              <TikTokIcon className="h-4 w-4" />
+            </a>
+
+            {/* YouTube */}
+            <a
+              href={CONTACT.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Masterpiece Hydro-Solutions on YouTube"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-500 text-gray-200 transition-colors duration-200 hover:border-[#5DD9D9] hover:text-[#5DD9D9]"
+            >
+              <YouTubeIcon className="h-4 w-4" />
+            </a>
+
+            {/* Website */}
             <a
               href={CONTACT.website}
               target="_blank"
@@ -143,8 +184,10 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Quick Links */}
         <div>
           <FooterHeading>Quick Links</FooterHeading>
+
           <ul className="space-y-2">
             {QUICK_LINKS.map((link) => (
               <li key={link.name}>
@@ -159,8 +202,10 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Services */}
         <div>
           <FooterHeading>Our Services</FooterHeading>
+
           <ul className="space-y-2">
             {SERVICE_LINKS.map((link) => (
               <li key={link.name}>
@@ -175,8 +220,10 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Areas + Contact */}
         <div>
           <FooterHeading>Areas We Serve</FooterHeading>
+
           <p className="text-sm leading-relaxed text-gray-300">
             {AREAS_SERVED.join(", ")}, and other areas across Kenya.
           </p>
@@ -184,7 +231,9 @@ const Footer = () => {
           <FooterHeading>
             <span className="mt-6 block">Contact</span>
           </FooterHeading>
+
           <ul className="space-y-2">
+            {/* Phone */}
             <li className="flex gap-1">
               <a
                 href={`tel:${CONTACT.phone}`}
@@ -193,25 +242,32 @@ const Footer = () => {
                 <PhoneIcon className="h-4 w-4 shrink-0" />
                 {CONTACT.phone}
               </a>
-              {" "} | {" "}
+
+              {" | "}
+
               <a
-                href={`tel:${CONTACT.phone}`}
+                href={`tel:${CONTACT.phone2}`}
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
               >
                 {CONTACT.phone2}
               </a>
             </li>
+
+            {/* WhatsApp */}
             <li>
               <a
                 href={`https://wa.me/254${CONTACT.whatsapp.replace(/^0/, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Contact Masterpiece Hydro-Solutions on WhatsApp"
                 className="flex items-center gap-2 text-sm text-gray-300 transition-colors duration-200 hover:text-[#5DD9D9]"
               >
                 <WhatsAppIcon className="h-4 w-4 shrink-0" />
                 WhatsApp {CONTACT.whatsapp}
               </a>
             </li>
+
+            {/* Email */}
             <li>
               <a
                 href={`mailto:${CONTACT.email}`}
@@ -225,9 +281,11 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-gray-400 sm:flex-row sm:px-6 lg:px-8">
           <p>© {year} Masterpiece Hydro-Solutions. All Rights Reserved.</p>
+
           <div className="flex gap-4">
             <Link
               to="/privacy-policy"
@@ -235,6 +293,7 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
+
             <Link
               to="/terms-of-use"
               className="transition-colors duration-200 hover:text-[#5DD9D9]"

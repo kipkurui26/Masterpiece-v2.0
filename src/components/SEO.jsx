@@ -3,7 +3,9 @@ import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from "../config/seo";
 
 export function SEO({ title, description, path, image, noindex = false }) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
-  const canonical = path ? `${SITE_URL}${path === "/" ? "" : path}` : null;
+  const canonical = path
+    ? `${SITE_URL}${path === "/" ? "/" : `${path}/`}`
+    : null;
   const ogImage = image || DEFAULT_OG_IMAGE;
 
   return (

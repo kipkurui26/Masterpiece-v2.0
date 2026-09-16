@@ -1,72 +1,72 @@
 export const SITE_NAME = "Masterpiece Hydro-Solutions";
-export const SITE_URL = "https://masterpiece-v2-0.vercel.app"; 
+export const SITE_URL = "https://www.masterpiecehydrosolutions.co.ke";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default-og.png`;
 
 export const PAGE_SEO = {
   home: {
-    title: "Masterpiece Hydro-Solutions",
+    title: "Masterpiece Hydro-Solutions | Borehole Services in Kenya",
     description:
-      "Expert hydrogeological surveys, borehole drilling, equipping and solarisation services across Kenya.",
+      "Borehole services in Kenya, from surveys and drilling to equipping, solarisation and rehabilitation, guided by site-specific assessment, not standard packages.",
     path: "/",
   },
   about: {
     title: "About Us",
     description:
-      "Learn about Masterpiece Hydro-Solutions — our mission, experience and expertise in water solutions.",
+      "Learn about Masterpiece Hydro-Solutions and how we approach borehole projects in Kenya, using site-specific assessment to guide groundwater and water decisions.",
     path: "/about",
   },
   contact: {
     title: "Contact Us",
     description:
-      "Get in touch with Masterpiece Hydro-Solutions for hydrogeological surveys, borehole drilling and more.",
+      "Planning a borehole in Kenya? Contact Masterpiece Hydro-Solutions for surveys, drilling, equipping, solarisation and rehabilitation services.",
     path: "/contact",
   },
   resourceCentre: {
     title: "Resource Centre",
     description:
-      "Guides, resources and information on boreholes, water solutions and hydrogeology.",
+      "Practical guides on boreholes, groundwater, water systems and borehole ownership in Kenya from Masterpiece Hydro-Solutions.",
     path: "/resource-centre",
   },
   projects: {
     title: "Our Projects",
     description:
-      "Explore completed borehole drilling, equipping and solarisation projects by Masterpiece Hydro-Solutions.",
+      "Explore Masterpiece Hydro-Solutions projects across Kenya, including hydrogeological surveys, borehole drilling, equipping and rehabilitation work.",
     path: "/projects",
   },
   survey: {
     title: "Hydrogeological Surveys",
     description:
-      "Professional hydrogeological survey services to locate and assess groundwater resources.",
+      "Hydrogeological surveys in Kenya to assess groundwater potential and guide drilling decisions before you invest. Request a survey.",
     path: "/services/hydrogeological-surveys",
   },
   drilling: {
     title: "Borehole Drilling",
     description:
-      "Reliable borehole drilling services using modern equipment and experienced teams.",
+      "Borehole drilling services in Kenya guided by hydrogeological assessment and your site's water requirements. Request a drilling quote.",
     path: "/services/borehole-drilling",
   },
   equipping: {
     title: "Borehole Equipping",
     description:
-      "Complete borehole equipping solutions including pumps, pipework and control systems.",
+      "Borehole equipping in Kenya with pumps and equipment selected for your borehole's depth, yield and water needs. Request an equipping quote.",
     path: "/services/borehole-equipping",
   },
   solarisation: {
     title: "Borehole Solarisation",
     description:
-      "Solar-powered borehole pumping solutions for sustainable, low-cost water access.",
+      "Borehole solarisation in Kenya with a solar pumping system sized to your borehole, water needs and site. Request a solarisation quote.",
     path: "/services/borehole-solarisation",
   },
   rehabilitation: {
     title: "Borehole Rehabilitation",
     description:
-      "Borehole rehabilitation and redevelopment services to restore yield and performance.",
+      "Restore a failing or underperforming borehole in Kenya. We assess the cause before recommending rehabilitation. Talk to Masterpiece.",
     path: "/services/borehole-rehabilitation",
   },
   inspection: {
     title: "Borehole Inspection",
     description:
-      "Thorough borehole inspection services using camera surveys and diagnostic testing.",
+      "Borehole inspection in Kenya before purchase, rehabilitation or continued use. Assess an existing borehole's condition before spending more on it.",
     path: "/services/borehole-inspection",
   },
   notFound: {

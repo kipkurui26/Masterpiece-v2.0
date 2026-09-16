@@ -11,10 +11,16 @@ import solarisationData from "./data";
 // SEO Setup
 import { SEO } from "../../../components/SEO";
 import { PAGE_SEO } from "../../../config/seo";
+import { ServiceSchema } from "../../../components/ServiceSchema";
 
 const Solarisation = () => (
   <>
   <SEO {...PAGE_SEO.solarisation} />
+      <ServiceSchema
+      name={PAGE_SEO.solarisation.title}
+      description={PAGE_SEO.solarisation.description}
+      path={PAGE_SEO.solarisation.path}
+    />
     <SolarisationHero />
     <SolarisationWhyItMatters />
     <SolarisationSuitabilityCheck />

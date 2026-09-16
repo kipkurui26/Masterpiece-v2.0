@@ -11,10 +11,16 @@ import surveyData from "./data";
 // SEO Setup
 import { SEO } from "../../../components/SEO";
 import { PAGE_SEO } from "../../../config/seo";
+import { ServiceSchema } from "../../../components/ServiceSchema";
 
 const Survey = () => (
   <>
-  <SEO {...PAGE_SEO.survey} />
+    <SEO {...PAGE_SEO.survey} />
+    <ServiceSchema
+      name={PAGE_SEO.survey.title}
+      description={PAGE_SEO.survey.description}
+      path={PAGE_SEO.survey.path}
+    />
     <SurveyHero />
     <SurveyWhyItMatters />
     <SurveyProcess />

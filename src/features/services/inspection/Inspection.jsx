@@ -13,11 +13,17 @@ import { gallery } from "./data";
 // SEO Setup
 import { SEO } from "../../../components/SEO";
 import { PAGE_SEO } from "../../../config/seo";
+import { ServiceSchema } from "../../../components/ServiceSchema";
 
 const Inspection = () => {
   return (
     <div>
-    <SEO {...PAGE_SEO.inspection} />
+      <SEO {...PAGE_SEO.inspection} />
+      <ServiceSchema
+        name={PAGE_SEO.inspection.title}
+        description={PAGE_SEO.inspection.description}
+        path={PAGE_SEO.inspection.path}
+      />
       <InspectionHero />
       <InspectionDeliverables />
       <InspectionUseCases />

@@ -11,11 +11,16 @@ import equippingData from "./data";
 // SEO Setup
 import { SEO } from "../../../components/SEO";
 import { PAGE_SEO } from "../../../config/seo";
-
+import { ServiceSchema } from "../../../components/ServiceSchema";
 
 const Equipping = () => (
   <>
     <SEO {...PAGE_SEO.equipping} />
+        <ServiceSchema
+      name={PAGE_SEO.equipping.title}
+      description={PAGE_SEO.equipping.description}
+      path={PAGE_SEO.equipping.path}
+    />
     <EquippingHero />
     <EquippingWhyItMatters />
     <EquippingProcess />

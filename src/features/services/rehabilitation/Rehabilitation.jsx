@@ -11,10 +11,16 @@ import rehabilitationData from "./data";
 // SEO Setup
 import { SEO } from "../../../components/SEO";
 import { PAGE_SEO } from "../../../config/seo";
+import { ServiceSchema } from "../../../components/ServiceSchema";
 
 const Rehabilitation = () => (
   <>
-  <SEO {...PAGE_SEO.rehabilitation} />
+    <SEO {...PAGE_SEO.rehabilitation} />
+    <ServiceSchema
+      name={PAGE_SEO.rehabilitation.title}
+      description={PAGE_SEO.rehabilitation.description}
+      path={PAGE_SEO.rehabilitation.path}
+    />
     <RehabilitationHero />
     <RehabilitationWhyItMatters />
     <RehabilitationSuitabilityCheck />
