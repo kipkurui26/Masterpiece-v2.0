@@ -1,5 +1,6 @@
 // src/router/AppRouter.jsx
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Home } from "../features/home";
 import { About } from "../features/about";
 import AppShell from "../components/layout/AppShell";
@@ -14,7 +15,31 @@ import { Rehabilitation } from "../features/services/rehabilitation";
 import { Inspection } from "../features/services/inspection";
 import PageNotFound from "../components/layout/PageNotFound";
 
+const TITLES = {
+  "/": "Home",
+  "/about": "About",
+  "/contact": "Contact",
+  "/resource-centre": "Resource Centre",
+  "/projects": "Projects",
+  "/services/hydrogeological-surveys": "Hydrogeological Surveys",
+  "/services/borehole-drilling": "Borehole Drilling",
+  "/services/borehole-equipping": "Borehole Equipping",
+  "/services/borehole-solarisation": "Borehole Solarisation",
+  "/services/borehole-rehabilitation": "Borehole Rehabilitation",
+  "/services/borehole-inspection": "Borehole Inspection",
+};
+
+const SITE_NAME = "Masterpiece Hydro-Solution";
+
+function usePageTitleFromRoute() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    const title = TITLES[pathname];
+    document.title = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  }, [pathname]);
+}
 const AppRouter = () => {
+  usePageTitleFromRoute();
   return (
     <Routes>
       <Route element={<AppShell />}>
