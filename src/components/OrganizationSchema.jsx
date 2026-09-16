@@ -45,6 +45,7 @@ export function OrganizationSchema() {
     sameAs: [
       "https://www.facebook.com/masterpiecedrill",
       "https://www.tiktok.com/@masterpiece_solutions",
+      "https://youtube.com/@geol.okelo1",
     ],
   };
 

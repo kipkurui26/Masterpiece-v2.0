@@ -42,7 +42,7 @@ const CONTACT = {
   email: "info@masterpiecehydrosolutions.co.ke",
   facebook: "https://www.facebook.com/masterpiecedrill",
   tiktok: "https://www.tiktok.com/@masterpiece_solutions",
-  youtube: "#",
+  youtube: "https://youtube.com/@geol.okelo1?si=CjgIkVK9hK0BHrCO",
   website: "https://masterpiecehydrosolutions.co.ke",
 };
 

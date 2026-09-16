@@ -125,8 +125,7 @@ try {
     // From is always your own verified address — never the client's.
     // Reply-To is the client's address, only when they actually gave one.
     $mail->setFrom(SMTP_USER, 'Masterpiece Hydro-Solutions Website');
-    // $mail->addAddress('sales@masterpiecehydrosolutions.co.ke');
-    $mail->addAddress('kipkuruijapheth11@gmail.com');
+    $mail->addAddress('sales@masterpiecehydrosolutions.co.ke');
 
     if ($contactMethod === 'email') {
         $mail->addReplyTo($contactDetail, $fullName);
