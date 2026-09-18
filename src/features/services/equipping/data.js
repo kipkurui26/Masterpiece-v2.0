@@ -1,4 +1,3 @@
-import equipingHeroImage from "../../../assets/borehole-equipping-project-konza-kajiado-kenya.jpeg";
 
 import boreholeEquipingProcess from "../../../assets/borehole-equiping-konza.jpeg";
 
@@ -28,7 +27,11 @@ const equippingData = {
     },
     media: {
       type: "image",
-      src: equipingHeroImage,
+      responsive: {
+        basePath: "/assets/images/optimized/equipping/borehole-equipping-project-konza-kajiado-kenya",
+        widths: [768, 1280, 1920],
+        sizes: "(min-width: 1024px) 50vw, 100vw",
+      },
       alt: "Borehole equipping project in Konza, Kajiado County, Kenya.",
       title: "Borehole Equipping Project in Konza, Kajiado County, Kenya",
       caption:

@@ -1,5 +1,3 @@
-import rehabilitationImage from "../../../assets/borehole-rehabilitation-kibwezi-kenya.jpeg";
-
 import rehabilitationGalleryOne from "../../../assets/solar-assessment-rehabilitation.jpeg";
 import rehabilitationGalleryTwo from "../../../assets/pump-lifting-for-rehabilitation.jpeg";
 import rehabilitationGalleryThree from "../../../assets/rehabilitation-gallery-three.jpeg";
@@ -25,7 +23,11 @@ const rehabilitationData = {
     },
     media: {
       type: "image",
-      src: rehabilitationImage,
+      responsive: {
+        basePath: "/assets/images/optimized/rehabilitation/borehole-rehabilitation-kibwezi-kenya",
+        widths: [768, 1280, 1920],
+        sizes: "(min-width: 1024px) 50vw, 100vw",
+      },
       alt: "Borehole rehabilitation,  began with camera. Kibwezi",
       title: "Borehole rehabilitation,  began with camera. Kibwezi",
       caption: "Borehole rehabilitation,  began with camera. Kibwezi Area",

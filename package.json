@@ -8,10 +8,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    
     "prerender": "node scripts/prerender.js",
     "sitemap": "node scripts/generate-sitemap.js",
-    "build:full": "npm run build && npm run prerender && npm run sitemap"
+    "build:full": "npm run build && npm run prerender && npm run sitemap",
+    "optimize:images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -33,6 +33,7 @@
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
     "puppeteer": "^25.11.0",
+    "sharp": "^0.35.4",
     "vite": "^8.1.1"
   },
   "allowScripts": {

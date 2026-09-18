@@ -36,21 +36,51 @@ const ImageIcon = () => (
 const MediaPlaceholder = ({
   type = "image",
   src,
+  responsive, // { basePath, widths, alt, sizes }
   poster,
   alt = "",
   caption,
   aspect = "video",
   height,
   objectFit = "cover",
+  loading = "lazy", // "lazy" | "eager"
+  fetchPriority = "auto", // "high" | "low" | "auto"
   className = "",
 }) => {
   const aspectClass = AspectRatios[aspect] || AspectRatios.video;
-
   const objectFitClass =
     objectFit === "contain" ? "object-contain" : "object-cover";
-
-  // If height is supplied, use height instead of aspect ratio.
   const sizingClass = height || aspectClass;
+
+  if (responsive) {
+    const {
+      basePath,
+      widths = [768, 1280, 1920],
+      sizes = "100vw",
+    } = responsive;
+    const avifSrcSet = widths
+      .map((w) => `${basePath}-${w}.avif ${w}w`)
+      .join(", ");
+    const webpSrcSet = widths
+      .map((w) => `${basePath}-${w}.webp ${w}w`)
+      .join(", ");
+    const fallback = `${basePath}-1280.jpg`;
+
+    return (
+      <picture>
+        <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />
+        <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
+        <img
+          src={fallback}
+          alt={alt}
+          loading={loading}
+          fetchPriority={fetchPriority}
+          decoding={loading === "eager" ? "sync" : "async"}
+          className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
+        />
+      </picture>
+    );
+  }
 
   if (src) {
     if (type === "video") {
@@ -65,11 +95,13 @@ const MediaPlaceholder = ({
         </video>
       );
     }
-
     return (
       <img
         src={src}
         alt={alt}
+        loading={loading}
+        fetchPriority={fetchPriority}
+        decoding={loading === "eager" ? "sync" : "async"}
         className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
       />
     );
@@ -80,7 +112,6 @@ const MediaPlaceholder = ({
       className={`w-full ${sizingClass} rounded-xl bg-gray-200 border border-gray-300 border-dashed flex flex-col items-center justify-center gap-2 ${className}`}
     >
       {type === "video" ? <PlayIcon /> : <ImageIcon />}
-
       <span className="text-sm text-gray-500 px-4 text-center">
         {caption ||
           (type === "video" ? "Video coming soon" : "Image coming soon")}

@@ -1,10 +1,9 @@
-import surveyVideo from "../../../assets/video-survey.mp4";
 import surveyImageWithClients from "../../../assets/hydrosurvey-with-clients.jpeg";
 
 import surveyGalleryOne from "../../../assets/survey-in-mombasa.jpeg";
 import surveyGalleryTwo from "../../../assets/video2.mp4";
 import surveyGalleryThree from "../../../assets/tools-of-work.jpeg";
-import surveyGalleryFour from "../../../assets/survey-gallery-four.jpeg";
+import surveyVideo from "../../../assets/video-survey.mp4";
 import surveyGalleryFive from "../../../assets/survey-gallery-five.jpeg";
 import surveyGallerySix from "../../../assets/ground-profile.jpeg";
 
@@ -27,11 +26,15 @@ const surveyData = {
       href: "https://wa.me/254721577588",
     },
     media: {
-      type: "video",
-      src: surveyVideo,
-      alt: "Alt text",
-      title: "Title text",
-      caption: "Hydrogeological survey field assessment",
+      type: "image",
+      responsive: {
+        basePath: "/assets/images/optimized/survey/survey-gallery-four",
+        widths: [768, 1280, 1920],
+        sizes: "(min-width: 1024px) 50vw, 100vw",
+      },
+      alt: "Hydrogeological survey in Loitoktok-Kajiado",
+      title: "Hydrogeological survey in Loitoktok-Kajiado",
+      caption: "Hydrogeological survey in Loitoktok-Kajiado",
     },
   },
 
@@ -116,8 +119,7 @@ const surveyData = {
       alt: "Hydrogeological survey in a coastal area",
       title: "Hydrogeological survey in a coastal area",
       src: surveyGalleryOne,
-      caption:
-        "Geologist Okelo doing hydrogeological survey in Mombasa",
+      caption: "Geologist Okelo doing hydrogeological survey in Mombasa",
     },
     {
       type: "video",
@@ -134,11 +136,11 @@ const surveyData = {
       caption: "Preview of our survey toolkit",
     },
     {
-      type: "image",
-      alt: "Hydrogeological survey in Loitoktok-Kajiado",
-      title: "Hydrogeological survey in Loitoktok-Kajiado",
-      src: surveyGalleryFour,
-      caption: "Hydrogeological survey in Loitoktok-Kajiado",
+      type: "video",
+      alt: "Hydrogeological survey field assessment",
+      title: "Hydrogeological survey field assessment",
+      src: surveyVideo,
+      caption: "Hydrogeological survey field assessment",
     },
     {
       type: "image",

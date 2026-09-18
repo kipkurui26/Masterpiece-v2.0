@@ -15,6 +15,7 @@ import { Rehabilitation } from "../features/services/rehabilitation";
 import { Inspection } from "../features/services/inspection";
 import PrivacyPolicy from "../components/ui/PrivacyPolicy";
 import PageNotFound from "../components/layout/PageNotFound";
+import TermsOfUse from "../components/ui/TermsOfUse";
 
 const TITLES = {
   "/": "Home",
@@ -66,6 +67,7 @@ const AppRouter = () => {
       </Route>
 
       <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
+      <Route path="terms-of-use" element={<TermsOfUse/>}/>
 
       {/* Outside AppShell — no Navbar/Footer */}
       <Route path="*" element={<PageNotFound />} />

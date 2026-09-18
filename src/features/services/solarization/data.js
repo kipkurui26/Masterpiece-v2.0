@@ -1,5 +1,3 @@
-import solarizationHeroImage from "../../../assets/borehole-solarisation-kitengela-kisaju-kajiado-kenya.jpeg";
-
 import solarisationGalleryOne from "../../../assets/solarisation-kitengela.jpeg";
 import solarisationGallerytwo from "../../../assets/Solarisation-and-tank-tower.jpeg";
 import solarisationGalleryThree from "../../../assets/solar-gallery-three.jpeg";
@@ -25,7 +23,11 @@ const solarisationData = {
     },
     media: {
       type: "image",
-      src: solarizationHeroImage,
+      responsive: {
+        basePath: "/assets/images/optimized/solarisation/borehole-solarisation-kitengela-kisaju-kajiado-kenya",
+        widths: [768, 1280, 1920],
+        sizes: "(min-width: 1024px) 50vw, 100vw",
+      },
       alt: "Borehole solarisation project in Kisaju, Kitengela, Kajiado County, Kenya",
       title:
         "Borehole Solarisation Project in Kisaju, Kitengela, Kajiado County, Kenya",

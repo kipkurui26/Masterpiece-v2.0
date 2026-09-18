@@ -1,4 +1,3 @@
-import inspectionHeroImage from "../../../assets/borehole-inspection-project-makindu-makueni-kenya.jpeg";
 import cameraInspectionProcess from "../../../assets/camera-inspection-process.jpeg";
 
 import inspectionGalleryOne from "../../../assets/borehole-camera-inspection-kibwezi.mp4";
@@ -30,7 +29,11 @@ export const hero = {
   },
   media: {
     type: "image",
-    src: inspectionHeroImage,
+    responsive: {
+      basePath: "/assets/images/optimized/inspection/borehole-inspection-project-makindu-makueni-kenya",
+      widths: [768, 1280, 1920],
+      sizes: "(min-width: 1024px) 50vw, 100vw",
+    },
     alt: "Borehole Camera Inspection Setup",
     title: "Borehole Camera Inspection Setup",
     caption: "Borehole Camera Inspection Setup",

@@ -30,12 +30,13 @@ const SurveyHero = () => (
         <div className="w-full">
           <MediaPlaceholder
             type={hero.media.type}
-            src={hero.media.src}
-            caption={hero.media.caption}
-            title={hero.media.title}
+            responsive={hero.media.responsive}
             alt={hero.media.alt}
+            title={hero.media.title}
             aspect="wide"
-            className="border border-white/20"
+            objectFit="contain"
+            loading="eager"
+            fetchPriority="high"
           />
           <p className="px-4 py-3 text-sm italic text-gray-100 text-center">
             {hero.media.caption}

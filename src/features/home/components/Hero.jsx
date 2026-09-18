@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
-import heroImage from "../../../assets/borehole-drilling-project-eldama-ravine-kenya.jpeg";
+
+const HERO_BASE_PATH = "/assets/images/optimized/home/borehole-drilling-project-eldama-ravine-kenya";
+const HERO_WIDTHS = [768, 1280, 1920];
 
 const Hero = () => {
+  const avifSrcSet = HERO_WIDTHS.map((w) => `${HERO_BASE_PATH}-${w}.avif ${w}w`).join(", ");
+  const webpSrcSet = HERO_WIDTHS.map((w) => `${HERO_BASE_PATH}-${w}.webp ${w}w`).join(", ");
+  const fallback = `${HERO_BASE_PATH}-1280.jpg`;
+
   return (
     <section className="bg-[#5DD9D9]/20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
@@ -31,7 +37,6 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            {/* Primary CTA — lands on the contact page and scrolls to the enquiry form */}
             <Link
               to="/contact#enquiry-form"
               className="inline-block rounded-md bg-[#1B1F5C] px-6 py-3 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#141748]"
@@ -39,10 +44,8 @@ const Hero = () => {
               Discuss Your Project
             </Link>
 
-            {/* Secondary CTA - anchors to #services section on the homepage */}
-
-            <a
-              href="#services"
+            
+            <a  href="#services"
               className="inline-block rounded-md border border-[#1B1F5C] px-6 py-3 text-center text-sm font-semibold text-[#1B1F5C] transition-colors duration-200 hover:bg-[#1B1F5C] hover:text-white"
             >
               Explore Our Services
@@ -50,15 +53,22 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Media column — swap src for the real hero image/video once assets arrive */}
+        {/* Media column */}
         <div className="order-first lg:order-last">
           <div className="overflow-hidden rounded-2xl">
-            <img
-              src={heroImage}
-              alt="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
-              title="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
-              className="aspect-4/3 w-full object-cover"
-            />
+            <picture>
+              <source type="image/avif" srcSet={avifSrcSet} sizes="(min-width: 1024px) 50vw, 100vw" />
+              <source type="image/webp" srcSet={webpSrcSet} sizes="(min-width: 1024px) 50vw, 100vw" />
+              <img
+                src={fallback}
+                alt="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
+                title="Borehole drilling rig operating at a project site in Eldama Ravine, Kenya"
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
+                className="aspect-4/3 w-full object-cover"
+              />
+            </picture>
 
             <p className="px-4 py-3 text-sm italic text-gray-600 text-center">
               A borehole drilling project in Eldama Ravine, Kenya, documented on

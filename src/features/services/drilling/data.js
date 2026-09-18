@@ -1,4 +1,3 @@
-import drillingHeroImage from "../../../assets/borehole-drilling-project-kitengela-kajiado-kenya.jpeg";
 import drillingProcessPreview from "../../../assets/drilling-process-preview.jpeg";
 
 import drillingGalleryOne from "../../../assets/borehole-drilling-gallery-one.jpeg";
@@ -24,7 +23,12 @@ const drillingData = {
     },
     media: {
       type: "image",
-      src: drillingHeroImage,
+      responsive: {
+        basePath:
+          "/assets/images/optimized/drilling/borehole-drilling-project-kitengela-kajiado-kenya",
+        widths: [768, 1280, 1920],
+        sizes: "(min-width: 1024px) 50vw, 100vw",
+      },
       alt: "Borehole drilling project in Kitengela, Kajiado County, Kenya",
       title: "Borehole Drilling Project in Kitengela, Kajiado County, Kenya",
       caption:
@@ -153,11 +157,11 @@ const drillingData = {
     },
     {
       type: "image",
-      src: drillingGalleryFour, 
+      src: drillingGalleryFour,
       alt: "Borehole Drilling behind KAG, Kisaju",
       title: "Borehole Drilling behind KAG, Kisaju",
       caption: "Borehole Drilling behind KAG, Kisaju",
-    }
+    },
   ],
 
   faq: [
