@@ -13,6 +13,7 @@ import { Equipping } from "../features/services/equipping";
 import { Solarization } from "../features/services/solarization";
 import { Rehabilitation } from "../features/services/rehabilitation";
 import { Inspection } from "../features/services/inspection";
+import PrivacyPolicy from "../components/ui/PrivacyPolicy";
 import PageNotFound from "../components/layout/PageNotFound";
 
 const TITLES = {
@@ -63,6 +64,8 @@ const AppRouter = () => {
         />
         <Route path="/services/borehole-inspection" element={<Inspection />} />
       </Route>
+
+      <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
 
       {/* Outside AppShell — no Navbar/Footer */}
       <Route path="*" element={<PageNotFound />} />
