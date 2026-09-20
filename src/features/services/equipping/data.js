@@ -201,7 +201,7 @@ const equippingData = {
       title: "Pump Installation – Kisaju",
       src: equippingGallerySix,
       caption:
-        "PVC casing pipes staged alongside the equipping rig during pump installation in Kisaju.",
+        "PVC casing pipes staged alongside the equipping truck during pump installation in Kisaju.",
     },
     {
       type: "image",
@@ -209,7 +209,7 @@ const equippingData = {
       title: "Pump Installation – Kuresoi",
       src: equippingGallerySeven,
       caption:
-        "Assembling surface pipe fittings and control valves during pump installation in Kuresoi.",
+        "Unpacking of submersible pump and motor for coupling, ready for installation in Kuresoi.",
     },
     {
       type: "image",
@@ -217,7 +217,7 @@ const equippingData = {
       title: "Pump Installation – Chuna Estate",
       src: equippingGalleryEight,
       caption:
-        "Connecting the submersible pump and rising main during equipping at Chuna Estate.",
+        "Coupling submersible pump and motor at Chuna Estate.",
     },
   ],
 
