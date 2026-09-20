@@ -1,9 +1,11 @@
 import drillingProcessPreview from "../../../assets/drilling-process-preview.jpeg";
 
 import drillingGalleryOne from "../../../assets/borehole-drilling-gallery-one.jpeg";
-import drillingGalleryTwo from "../../../assets/borehole-drilling-chuna-estate-kitengela.mp4";
-import drillingGalleryThree from "../../../assets/drilling-in-maili-tisa.jpeg";
-import drillingGalleryFour from "../../../assets/Borehole-Drilling-behind-KAG.jpeg";
+import drillingGalleryTwo from "../../../assets/borehole-drilling-eldama-ravine.jpeg";
+import drillingGalleryThree from "../../../assets/borehole-drilling-in-kitengela-kenya.mp4";
+import drillingGalleryFour from "../../../assets/borehole-drilling-eldama-ravine-baringo.jpeg";
+import drillingGalleryFive from "../../../assets/drilling-in-maili-tisa.jpeg";
+import drillingGallerySix from "../../../assets/Borehole-Drilling-behind-KAG.jpeg";
 
 const drillingData = {
   hero: {
@@ -142,22 +144,36 @@ const drillingData = {
       caption: "Borehole Drilling in Joska Area Machakos County",
     },
     {
-      type: "video",
+      type: "image",
       src: drillingGalleryTwo,
-      alt: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
-      title: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
-      caption: "Borehole Drilling at Chuna Estate Kitengela-Kenya",
+      alt: "Borehole Drilling in Eldama Ravine, Kenya",
+      title: "Borehole Drilling in Eldama Ravine, Kenya",
+      caption: "Borehole Drilling in Eldama Ravine, Kenya",
+    },
+    {
+      type: "video",
+      src: drillingGalleryThree,
+      alt: "Borehole Drilling in Kitengela, Kenya",
+      title: "Borehole Drilling in Kitengela, Kenya",
+      caption: "Borehole Drilling in Kitengela, Kenya",
+    },
+    {
+      type: "image",
+      src: drillingGalleryFour,
+      alt: "Borehole Drilling in Eldama Ravine, Kenya",
+      title: "Borehole Drilling in Eldama Ravine, Kenya",
+      caption: "Borehole Drilling in Eldama Ravine, Kenya",
     },
     {
       type: "image",
       alt: "Borehole Drilling in Maili Tisa, Kajiado",
       title: "Borehole Drilling in Maili Tisa, Kajiado",
-      src: drillingGalleryThree,
+      src: drillingGalleryFive,
       caption: "Borehole Drilling in Maili Tisa, Kajiado",
     },
     {
       type: "image",
-      src: drillingGalleryFour,
+      src: drillingGallerySix,
       alt: "Borehole Drilling behind KAG, Kisaju",
       title: "Borehole Drilling behind KAG, Kisaju",
       caption: "Borehole Drilling behind KAG, Kisaju",

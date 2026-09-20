@@ -117,15 +117,17 @@ const FeaturedProjects = () => {
               </div>
             ))}
           </div>
+          
+           {/* TODO : Uncomment the Projects link once implemented */}
 
-          <div className="mt-10 text-center">
+          {/* <div className="mt-10 text-center">
             <Link
               to="/projects"
               className="text-sm font-semibold text-[#0F9E9E] transition-colors duration-200 hover:text-[#1B1F5C]"
             >
               View Our Projects →
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 

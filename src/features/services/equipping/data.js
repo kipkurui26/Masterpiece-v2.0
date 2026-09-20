@@ -1,4 +1,3 @@
-
 import boreholeEquipingProcess from "../../../assets/borehole-equiping-konza.jpeg";
 
 import equippingGalleryOne from "../../../assets/equipping-gallery-one.jpeg";
@@ -6,6 +5,9 @@ import equippingGalleryTwo from "../../../assets/equipping-gallery-two.jpeg";
 import equippingGalleryThree from "../../../assets/image3.jpg";
 import equippingGalleryFour from "../../../assets/equipping-gallery-four.jpeg";
 import equippingGalleryFive from "../../../assets/equipping-gallery-five.jpeg";
+import equippingGallerySix from "../../../assets/borehole-equipping-gallery-addition.jpeg";
+import equippingGallerySeven from "../../../assets/borehole-equipping-exhebition-two.jpeg";
+import equippingGalleryEight from "../../../assets/borehole-equipping-exhebition-three.jpeg";
 
 const equippingData = {
   hero: {
@@ -28,7 +30,8 @@ const equippingData = {
     media: {
       type: "image",
       responsive: {
-        basePath: "/assets/images/optimized/equipping/borehole-equipping-project-konza-kajiado-kenya",
+        basePath:
+          "/assets/images/optimized/equipping/borehole-equipping-project-konza-kajiado-kenya",
         widths: [768, 1280, 1920],
         sizes: "(min-width: 1024px) 50vw, 100vw",
       },
@@ -191,6 +194,30 @@ const equippingData = {
       src: equippingGalleryFive,
       caption:
         "Fitting a water meter to monitor output from the completed borehole.",
+    },
+    {
+      type: "image",
+      alt: "Equipping rig and PVC casing pipes staged at a borehole site in Kisaju",
+      title: "Pump Installation – Kisaju",
+      src: equippingGallerySix,
+      caption:
+        "PVC casing pipes staged alongside the equipping rig during pump installation in Kisaju.",
+    },
+    {
+      type: "image",
+      alt: "Technician assembling surface pipe fittings and control valves for a borehole pump in Kuresoi",
+      title: "Pump Installation – Kuresoi",
+      src: equippingGallerySeven,
+      caption:
+        "Assembling surface pipe fittings and control valves during pump installation in Kuresoi.",
+    },
+    {
+      type: "image",
+      alt: "Technicians connecting the rising main and submersible pump at a borehole in Chuna Estate",
+      title: "Pump Installation – Chuna Estate",
+      src: equippingGalleryEight,
+      caption:
+        "Connecting the submersible pump and rising main during equipping at Chuna Estate.",
     },
   ],
 
