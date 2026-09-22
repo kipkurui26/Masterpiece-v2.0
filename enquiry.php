@@ -50,10 +50,10 @@ if ($elapsed < 3) {
     exit;
 }
 
-// --- Required fields ---
+// --- Required fields (message is optional — handled separately below) ---
 $required = [
     'fullName', 'location', 'hasBorehole', 'projectType',
-    'projectStage', 'message', 'contactMethod', 'contactDetail',
+    'projectStage', 'contactMethod', 'contactDetail',
 ];
 foreach ($required as $field) {
     if (trim((string)($data[$field] ?? '')) === '') {
@@ -96,9 +96,18 @@ $location     = e($data['location']);
 $hasBorehole  = $data['hasBorehole'] === 'yes' ? 'Yes' : 'No';
 $projectType  = e($data['projectType']);
 $projectStage = e($data['projectStage']);
-$message      = nl2br(e($data['message']));
 $contactMethodLabel = ucfirst($contactMethod);
 $contactDetailSafe  = e($contactDetail);
+
+// Message is optional — only build a "Project Details" block if something was provided
+$rawMessage = trim((string)($data['message'] ?? ''));
+$projectDetailsHtml = '';
+$projectDetailsText = '';
+if ($rawMessage !== '') {
+    $messageHtml = nl2br(e($rawMessage));
+    $projectDetailsHtml = "<h3>Project Details</h3><p>$messageHtml</p>";
+    $projectDetailsText = "\n\n$rawMessage";
+}
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -141,12 +150,11 @@ try {
         <p><b>Project Stage:</b> $projectStage</p>
         <p><b>Preferred Contact Method:</b> $contactMethodLabel</p>
         <p><b>Contact Detail:</b> $contactDetailSafe</p>
-        <h3>Project Details</h3>
-        <p>$message</p>
+        $projectDetailsHtml
     ";
     $mail->AltBody = "New enquiry from $fullName ($location). "
         . "Existing borehole: $hasBorehole. Type: $projectType. Stage: $projectStage. "
-        . "Contact via $contactMethodLabel: $contactDetailSafe.\n\n$message";
+        . "Contact via $contactMethodLabel: $contactDetailSafe.$projectDetailsText";
 
     $mail->send();
     echo json_encode(['success' => true]);

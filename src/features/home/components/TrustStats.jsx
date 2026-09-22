@@ -1,12 +1,5 @@
-// TrustStats.jsx
 import { useEffect, useRef, useState } from "react";
-
-const STATS = [
-  { value: 455, suffix: "+", label: "Hydrogeological Surveys Completed" },
-  { value: 80, suffix: "+", label: "Boreholes Drilled & Equipped" },
-  { value: 36, suffix: "+", label: "Boreholes Rehabilitated" },
-  { value: 40, suffix: "+", label: "Borehole Inspections Conducted" },
-];
+import useStats from "../../../hooks/useStats";
 
 // Lightweight count-up on scroll into view — no extra dependency required
 const useCountUp = (target, shouldStart, duration = 1400) => {
@@ -49,6 +42,30 @@ const StatItem = ({ value, suffix, label, shouldStart }) => {
 const TrustStats = () => {
   const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
+  const liveStats = useStats();
+
+  const STATS = [
+    {
+      value: liveStats.surveysCompleted,
+      suffix: "+",
+      label: "Hydrogeological Surveys Completed",
+    },
+    {
+      value: liveStats.boreholesDrilledEquipped,
+      suffix: "+",
+      label: "Boreholes Drilled & Equipped",
+    },
+    {
+      value: liveStats.boreholesRehabilitated,
+      suffix: "+",
+      label: "Boreholes Rehabilitated",
+    },
+    {
+      value: liveStats.boreholeInspections,
+      suffix: "+",
+      label: "Borehole Inspections Conducted",
+    },
+  ];
 
   useEffect(() => {
     const node = sectionRef.current;
@@ -61,7 +78,7 @@ const TrustStats = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     observer.observe(node);
@@ -72,7 +89,8 @@ const TrustStats = () => {
     <section ref={sectionRef} className="bg-white py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="mb-10 text-center text-lg font-semibold uppercase tracking-wide text-[#0F9E9E]">
-          Trusted by Property Owners, Farmers, Businesses, and Institutions Across Kenya
+          Trusted by Property Owners, Farmers, Businesses, and Institutions
+          Across Kenya
         </p>
 
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
@@ -82,8 +100,8 @@ const TrustStats = () => {
         </div>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Backed by years of field experience and hundreds of completed groundwater projects
-          across Kenya.
+          Backed by years of field experience and hundreds of completed
+          groundwater projects across Kenya.
         </p>
       </div>
     </section>

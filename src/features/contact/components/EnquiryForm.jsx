@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from "react";
+import useStats from "../../../hooks/useStats";
 
 // const ENDPOINT_URL = import.meta.env.VITE_ENQUIRY_ENDPOINT;
 // const ENDPOINT_URL = 'http://localhost:8000/enquiry.php';
@@ -104,7 +105,7 @@ function EnquiryToast({ onClose }) {
       clearTimeout(timeout);
     };
   }, [onClose]);
-  
+
   return (
     <div
       role="status"
@@ -185,6 +186,7 @@ export default function EnquiryForm() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle"); // idle | submitting | error
   const [toast, setToast] = useState(null); // null | { key: number }
+  const stats = useStats();
   const mountedAt = useRef(0);
 
   useEffect(() => {
@@ -237,8 +239,6 @@ export default function EnquiryForm() {
       next.projectType = "Please select a project type.";
     if (!formData.projectStage)
       next.projectStage = "Please select your project stage.";
-    if (!formData.message.trim())
-      next.message = "Please tell us about your project.";
     if (!formData.contactMethod)
       next.contactMethod = "Please choose a contact method.";
 
@@ -333,7 +333,12 @@ export default function EnquiryForm() {
 
       <div className="mx-auto max-w-2xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-[#1B1F5C] sm:text-4xl">
+          <p className="text-xl text-gray-600 font-bold">
+            {stats.surveysCompleted}+ surveys and{" "}
+            {stats.boreholesDrilledEquipped}+ borehole projects completed across
+            Kenya.
+          </p>
+          <h2 className="mt-2 text-3xl font-bold text-[#1B1F5C] sm:text-4xl">
             Your Enquiry Starts With a Conversation
           </h2>
           <p className="mt-4 text-gray-600">
@@ -449,11 +454,7 @@ export default function EnquiryForm() {
             </select>
           </FormField>
 
-          <FormField
-            label="Tell Us About Your Project"
-            required
-            error={errors.message}
-          >
+          <FormField label="Tell Us About Your Project" error={errors.message}>
             <textarea
               rows={5}
               className={inputClasses(errors.message)}

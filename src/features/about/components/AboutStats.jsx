@@ -1,11 +1,27 @@
-const stats = [
-  { value: "455+", label: "Hydrogeological Surveys Completed" },
-  { value: "80+", label: "Boreholes Drilled & Equipped" },
-  { value: "36+", label: "Boreholes Rehabilitated" },
-  { value: "40+", label: "Borehole Inspections Conducted" },
-];
+import useStats from "../../../hooks/useStats";
 
 export default function AboutStats() {
+  const liveStats = useStats();
+
+  const stats = [
+    {
+      value: `${liveStats.surveysCompleted}+`,
+      label: "Hydrogeological Surveys Completed",
+    },
+    {
+      value: `${liveStats.boreholesDrilledEquipped}+`,
+      label: "Boreholes Drilled & Equipped",
+    },
+    {
+      value: `${liveStats.boreholesRehabilitated}+`,
+      label: "Boreholes Rehabilitated",
+    },
+    {
+      value: `${liveStats.boreholeInspections}+`,
+      label: "Borehole Inspections Conducted",
+    },
+  ];
+
   return (
     <section className="bg-[#1B1F5C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -14,9 +30,9 @@ export default function AboutStats() {
             Experience Across Different Groundwater Conditions
           </h2>
           <p className="mt-4 text-gray-300 leading-relaxed">
-            Every recommendation we make is informed by experience gained
-            across hundreds of groundwater projects carried out in
-            different geological settings across Kenya.
+            Every recommendation we make is informed by experience gained across
+            hundreds of groundwater projects carried out in different geological
+            settings across Kenya.
           </p>
         </div>
 
