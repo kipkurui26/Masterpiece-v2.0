@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const STATS_ENDPOINT_URL = "https://masterpiecehydrosolutions.co.ke/stats.php";
+const STATS_ENDPOINT_URL = "/stats.php";
 
 // Shown immediately on mount and kept if the fetch fails
 const DEFAULT_STATS = {
