@@ -1,8 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import useStats from "../../../hooks/useStats";
 
-// const ENDPOINT_URL = import.meta.env.VITE_ENQUIRY_ENDPOINT;
-// const ENDPOINT_URL = 'http://localhost:8000/enquiry.php';
 const ENDPOINT_URL = "https://masterpiecehydrosolutions.co.ke/enquiry.php";
 const MIN_SUBMIT_SECONDS = 3;
 const TOAST_DURATION_MS = 8000;
