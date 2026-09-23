@@ -6,6 +6,7 @@ import drillingGalleryThree from "../../../assets/borehole-drilling-in-kitengela
 import drillingGalleryFour from "../../../assets/borehole-drilling-eldama-ravine-baringo.jpeg";
 import drillingGalleryFive from "../../../assets/drilling-in-maili-tisa.jpeg";
 import drillingGallerySix from "../../../assets/Borehole-Drilling-behind-KAG.jpeg";
+import drillingGallerySeven from "../../../assets/groundbreaking-process-in athi-river.mp4";
 
 const drillingData = {
   hero: {
@@ -177,6 +178,13 @@ const drillingData = {
       alt: "Borehole Drilling behind KAG, Kisaju",
       title: "Borehole Drilling behind KAG, Kisaju",
       caption: "Borehole Drilling behind KAG, Kisaju",
+    },
+    {
+      type: "video",
+      src: drillingGallerySeven,
+      alt: "Groundbreaking process during drilling in Athi River",
+      title: "Groundbreaking process during drilling in Athi River",
+      caption: "Groundbreaking process during drilling in Athi River",
     },
   ],
 
