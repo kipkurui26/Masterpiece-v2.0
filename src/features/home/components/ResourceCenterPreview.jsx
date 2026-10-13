@@ -1,24 +1,36 @@
 import { Link } from "react-router-dom";
 
 const POPULAR_RESOURCES = [
-  { name: "Hydrogeological Surveys", path: "/resource-centre/hydrogeological-surveys" },
-  { name: "Borehole Drilling", path: "/resource-centre/borehole-drilling" },
-  { name: "Borehole Costs", path: "/resource-centre/borehole-costs" },
-  { name: "Test Pumping", path: "/resource-centre/test-pumping" },
-  { name: "Water Quality Analysis", path: "/resource-centre/water-quality-analysis" },
-  { name: "Borehole Rehabilitation", path: "/resource-centre/borehole-rehabilitation" },
-  { name: "Borehole Solarisation", path: "/resource-centre/borehole-solarisation" },
+  {
+    name: "Hydrogeological Surveys",
+    path: "/resource-centre?category=hydrogeological-survey",
+  },
+  {
+    name: "Borehole Drilling",
+    path: "/resource-centre?category=borehole-drilling",
+  },
+  {
+    name: "Borehole Rehabilitation",
+    path: "/resource-centre?category=borehole-rehabilitation",
+  },
+  {
+    name: "Borehole Solarisation",
+    path: "/resource-centre?category=borehole-solarisation",
+  },
 ];
 
 const ResourceCentrePreview = () => {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">Learn Before You Invest</h2>
+        <h2 className="text-2xl font-bold text-[#1B1F5C] sm:text-3xl">
+          Learn Before You Invest
+        </h2>
         <p className="mt-3 text-base text-gray-600">
-          Make informed decisions before investing in your borehole project. Explore practical
-          guides covering every stage of groundwater development, from hydrogeological surveys
-          and drilling to rehabilitation, solarisation, and long-term borehole management.
+          Make informed decisions before investing in your borehole project.
+          Explore practical guides covering every stage of groundwater
+          development, from hydrogeological surveys and drilling to
+          rehabilitation, solarisation, and long-term borehole management.
         </p>
 
         <p className="mt-8 text-sm font-semibold uppercase tracking-wide text-[#0F9E9E]">

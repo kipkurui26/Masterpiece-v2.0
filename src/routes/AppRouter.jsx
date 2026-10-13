@@ -3,8 +3,10 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Home } from "../features/home";
 import { About } from "../features/about";
-import AppShell from "../components/layout/AppShell";
+import { ResourceCenter } from "../features/resource-center";
 import { Contact } from "../features/contact";
+
+import AppShell from "../components/layout/AppShell";
 import { Survey } from "../features/services/survey";
 import { Drilling } from "../features/services/drilling";
 import { Equipping } from "../features/services/equipping";
@@ -45,6 +47,7 @@ const AppRouter = () => {
       <Route element={<AppShell />}>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/resource-centre" element={<ResourceCenter />} />
         <Route path="/contact" element={<Contact />} />
 
         {/* {TODO : Nest the services pages} */}

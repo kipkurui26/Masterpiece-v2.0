@@ -1,10 +1,10 @@
 export const SITE_NAME = "Masterpiece Hydro-Solutions";
 export const SITE_URL = "https://www.masterpiecehydrosolutions.co.ke";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default-og.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/display-image.jpeg`;
 
 export const PAGE_SEO = {
   home: {
-    title: "Masterpiece Hydro-Solutions | Borehole Services in Kenya",
+    title: "Borehole Services in Kenya",
     description:
       "Borehole services in Kenya, from surveys and drilling to equipping, solarisation and rehabilitation, guided by site-specific assessment, not standard packages.",
     path: "/",

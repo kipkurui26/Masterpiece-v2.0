@@ -21,7 +21,21 @@ export function SEO({ title, description, path, image, noindex = false }) {
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta
+        property="og:image:alt"
+        content={`${SITE_NAME} borehole drilling in Kenya`}
+      />
       {canonical && <meta property="og:url" content={canonical} />}
+
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta
+        property="og:image:alt"
+        content={`${SITE_NAME} borehole drilling in Kenya`}
+      />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
