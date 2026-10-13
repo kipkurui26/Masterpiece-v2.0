@@ -72,12 +72,10 @@ const ResourceCenter = () => {
             Learn Before You Invest
           </p>
           <h1 className="text-3xl font-bold text-[#1B1F5C] sm:text-4xl">
-            Resource Centre
+            Knowledge Centre
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-gray-700 sm:text-lg">
-            Practical guides on boreholes, groundwater and water systems in
-            Kenya, from hydrogeological surveys and drilling to solarisation
-            and rehabilitation.
+            Practical guideance for farmers and land owners planning, drilling or maintaining a borehole
           </p>
         </div>
       </section>
