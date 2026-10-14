@@ -72,7 +72,7 @@ const ResourceCenter = () => {
             Learn Before You Invest
           </p>
           <h1 className="text-3xl font-bold text-[#1B1F5C] sm:text-4xl">
-            Knowledge Centre
+            Borehole Knowledge Centre
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-gray-700 sm:text-lg">
             Practical information to help you make smarter borehole and water decisions before you spend.
