@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const QUICK_LINKS = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
+  { name: "Knowledge Centre", path: "/knowledge-centre" },
   { name: "Contact Us", path: "/contact" },
 ];
 

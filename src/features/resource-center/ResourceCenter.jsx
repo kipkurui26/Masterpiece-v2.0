@@ -75,7 +75,7 @@ const ResourceCenter = () => {
             Knowledge Centre
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-gray-700 sm:text-lg">
-            Practical guideance for farmers and land owners planning, drilling or maintaining a borehole
+            Practical information to help you make smarter borehole and water decisions before you spend.
           </p>
         </div>
       </section>

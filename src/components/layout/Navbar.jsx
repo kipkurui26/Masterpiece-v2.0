@@ -22,7 +22,7 @@ const NAV_LINKS = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services", children: SERVICE_LINKS },
-  { name: "Resource Centre", path: "/resource-centre" },
+  { name: "Knowledge Centre", path: "/knowledge-centre" },
   { name: "Contact", path: "/contact" },
 ];
 

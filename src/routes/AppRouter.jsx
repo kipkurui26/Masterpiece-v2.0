@@ -47,7 +47,7 @@ const AppRouter = () => {
       <Route element={<AppShell />}>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/resource-centre" element={<ResourceCenter />} />
+        <Route path="/knowledge-centre" element={<ResourceCenter />} />
         <Route path="/contact" element={<Contact />} />
 
         {/* {TODO : Nest the services pages} */}

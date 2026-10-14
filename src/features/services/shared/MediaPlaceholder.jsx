@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 const AspectRatios = {
   video: "aspect-video",
   square: "aspect-square",
@@ -33,6 +35,45 @@ const ImageIcon = () => (
   </svg>
 );
 
+/**
+ * Wraps an <img> with a pulsing skeleton until it has loaded (or failed).
+ * The frame owns the aspect ratio, so there's no layout shift when the image arrives.
+ */
+const ImageFrame = ({ frameKey, sizingClass, className, children }) => {
+  const [settledKey, setSettledKey] = useState(null);
+  const imgRef = useRef(null);
+  const settled = settledKey === frameKey;
+
+  // Cached images can finish loading before React attaches onLoad
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img?.complete) setSettledKey(frameKey);
+  }, [frameKey]);
+
+  const markSettled = () => setSettledKey(frameKey);
+
+  return (
+    <div
+      className={`relative w-full ${sizingClass} overflow-hidden rounded-xl ${className}`}
+    >
+      {!settled && (
+        <div
+          className="absolute inset-0 animate-pulse bg-gray-200"
+          aria-hidden="true"
+        />
+      )}
+      {children({
+        ref: imgRef,
+        onLoad: markSettled,
+        onError: markSettled, // stop pulsing if the image fails
+        imgClass: `h-full w-full transition-opacity duration-300 ${
+          settled ? "opacity-100" : "opacity-0"
+        }`,
+      })}
+    </div>
+  );
+};
+
 const MediaPlaceholder = ({
   type = "image",
   src,
@@ -67,18 +108,29 @@ const MediaPlaceholder = ({
     const fallback = `${basePath}-1280.jpg`;
 
     return (
-      <picture>
-        <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />
-        <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
-        <img
-          src={fallback}
-          alt={alt}
-          loading={loading}
-          fetchPriority={fetchPriority}
-          decoding={loading === "eager" ? "sync" : "async"}
-          className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
-        />
-      </picture>
+      <ImageFrame
+        frameKey={basePath}
+        sizingClass={sizingClass}
+        className={className}
+      >
+        {({ ref, onLoad, onError, imgClass }) => (
+          <picture>
+            <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />
+            <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
+            <img
+              ref={ref}
+              src={fallback}
+              alt={alt}
+              loading={loading}
+              fetchPriority={fetchPriority}
+              decoding={loading === "eager" ? "sync" : "async"}
+              onLoad={onLoad}
+              onError={onError}
+              className={`${imgClass} ${objectFitClass}`}
+            />
+          </picture>
+        )}
+      </ImageFrame>
     );
   }
 
@@ -96,14 +148,25 @@ const MediaPlaceholder = ({
       );
     }
     return (
-      <img
-        src={src}
-        alt={alt}
-        loading={loading}
-        fetchPriority={fetchPriority}
-        decoding={loading === "eager" ? "sync" : "async"}
-        className={`w-full ${sizingClass} ${objectFitClass} rounded-xl ${className}`}
-      />
+      <ImageFrame
+        frameKey={src}
+        sizingClass={sizingClass}
+        className={className}
+      >
+        {({ ref, onLoad, onError, imgClass }) => (
+          <img
+            ref={ref}
+            src={src}
+            alt={alt}
+            loading={loading}
+            fetchPriority={fetchPriority}
+            decoding={loading === "eager" ? "sync" : "async"}
+            onLoad={onLoad}
+            onError={onError}
+            className={`${imgClass} ${objectFitClass}`}
+          />
+        )}
+      </ImageFrame>
     );
   }
 

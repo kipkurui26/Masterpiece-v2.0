@@ -6,16 +6,7 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
   const [active, setActive] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
 
-  if (!items.length) {
-    return (
-      <MediaPlaceholder
-        type="image"
-        aspect={aspect}
-        caption="Gallery coming soon"
-      />
-    );
-  }
-
+  const hasItems = items.length > 0;
   const current = items[active];
   const goTo = (i) => setActive((i + items.length) % items.length);
 
@@ -39,13 +30,26 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
     };
   }, [isZoomed, active, closeZoom]);
 
+  // Early return lives below all hooks so hook order stays stable
+  if (!hasItems) {
+    return (
+      <MediaPlaceholder
+        type="image"
+        aspect={aspect}
+        caption="Gallery coming soon"
+      />
+    );
+  }
+
   return (
     <div className="w-full">
       <div className="relative">
         <MediaPlaceholder
+          key={current.src}
           type={current.type}
           src={current.src}
           poster={current.poster}
+          alt={current.caption || ""}
           caption={current.caption}
           objectFit="contain"
           aspect={aspect}
@@ -96,7 +100,9 @@ const MediaGallery = ({ items = [], aspect = "wide" }) => {
               type="button"
               onClick={() => setActive(i)}
               aria-label={`Go to slide ${i + 1}`}
-              className={`w-2.5 h-2.5 rounded-full transition-colors ${i === active ? "bg-[#0F9E9E]" : "bg-gray-300"}`}
+              className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                i === active ? "bg-[#0F9E9E]" : "bg-gray-300"
+              }`}
             />
           ))}
         </div>
