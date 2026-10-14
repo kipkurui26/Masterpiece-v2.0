@@ -6,7 +6,7 @@ export const PAGE_SEO = {
   home: {
     title: "Borehole Services in Kenya",
     description:
-      "Borehole services in Kenya, from surveys and drilling to equipping, solarisation and rehabilitation, guided by site-specific assessment, not standard packages.",
+      "Hydrogeological surveys, drilling, equipping, solarisation and rehabilitation across Kenya. Call or WhatsApp 0721577588",
     path: "/",
   },
   about: {
