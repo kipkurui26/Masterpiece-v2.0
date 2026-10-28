@@ -14,7 +14,7 @@ const Hero = () => {
         {/* Text column */}
         <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-[#0F9E9E]">
-            Professional Groundwater &amp; Borehole Solutions in Kenya
+            Hydrogeological Survey &amp; Borehole Drilling Solutions in Kenya
           </p>
 
           <h1 className="text-3xl font-bold leading-tight text-[#1B1F5C] sm:text-4xl lg:text-5xl">

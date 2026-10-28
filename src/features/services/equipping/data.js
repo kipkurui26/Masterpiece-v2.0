@@ -11,7 +11,7 @@ import equippingGalleryEight from "../../../assets/borehole-equipping-exhebition
 
 const equippingData = {
   hero: {
-    eyebrow: "Professional Borehole Equipping in Kenya",
+    eyebrow: "Borehole Equipping & Pump Installation in Kenya",
     headline:
       "A Drilled Borehole Only Becomes a Water Supply Once It's Equipped",
     intro: [

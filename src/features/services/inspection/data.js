@@ -13,7 +13,7 @@ export const seo = {
 };
 
 export const hero = {
-  eyebrow: "Trusted Borehole Inspection Services",
+  eyebrow: "Borehole Camera Inspection Services in Kenya",
   headline: "Borehole Inspection Services in Kenya",
   intro: [
     "Find out what is happening inside your borehole before deciding what to do next.",

@@ -10,7 +10,7 @@ import drillingGallerySeven from "../../../assets/groundbreaking-process-in athi
 
 const drillingData = {
   hero: {
-    eyebrow: "Professional Borehole Drilling in Kenya",
+    eyebrow: "Borehole Drilling Services in Kenya",
     headline: "Finding Water Is Only Part of a Successful Borehole",
     intro: [
       "Finding water is an important milestone, but it does not determine how well your borehole will perform over time. A successful borehole depends on much more than simply reaching water during drilling.",

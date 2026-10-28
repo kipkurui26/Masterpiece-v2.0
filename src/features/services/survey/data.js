@@ -9,7 +9,7 @@ import surveyGallerySix from "../../../assets/ground-profile.jpeg";
 
 const surveyData = {
   hero: {
-    eyebrow: "Professional Hydrogeological Survey in Kenya",
+    eyebrow: "Hydrogeological Survey in Kenya",
     headline: "Every Successful Borehole Begins Before Drilling",
     intro: [
       "The first decision in a successful borehole project isn't where to drill.",

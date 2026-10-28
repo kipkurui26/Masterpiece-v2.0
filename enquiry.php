@@ -1,17 +1,18 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__ . '/PHPMailer/src/Exception.php';
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
+require __DIR__ . '/../config.php';
+
 header('Content-Type: application/json');
 
-
 // --- CORS: only allow your own domain(s) to call this ---
-$allowedOrigins = [
-    'https://masterpiecehydrosolutions.co.ke',
-    'https://www.masterpiecehydrosolutions.co.ke',
-    'https://masterpiece-v2-0.vercel.app',
-    'http://localhost:3000', 
-];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-if (in_array($origin, $allowedOrigins, true)) {
+if (in_array($origin, ALLOWED_ORIGINS, true)) {
     header("Access-Control-Allow-Origin: $origin");
 }
 header('Access-Control-Allow-Methods: POST, OPTIONS');
@@ -109,32 +110,21 @@ if ($rawMessage !== '') {
     $projectDetailsText = "\n\n$rawMessage";
 }
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require __DIR__ . '/PHPMailer/src/Exception.php';
-require __DIR__ . '/PHPMailer/src/PHPMailer.php';
-require __DIR__ . '/PHPMailer/src/SMTP.php';
-require __DIR__ . '/../config.php';
-// require __DIR__ . '/config.php';
-
-
-
 $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host       = 'mail.masterpiecehydrosolutions.co.ke';
+    $mail->Host       = SMTP_HOST;
     $mail->SMTPAuth   = true;
     $mail->Username   = SMTP_USER;
     $mail->Password   = SMTP_PASS;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465;
+    $mail->Port       = SMTP_PORT;
 
     // From is always your own verified address — never the client's.
     // Reply-To is the client's address, only when they actually gave one.
-    $mail->setFrom(SMTP_USER, 'Masterpiece Hydro-Solutions Website');
-    $mail->addAddress('sales@masterpiecehydrosolutions.co.ke');
+    $mail->setFrom(SMTP_USER, MAIL_FROM_NAME);
+    $mail->addAddress(MAIL_TO);
 
     if ($contactMethod === 'email') {
         $mail->addReplyTo($contactDetail, $fullName);

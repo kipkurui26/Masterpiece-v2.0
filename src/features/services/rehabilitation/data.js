@@ -6,7 +6,7 @@ import rehabilitationGalleryFive from "../../../assets/rehabillitation-in-joska.
 
 const rehabilitationData = {
   hero: {
-    eyebrow: "Professional Borehole Rehabilitation in Kenya",
+    eyebrow: "Borehole Rehabilitation Services in Kenya",
     headline:
       "Restore Your Borehole's Performance, Before Deciding It Needs Replacing",
     intro: [

@@ -7,7 +7,7 @@ import solarisationGallerySix from "../../../assets/solar-gallery-six.jpeg";
 
 const solarisationData = {
   hero: {
-    eyebrow: "Professional Borehole Solarisation in Kenya",
+    eyebrow: "Solar Borehole Pump Installation in Kenya",
     headline: "A Solar System Designed Around Your Borehole and Your Site",
     intro: [
       "Borehole solarisation can provide a reliable power source for your borehole without the ongoing running costs of grid electricity or diesel.",
