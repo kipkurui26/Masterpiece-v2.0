@@ -16,6 +16,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build:full
+        env:
+          VITE_WP_API_URL: ${{ vars.VITE_WP_API_URL }}
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: dist
